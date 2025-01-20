@@ -19,9 +19,10 @@ public static class ObjectExtension
         for (int i = 0; i < obj.GameObject().transform.childCount; i++)
         {
             GameObject childobj = obj.GameObject().transform.GetChild(i).gameObject;
-            
-            _savedObjects.Add(childobj);
-            Object.DontDestroyOnLoad(childobj);
+
+            DontDestroyOnLoad(childobj);
+            // _savedObjects.Add(childobj);
+            // Object.DontDestroyOnLoad(childobj);
         }
     }
 

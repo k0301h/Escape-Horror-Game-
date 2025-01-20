@@ -1,13 +1,24 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class TimeManager : MonoBehaviour, ISingleton
+public class TimeManager : MonoBehaviour
 {
-    private double _time, _prev;
+    private static TimeManager _instance;
+    
+    private float _time, _prev;
+
+    void Awake()
+    {
+        if(_instance == null)
+            _instance = this;
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
     
     void Start()
     {
-        ObjectExtension.Log();
         _time = 0;
     }
 
@@ -16,13 +27,24 @@ public class TimeManager : MonoBehaviour, ISingleton
         _prev = _time;
         _time += Time.deltaTime;
     }
+    
+    public static TimeManager Instance
+    {
+        get 
+        {
+            if (_instance == null)
+                return null;
 
-    double GetDeltaTime()
+            return _instance;
+        }
+    }
+
+    public float DeltaTime()
     {
         return _time - _prev;
     }
     
-    double GetTime()
+    public float GetTime()
     {
         return _time;
     }

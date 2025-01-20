@@ -4,11 +4,13 @@ namespace Mannagers
 {
     public class GeneralManager : MonoBehaviour
     {
-        private void Awake()
+        void Start()
         {
             ObjectExtension.Init();
             ObjectExtension.DontDestroyOnLoad(gameObject);
             // == gameObject.DontDestroyOnLoad(); // 확장 매서드 사용 예
+            
+            ObjectExtension.Log();
         }
     }
 }
