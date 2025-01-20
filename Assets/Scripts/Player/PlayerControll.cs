@@ -1,10 +1,12 @@
+using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerControll : MonoBehaviour
 {
-    public Camera ViewCamera;
+    public Camera viewCamera;
     public CharacterController cc;
     
     public float _moveSpeed = 1f;
@@ -12,8 +14,8 @@ public class PlayerControll : MonoBehaviour
     public float sensitivityX = 15.0f;
     public float sensitivityY = 15.0f;
 
-    public float minimumY = -60.0f;
-    public float maximumY = 60.0f;
+    public float minimumY = -50.0f;
+    public float maximumY = 50.0f;
     
     private float _rotationX = 0.0f;
     private float _rotationY = 0.0f;
@@ -24,7 +26,7 @@ public class PlayerControll : MonoBehaviour
         // Object timer = ObjectExtension.FindObjectByID("TimeManager");
         // _timer = timer?.GetComponent<TimeManager>();
         
-        ViewCamera = gameObject.GetComponentInChildren<Camera>();
+        viewCamera = gameObject.GetComponentInChildren<Camera>();
         cc = gameObject.GetComponent<CharacterController>();
     }
 
@@ -36,22 +38,28 @@ public class PlayerControll : MonoBehaviour
     void FixedUpdate()
     {
         #region Move Function
+        
         if (Input.GetKey(KeyCode.A))
         {
-            cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * Vector3.left);
+            cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad), 0,
+                Mathf.Cos((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad)));
         }
         if (Input.GetKey(KeyCode.D))
         {
-            cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * Vector3.right);
+            cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad), 0,
+                Mathf.Cos((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad)));
         }
         if (Input.GetKey(KeyCode.W))
         {
-            cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * Vector3.forward);
+            cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin(transform.localEulerAngles.y * Mathf.Deg2Rad), 0,
+                Mathf.Cos(transform.localEulerAngles.y * Mathf.Deg2Rad)));
         }
         if (Input.GetKey(KeyCode.S))
-        {
-            cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * Vector3.back);
+        {            
+            cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad), 0,
+                Mathf.Cos((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad)));
         }
+        
         #endregion
         
         #region Mouse Function
@@ -61,7 +69,8 @@ public class PlayerControll : MonoBehaviour
         _rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
         _rotationY = Mathf.Clamp(_rotationY, minimumY, maximumY);
         
-        ViewCamera.transform.localEulerAngles = new Vector3(-_rotationY, _rotationX, 0.0f);
+        transform.localEulerAngles = new Vector3(0.0f, _rotationX, 0.0f);
+        viewCamera.transform.localEulerAngles = new Vector3(-_rotationY, 0.0f, 0.0f);
         
         #endregion
     }

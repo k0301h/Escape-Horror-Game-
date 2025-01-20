@@ -20,8 +20,8 @@ public static class ObjectExtension
         {
             GameObject childobj = obj.GameObject().transform.GetChild(i).gameObject;
 
-            DontDestroyOnLoad(childobj);
-            // _savedObjects.Add(childobj);
+            _savedObjects.Add(childobj);
+            // 자식 개체에는 실행하면 안된다.
             // Object.DontDestroyOnLoad(childobj);
         }
     }
