@@ -8,6 +8,7 @@ public class PlayerControll : MonoBehaviour
 {
     public Camera viewCamera;
     public CharacterController cc;
+    private RaycastHit _hit;
     
     public float _moveSpeed = 1f;
     
@@ -71,7 +72,22 @@ public class PlayerControll : MonoBehaviour
         
         transform.localEulerAngles = new Vector3(0.0f, _rotationX, 0.0f);
         viewCamera.transform.localEulerAngles = new Vector3(-_rotationY, 0.0f, 0.0f);
-        
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (Physics.Raycast(transform.position, viewCamera.transform.forward, out _hit, 5.0f))
+            {
+                Debug.Log($"hitpoint : {_hit.point}, degree : {viewCamera.transform.forward}, distance : {_hit.distance}, name : {_hit.collider.name}");
+                Debug.DrawRay(transform.position, (viewCamera.transform.forward) * 5.0f,
+                    Color.red);
+            }
+            else
+            {
+                Debug.DrawRay(transform.position, (viewCamera.transform.forward) * 5.0f,
+                    Color.red);
+            }
+        }
+
         #endregion
     }
 }
