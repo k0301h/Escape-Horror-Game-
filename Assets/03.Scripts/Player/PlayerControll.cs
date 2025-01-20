@@ -78,13 +78,22 @@ public class PlayerControll : MonoBehaviour
             if (Physics.Raycast(transform.position, viewCamera.transform.forward, out _hit, 5.0f))
             {
                 Debug.Log($"hitpoint : {_hit.point}, degree : {viewCamera.transform.forward}, distance : {_hit.distance}, name : {_hit.collider.name}");
-                Debug.DrawRay(transform.position, (viewCamera.transform.forward) * 5.0f,
-                    Color.red);
+                Debug.DrawRay(transform.position, (viewCamera.transform.forward) * 5.0f, Color.red);
+                
+                var rayObject = _hit.collider.gameObject;
+                Door_Controller doorController;
+
+                if (rayObject.TryGetComponent<Door_Controller>(out doorController))
+                {
+                    if(doorController.IsOpen())
+                        doorController.OpenDoor();
+                    else
+                        doorController.CloseDoor();
+                }
             }
             else
             {
-                Debug.DrawRay(transform.position, (viewCamera.transform.forward) * 5.0f,
-                    Color.red);
+                Debug.DrawRay(transform.position, (viewCamera.transform.forward) * 5.0f, Color.red);
             }
         }
 

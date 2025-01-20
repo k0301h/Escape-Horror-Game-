@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mannagers/ObjectExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mannagers/ObjectExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControll.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Door/Door_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Door/Door_Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +24,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/84f0d810adef4e6c8deab33e4ae93f7c1dec00/7f/84974bc4/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/84f0d810adef4e6c8deab33e4ae93f7c1dec00/ca/e490eaf0/Component.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ed969b0e627d471da4848289f9c322df46ae00/09/56cf3a99/List`1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mannagers/ObjectExtension.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mannagers/TimeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.high-definition/Runtime/Material/Decal/Decal.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting/Runtime/VisualScripting.Core/Unity/ISingleton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting/Runtime/VisualScripting.Core/Utilities/ComponentHolderProtocol.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -71,13 +69,15 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20248">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="20248" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -108,7 +108,7 @@
       <updated>1737269404235</updated>
       <workItem from="1737269405606" duration="73000" />
       <workItem from="1737269895256" duration="7451000" />
-      <workItem from="1737352749441" duration="1190000" />
+      <workItem from="1737352758273" duration="16940000" />
     </task>
     <servers />
   </component>
@@ -125,5 +125,76 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Mannagers/GeneralManager.cs</url>
+          <line>9</line>
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\Scripts\Mannagers\GeneralManager.cs" containingFunctionPresentation="메서드 'Start'">
+            <startOffsets>
+              <option value="175" />
+            </startOffsets>
+            <endOffsets>
+              <option value="226" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Door/Door_Controller.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Furnitures\Door\Door_Controller.cs" containingFunctionPresentation="메서드 'OpenDoor'">
+            <startOffsets>
+              <option value="381" />
+            </startOffsets>
+            <endOffsets>
+              <option value="396" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Door/Door_Controller.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Furnitures\Door\Door_Controller.cs" containingFunctionPresentation="메서드 'CloseDoor'">
+            <startOffsets>
+              <option value="522" />
+            </startOffsets>
+            <endOffsets>
+              <option value="538" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs</url>
+          <line>88</line>
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Player\PlayerControll.cs" containingFunctionPresentation="메서드 'FixedUpdate'">
+            <startOffsets>
+              <option value="3294" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3320" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs</url>
+          <line>90</line>
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Player\PlayerControll.cs" containingFunctionPresentation="메서드 'FixedUpdate'">
+            <startOffsets>
+              <option value="3370" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3397" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
