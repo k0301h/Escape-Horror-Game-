@@ -21,13 +21,13 @@ public class Door_Controller : MonoBehaviour
     
     public void OpenDoor()
     {
-        _isOpen = false;
+        _isOpen = true;
         _animator.SetTrigger(TOpen);
     }
     
     public void CloseDoor()
     {
-        _isOpen = true;
+        _isOpen = false;
         _animator.SetTrigger(TClose);
     }
 }

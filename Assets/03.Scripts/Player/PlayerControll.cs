@@ -3,23 +3,33 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class PlayerControll : MonoBehaviour
 {
     public Camera viewCamera;
     public CharacterController cc;
-    private RaycastHit _hit;
+    public Canvas canvas;
+    public RawImage _cursorImage;
     
+    #region controll variables
     public float _moveSpeed = 1f;
     
     public float sensitivityX = 15.0f;
     public float sensitivityY = 15.0f;
-
     public float minimumY = -50.0f;
     public float maximumY = 50.0f;
-    
     private float _rotationX = 0.0f;
     private float _rotationY = 0.0f;
+    
+    private bool _isMouseLocked;
+    #endregion
+    
+    #region Ray Variables
+    private RaycastHit _hit;
+
+    private readonly int Layer_Furniture = 1 << 10;
+    #endregion
     
     void Start()
     {
@@ -29,6 +39,10 @@ public class PlayerControll : MonoBehaviour
         
         viewCamera = gameObject.GetComponentInChildren<Camera>();
         cc = gameObject.GetComponent<CharacterController>();
+        canvas = gameObject.GetComponentInChildren<Canvas>();
+        _cursorImage = canvas.gameObject.GetComponentInChildren<RawImage>();
+
+        _isMouseLocked = false;
     }
 
     void Update()
@@ -73,12 +87,23 @@ public class PlayerControll : MonoBehaviour
         transform.localEulerAngles = new Vector3(0.0f, _rotationX, 0.0f);
         viewCamera.transform.localEulerAngles = new Vector3(-_rotationY, 0.0f, 0.0f);
 
+        // always
+        if (Physics.Raycast(transform.position, viewCamera.transform.forward, out _hit, 3.0f, Layer_Furniture))
+        {
+            _cursorImage.enabled = true;
+        }
+        else
+        {
+            _cursorImage.enabled = false;
+        }
+        //
+        
         if (Input.GetMouseButtonDown(0))
         {
-            if (Physics.Raycast(transform.position, viewCamera.transform.forward, out _hit, 5.0f))
+            if (Physics.Raycast(transform.position, viewCamera.transform.forward, out _hit, 3.0f, Layer_Furniture))
             {
                 Debug.Log($"hitpoint : {_hit.point}, degree : {viewCamera.transform.forward}, distance : {_hit.distance}, name : {_hit.collider.name}");
-                Debug.DrawRay(transform.position, (viewCamera.transform.forward) * 5.0f, Color.red);
+                Debug.DrawRay(transform.position, (viewCamera.transform.forward) * 3.0f, Color.red);
                 
                 var rayObject = _hit.collider.gameObject;
                 Door_Controller doorController;
@@ -86,14 +111,29 @@ public class PlayerControll : MonoBehaviour
                 if (rayObject.TryGetComponent<Door_Controller>(out doorController))
                 {
                     if(doorController.IsOpen())
-                        doorController.OpenDoor();
-                    else
                         doorController.CloseDoor();
+                    else
+                        doorController.OpenDoor();
                 }
             }
             else
             {
-                Debug.DrawRay(transform.position, (viewCamera.transform.forward) * 5.0f, Color.red);
+                Debug.DrawRay(transform.position, (viewCamera.transform.forward) * 3.0f, Color.red);
+            }
+        }
+        else if (Input.GetMouseButtonDown(2))
+        {
+            if (_isMouseLocked)
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                _isMouseLocked = false;
+            }
+            else
+            {
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+                _isMouseLocked = true;
             }
         }
 
