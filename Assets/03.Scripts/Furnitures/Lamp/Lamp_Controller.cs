@@ -3,20 +3,24 @@ using UnityEngine;
 
 public class Lamp_Controller : MonoBehaviour
 {
-    public Light light;
+    public new Light light;
     public Material material;
 
     public bool ison;
     private float value;
+    public int twinklingMode;
     
     void Start()
     {
         light = gameObject.GetComponentInChildren<Light>();
         material = gameObject.GetComponentInChildren<Renderer>().material;
-
+        
         ison = true;
         value = 0.0f;
-        StartCoroutine(LightCoroutines());
+        if (twinklingMode == 0)
+            StartCoroutine(MediumLightCoroutines());
+        else
+            StartCoroutine(FastLightCoroutines());
     }
 
     void Update()
@@ -25,7 +29,34 @@ public class Lamp_Controller : MonoBehaviour
         light.intensity = (1 - value) * 40000;
     }
 
-    IEnumerator LightCoroutines()
+    IEnumerator FastLightCoroutines()
+    {
+        while (true)
+        {
+            if (ison)
+            {
+                value += 0.5f;
+                if (value >= 1.0f)
+                {
+                    ison = false;            
+                    yield return new WaitForSeconds(0.5f);
+                }
+            }
+            else
+            {
+                value -= 0.5f;
+                if (value <= 0.0f)
+                {
+                    ison = true;
+                    yield return new WaitForSeconds(0.5f);
+                }
+            }
+
+            yield return new WaitForSeconds(0.01f);
+        }
+    }
+    
+    IEnumerator MediumLightCoroutines()
     {
         while (true)
         {

@@ -927,6 +927,7 @@ MonoBehaviour:
   light: {fileID: 0}
   material: {fileID: 0}
   ison: 0
+  twinklingMode: 1
 --- !u!1 &924012723
 GameObject:
   m_ObjectHideFlags: 0
