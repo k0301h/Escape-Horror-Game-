@@ -36,15 +36,20 @@ public class DebugManager : MonoBehaviour
         }
     }
 
+    public void Log(object message)
+    {
+        Debug.Log(message);
+    }
+    
     public void DrawRay(Vector3 position, Vector3 direction, float rayDist)
     {
-        if (isDebug && isRaycast)
+        if (isRaycast)
             Debug.DrawRay(position, (direction) * rayDist, Color.red);
     }
     
     public void LogAndDrawRay(RaycastHit hit, Vector3 position, Vector3 direction, float rayDist)
     {
-        if (isDebug && isRaycast)
+        if (isRaycast)
         {
             Debug.Log($"hitpoint : {hit.point}, degree : {direction}, distance : {hit.distance}, name : {hit.collider.name}");
             DrawRay(position, direction, rayDist);

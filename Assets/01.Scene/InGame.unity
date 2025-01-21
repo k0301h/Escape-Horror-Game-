@@ -1066,8 +1066,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb6afc9b291483db895c85aa87d7854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDebug: 1
-  isRaycast: 1
+  isDebug: 0
+  isRaycast: 0
 --- !u!1001 &1134292523
 PrefabInstance:
   m_ObjectHideFlags: 0
