@@ -103,8 +103,7 @@ public class PlayerControll : MonoBehaviour
         {
             if (Physics.Raycast(transform.position, viewCamera.transform.forward, out _hit, Ray_Dist, Layer_Furniture))
             {
-                Debug.Log($"hitpoint : {_hit.point}, degree : {viewCamera.transform.forward}, distance : {_hit.distance}, name : {_hit.collider.name}");
-                Debug.DrawRay(transform.position, (viewCamera.transform.forward) * Ray_Dist, Color.red);
+                DebugManager.Instance.LogAndDrawRay(_hit, transform.position, viewCamera.transform.forward, Ray_Dist);
                 
                 var rayObject = _hit.collider.gameObject;
                 Door_Controller doorController;
@@ -119,7 +118,7 @@ public class PlayerControll : MonoBehaviour
             }
             else
             {
-                Debug.DrawRay(transform.position, (viewCamera.transform.forward) * Ray_Dist, Color.red);
+                DebugManager.Instance.DrawRay(transform.position, viewCamera.transform.forward, Ray_Dist);
             }
         }
         else if (Input.GetMouseButtonDown(2))
