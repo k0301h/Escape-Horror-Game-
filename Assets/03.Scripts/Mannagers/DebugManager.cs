@@ -38,7 +38,8 @@ public class DebugManager : MonoBehaviour
 
     public void Log(object message)
     {
-        Debug.Log(message);
+        if(isDebug)
+            Debug.Log(message);
     }
     
     public void DrawRay(Vector3 position, Vector3 direction, float rayDist)
