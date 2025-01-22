@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -9,8 +10,11 @@ public class PlayerControll : MonoBehaviour
 {
     public Camera viewCamera;
     public CharacterController cc;
+    
     public Canvas canvas;
     public RawImage _cursorImage;
+    
+    public PlayerInventory inventory;
     
     #region controll variables
     public float _moveSpeed = 1f;
@@ -26,10 +30,12 @@ public class PlayerControll : MonoBehaviour
     #endregion
     
     #region Ray Variables
-    private RaycastHit _hit;
+    private RaycastHit _furnitureHit;
+    private RaycastHit _itemHit;
 
     private readonly float Ray_Dist = 3.0f;
     private readonly int Layer_Furniture = 1 << 10;
+    private readonly int Layer_Item = 1 << 11;
     #endregion
     
     void Start()
@@ -42,6 +48,7 @@ public class PlayerControll : MonoBehaviour
         cc = gameObject.GetComponent<CharacterController>();
         canvas = gameObject.GetComponentInChildren<Canvas>();
         _cursorImage = canvas.gameObject.GetComponentInChildren<RawImage>();
+        inventory = gameObject.GetComponent<PlayerInventory>();
 
         _isMouseLocked = false;
     }
@@ -88,8 +95,13 @@ public class PlayerControll : MonoBehaviour
         transform.localEulerAngles = new Vector3(0.0f, _rotationX, 0.0f);
         viewCamera.transform.localEulerAngles = new Vector3(-_rotationY, 0.0f, 0.0f);
 
+        bool furnitureRayResult = Physics.Raycast(viewCamera.transform.position, viewCamera.transform.forward, out _furnitureHit, Ray_Dist,
+            Layer_Furniture);
+        bool ItemRayResult = Physics.Raycast(viewCamera.transform.position, viewCamera.transform.forward, out _itemHit, Ray_Dist,
+            Layer_Item);
+        
         // always
-        if (Physics.Raycast(transform.position, viewCamera.transform.forward, out _hit, Ray_Dist, Layer_Furniture))
+        if (furnitureRayResult || ItemRayResult)
         {
             _cursorImage.enabled = true;
         }
@@ -101,11 +113,11 @@ public class PlayerControll : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0))
         {
-            if (Physics.Raycast(transform.position, viewCamera.transform.forward, out _hit, Ray_Dist, Layer_Furniture))
+            if (furnitureRayResult)
             {
-                DebugManager.Instance.LogAndDrawRay(_hit, transform.position, viewCamera.transform.forward, Ray_Dist);
+                DebugManager.Instance.LogAndDrawRay(_furnitureHit, viewCamera.transform.position, viewCamera.transform.forward, Ray_Dist);
                 
-                var rayObject = _hit.collider.gameObject;
+                var rayObject = _furnitureHit.collider.gameObject;
                 Door_Controller doorController;
 
                 if (rayObject.TryGetComponent<Door_Controller>(out doorController))
@@ -118,7 +130,7 @@ public class PlayerControll : MonoBehaviour
             }
             else
             {
-                DebugManager.Instance.DrawRay(transform.position, viewCamera.transform.forward, Ray_Dist);
+                DebugManager.Instance.DrawRay(viewCamera.transform.position, viewCamera.transform.forward, Ray_Dist);
             }
         }
         else if (Input.GetMouseButtonDown(2))
@@ -136,6 +148,31 @@ public class PlayerControll : MonoBehaviour
                 _isMouseLocked = true;
             }
         }
+        
+        #region Item
+
+        if (Input.GetKey(KeyCode.E))
+        {            
+            if (ItemRayResult)
+            {
+                DebugManager.Instance.LogAndDrawRay(_itemHit, viewCamera.transform.position, viewCamera.transform.forward, Ray_Dist);
+                
+                var rayObject = _itemHit.collider.gameObject;
+                Item itemCoponent;
+                
+                inventory.GetItem(rayObject);
+                if (rayObject.TryGetComponent<Item>(out itemCoponent))
+                {
+                    itemCoponent.Acquired();
+                }
+            }
+            else
+            {
+                DebugManager.Instance.DrawRay(viewCamera.transform.position, viewCamera.transform.forward, Ray_Dist);
+            }
+        }
+
+        #endregion
 
         #endregion
     }
