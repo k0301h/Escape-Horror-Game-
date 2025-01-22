@@ -163,7 +163,11 @@ public class PlayerControll : MonoBehaviour
                 inventory.GetItem(rayObject);
                 if (rayObject.TryGetComponent<Item>(out itemCoponent))
                 {
-                    itemCoponent.Acquired();
+                    if (itemCoponent.IsFlash())
+                    {
+                        itemCoponent.Acquired(viewCamera.gameObject);
+                        itemCoponent.SetFlash();
+                    }
                 }
             }
             else
