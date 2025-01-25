@@ -6,7 +6,7 @@ public class Lamp_Controller : MonoBehaviour
     public new Light light;
     public Material material;
 
-    public bool ison;
+    private bool ison;
     private float value;
     public int twinklingMode;
     
@@ -17,10 +17,8 @@ public class Lamp_Controller : MonoBehaviour
         
         ison = true;
         value = 0.0f;
-        if (twinklingMode == 0)
-            StartCoroutine(MediumLightCoroutines());
-        else
-            StartCoroutine(FastLightCoroutines());
+
+        StartCoroutine(RandomStartCoroutines());
     }
 
     void Update()
@@ -29,30 +27,46 @@ public class Lamp_Controller : MonoBehaviour
         light.intensity = (1 - value) * 40000;
     }
 
+    IEnumerator RandomStartCoroutines()
+    {
+        yield return new WaitForSeconds(Random.Range(0.0f, 1.0f));
+        
+        if (twinklingMode == 0)
+            StartCoroutine(MediumLightCoroutines());
+        else
+            StartCoroutine(FastLightCoroutines());
+    }
+
     IEnumerator FastLightCoroutines()
     {
+        float time = Random.Range(0.5f, 1.0f);
+        float breakTime = Random.Range(0.0f, 0.5f);
         while (true)
         {
             if (ison)
             {
-                value += 0.5f;
-                if (value >= 1.0f)
+                value += 0.1f;
+                if (value >= time)
                 {
+                    time = Random.Range(0.5f, 1.0f);
                     ison = false;            
-                    yield return new WaitForSeconds(0.5f);
+                    yield return new WaitForSeconds(breakTime);
+                    breakTime = Random.Range(0.0f, 0.5f);
                 }
             }
             else
             {
-                value -= 0.5f;
+                value -= 0.1f;
                 if (value <= 0.0f)
                 {
+                    time = Random.Range(0.5f, 1.0f);
                     ison = true;
-                    yield return new WaitForSeconds(0.5f);
+                    yield return new WaitForSeconds(breakTime);
+                    breakTime = Random.Range(0.0f, 0.5f);
                 }
             }
 
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.002f);
         }
     }
     

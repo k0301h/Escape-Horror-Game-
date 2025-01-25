@@ -6,8 +6,37 @@
   <component name="ChangeListManager">
     <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/11.Model/player/PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/11.Model/player/PlayerAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01.Scene/InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/InGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/Lamp_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/Lamp_Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Glossiness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Glossiness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Specular.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Specular.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Glossiness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Glossiness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Specular.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Specular.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_Body.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_Body.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_Body1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_Body1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/ZombieAnimator.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/ZombieAnimator.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Zombie_Walk(Slow).fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Zombie_Walk(Slow).fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Zombie_Walk(Sneak).fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Zombie_Walk(Sneak).fbx.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
