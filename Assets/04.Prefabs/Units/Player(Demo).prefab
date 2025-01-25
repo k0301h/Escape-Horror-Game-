@@ -505,12 +505,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87830122a90d7b847b2ef70f2c659d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewCamera: {fileID: 9214143182537004094}
-  cc: {fileID: 7894261520119729753}
-  canvas: {fileID: 1974866038280382470}
+  _viewCamera: {fileID: 0}
+  _cc: {fileID: 0}
+  _inventory: {fileID: 0}
+  _IKController: {fileID: 0}
+  _animator: {fileID: 0}
+  _canvas: {fileID: 0}
   _cursorImage: {fileID: 7618846815351257997}
-  inventory: {fileID: 3970591621519399408}
-  flashLight: {fileID: 0}
+  _flashLight: {fileID: 0}
   _moveSpeed: 5
   sensitivityX: 3
   sensitivityY: 2
