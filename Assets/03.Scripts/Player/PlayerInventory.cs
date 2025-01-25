@@ -10,7 +10,7 @@ public class PlayerInventory : MonoBehaviour
         _inventory.Clear();
     }
 
-    public void GetItem(GameObject item)
+    public void AddItem(GameObject item)
     {
         _inventory.Add(item);
     }

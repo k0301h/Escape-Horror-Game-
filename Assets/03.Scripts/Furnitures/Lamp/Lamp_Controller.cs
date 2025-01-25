@@ -56,6 +56,7 @@ public class Lamp_Controller : MonoBehaviour
         }
     }
     
+    // 따따따따딱닥
     IEnumerator MediumLightCoroutines()
     {
         while (true)
@@ -71,7 +72,7 @@ public class Lamp_Controller : MonoBehaviour
                 if (value <= 0.0f) ison = true;
             }
 
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.03f);
         }
     }
 }

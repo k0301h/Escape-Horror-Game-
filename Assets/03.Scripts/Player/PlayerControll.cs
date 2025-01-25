@@ -1,20 +1,32 @@
-using System;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class PlayerControll : MonoBehaviour
 {
-    public Camera viewCamera;
-    public CharacterController cc;
+    #region Cached references
     
-    public Canvas canvas;
+    // private static readonly int IsFront = Animator.StringToHash("isFront");
+    // private static readonly int IsRight = Animator.StringToHash("isRight");
+    // private static readonly int IsLeft = Animator.StringToHash("isLeft");
+    // private static readonly int IsBack = Animator.StringToHash("isBack");
+    private static readonly int IndexWalk = Animator.StringToHash("IndexWalk");
+    
+    private static readonly int TWalk = Animator.StringToHash("tWalk");
+    
+    #endregion
+    
+    public Camera _viewCamera;
+    public CharacterController _cc;
+    public PlayerInventory _inventory;
+    public PlayerIKController _IKController;
+    public Animator _animator;
+    
+    public Canvas _canvas;
     public RawImage _cursorImage;
     
-    public PlayerInventory inventory;
+    public FlashLight _flashLight;
     
     #region controll variables
     public float _moveSpeed = 1f;
@@ -44,60 +56,228 @@ public class PlayerControll : MonoBehaviour
         // Object timer = ObjectExtension.FindObjectByID("TimeManager");
         // _timer = timer?.GetComponent<TimeManager>();
         
-        viewCamera = gameObject.GetComponentInChildren<Camera>();
-        cc = gameObject.GetComponent<CharacterController>();
-        canvas = gameObject.GetComponentInChildren<Canvas>();
-        _cursorImage = canvas.gameObject.GetComponentInChildren<RawImage>();
-        inventory = gameObject.GetComponent<PlayerInventory>();
+        _viewCamera = gameObject.GetComponentInChildren<Camera>();
+        _cc = gameObject.GetComponent<CharacterController>();
+        _canvas = gameObject.GetComponentInChildren<Canvas>();
+        _cursorImage = _canvas.gameObject.GetComponentInChildren<RawImage>();
+        _inventory = gameObject.GetComponent<PlayerInventory>();
+        _IKController = gameObject.GetComponent<PlayerIKController>();
+        _animator = gameObject.GetComponent<Animator>();
 
         _isMouseLocked = false;
     }
 
     void Update()
     {
-
-    }
-
-    void FixedUpdate()
-    {
         #region Move Function
         
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad), 0,
-                Mathf.Cos((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad)));
+            WalkingAnimation();
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad), 0,
-                Mathf.Cos((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad)));
+            WalkingAnimation();
         }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            WalkingAnimation();
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            WalkingAnimation();
+        }
+        
+        Vector3 moveDirection = Vector3.zero;
+
         if (Input.GetKey(KeyCode.W))
         {
-            cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin(transform.localEulerAngles.y * Mathf.Deg2Rad), 0,
-                Mathf.Cos(transform.localEulerAngles.y * Mathf.Deg2Rad)));
+            moveDirection += new Vector3(Mathf.Sin(transform.localEulerAngles.y * Mathf.Deg2Rad), 0,
+                Mathf.Cos(transform.localEulerAngles.y * Mathf.Deg2Rad));
         }
+
         if (Input.GetKey(KeyCode.S))
-        {            
-            cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad), 0,
-                Mathf.Cos((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad)));
+        {
+            moveDirection += new Vector3(Mathf.Sin((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad), 0,
+                Mathf.Cos((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad));
         }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            moveDirection += new Vector3(Mathf.Sin((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad), 0,
+                Mathf.Cos((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad));
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            moveDirection += new Vector3(Mathf.Sin((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad), 0,
+                Mathf.Cos((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad));
+        }
+
+        if (moveDirection != Vector3.zero)
+        {
+            moveDirection = moveDirection.normalized;
+        }
+
+        _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * moveDirection);
+        
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+        }
+        
+
+        #region Demo Moving1
+
+        // if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) ||
+        //     Input.GetKeyDown(KeyCode.D))
+        // {
+        //     WalkingAnimation();
+        // }
+        //
+        // //
+        // if (Input.GetKey(KeyCode.A))
+        // {
+        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad), 0,
+        //         Mathf.Cos((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad)));
+        // }
+        // if (Input.GetKey(KeyCode.D))
+        // {
+        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad), 0,
+        //         Mathf.Cos((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad)));
+        // }
+        // if (Input.GetKey(KeyCode.W))
+        // {
+        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin(transform.localEulerAngles.y * Mathf.Deg2Rad), 0,
+        //         Mathf.Cos(transform.localEulerAngles.y * Mathf.Deg2Rad)));
+        // }
+        // if (Input.GetKey(KeyCode.S))
+        // {            
+        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad), 0,
+        //         Mathf.Cos((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad)));
+        // }
+        // //
+        //
+        // if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) ||
+        //     Input.GetKeyUp(KeyCode.D))
+        // {
+        //     _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+        // }
+        //
+
+        #endregion
+        #region Demo Moving2
+        
+        // if (Input.GetKeyDown(KeyCode.W))
+        // {
+        //     WalkingAnimation();
+        //     isFornt = !isFornt;
+        //     DebugManager.Instance.Log($"isFornt : {isFornt}");
+        // }
+        // if (Input.GetKeyDown(KeyCode.S))
+        // {
+        //     WalkingAnimation();
+        //     isBack = !isBack;
+        //     DebugManager.Instance.Log($"isBack : {isBack}");
+        // }
+        // if (Input.GetKeyDown(KeyCode.A))
+        // {
+        //     WalkingAnimation();
+        //     isLeft = !isLeft;
+        //     DebugManager.Instance.Log($"isLeft : {isLeft}");
+        // }
+        // if (Input.GetKeyDown(KeyCode.D))
+        // {
+        //     WalkingAnimation();
+        //     isRight = !isRight;
+        //     DebugManager.Instance.Log($"isRight : {isRight}");
+        // }
+        //
+        // // 여기서 boolean값 이용해서 구현하려 했으나 더 효율적인 방안 구안
+        // if (isFornt)
+        // {
+        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin(transform.localEulerAngles.y * Mathf.Deg2Rad), 0,
+        //         Mathf.Cos(transform.localEulerAngles.y * Mathf.Deg2Rad)));
+        // }
+        // if (isBack)
+        // {            
+        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad), 0,
+        //         Mathf.Cos((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad)));
+        // }
+        // if (isLeft)
+        // {
+        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad), 0,
+        //         Mathf.Cos((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad)));
+        // }
+        // if (isRight)
+        // {
+        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad), 0,
+        //         Mathf.Cos((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad)));
+        // }
+        // //
+        //
+        // if (Input.GetKeyUp(KeyCode.W))
+        // {
+        //     _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+        //     isFornt = !isFornt;
+        //     DebugManager.Instance.Log($"isFornt : {isFornt}");
+        // }
+        // if (Input.GetKeyUp(KeyCode.S))
+        // {
+        //     _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+        //     isBack = !isBack;
+        //     DebugManager.Instance.Log($"isBack : {isBack}");
+        // }
+        // if (Input.GetKeyUp(KeyCode.A))
+        // {
+        //     _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+        //     isLeft = !isLeft;
+        //     DebugManager.Instance.Log($"isLeft : {isLeft}");
+        // }
+        // if (Input.GetKeyUp(KeyCode.D))
+        // {
+        //     _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+        //     isRight = !isRight;
+        //     DebugManager.Instance.Log($"isRight : {isRight}");
+        // }
         
         #endregion
-        
+        #endregion
+    }
+    
+    void FixedUpdate()
+    {
         #region Mouse Function
 
+        #region Direction
+        
         _rotationX += Input.GetAxis("Mouse X") * sensitivityX;
         
         _rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
         _rotationY = Mathf.Clamp(_rotationY, minimumY, maximumY);
         
         transform.localEulerAngles = new Vector3(0.0f, _rotationX, 0.0f);
-        viewCamera.transform.localEulerAngles = new Vector3(-_rotationY, 0.0f, 0.0f);
+        _viewCamera.transform.localEulerAngles = new Vector3(-_rotationY, 0.0f, 0.0f);
 
-        bool furnitureRayResult = Physics.Raycast(viewCamera.transform.position, viewCamera.transform.forward, out _furnitureHit, Ray_Dist,
+        #endregion
+        
+        #region Click Function
+        
+        bool furnitureRayResult = Physics.Raycast(_viewCamera.transform.position, _viewCamera.transform.forward, out _furnitureHit, Ray_Dist,
             Layer_Furniture);
-        bool ItemRayResult = Physics.Raycast(viewCamera.transform.position, viewCamera.transform.forward, out _itemHit, Ray_Dist,
+        bool ItemRayResult = Physics.Raycast(_viewCamera.transform.position, _viewCamera.transform.forward, out _itemHit, Ray_Dist,
             Layer_Item);
         
         // always
@@ -115,7 +295,7 @@ public class PlayerControll : MonoBehaviour
         {
             if (furnitureRayResult)
             {
-                DebugManager.Instance.LogAndDrawRay(_furnitureHit, viewCamera.transform.position, viewCamera.transform.forward, Ray_Dist);
+                DebugManager.Instance.LogAndDrawRay(_furnitureHit, _viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
                 
                 var rayObject = _furnitureHit.collider.gameObject;
                 Door_Controller doorController;
@@ -130,7 +310,7 @@ public class PlayerControll : MonoBehaviour
             }
             else
             {
-                DebugManager.Instance.DrawRay(viewCamera.transform.position, viewCamera.transform.forward, Ray_Dist);
+                DebugManager.Instance.DrawRay(_viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
             }
         }
         else if (Input.GetMouseButtonDown(2))
@@ -149,35 +329,55 @@ public class PlayerControll : MonoBehaviour
             }
         }
         
+        #endregion
+        
         #region Item
 
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {            
             if (ItemRayResult)
             {
-                DebugManager.Instance.LogAndDrawRay(_itemHit, viewCamera.transform.position, viewCamera.transform.forward, Ray_Dist);
+                DebugManager.Instance.LogAndDrawRay(_itemHit, _viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
                 
                 var rayObject = _itemHit.collider.gameObject;
-                Item itemCoponent;
                 
-                inventory.GetItem(rayObject);
-                if (rayObject.TryGetComponent<Item>(out itemCoponent))
+                if (rayObject.TryGetComponent<Item>(out Item itemCoponent))
                 {
-                    if (itemCoponent.IsFlash())
+                    if (itemCoponent is FlashLight flashLight)
                     {
-                        itemCoponent.Acquired(viewCamera.gameObject);
-                        itemCoponent.SetFlash();
+                        flashLight.Acquired(_viewCamera.gameObject);
+                        flashLight.SetFlash();
+                        _IKController.changeIK();
                     }
                 }
+                
+                _inventory.AddItem(rayObject);
             }
             else
             {
-                DebugManager.Instance.DrawRay(viewCamera.transform.position, viewCamera.transform.forward, Ray_Dist);
+                DebugManager.Instance.DrawRay(_viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
             }
+        }
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (_flashLight == null) _flashLight = _inventory._inventory.Find(x => x.name == "Flashlight").GetComponent<FlashLight>();
+
+            if(_flashLight.IsOn())
+                _flashLight.TurnOff();
+            else 
+                _flashLight.TurnOn();  
         }
 
         #endregion
 
         #endregion
+    }
+    
+    void WalkingAnimation()
+    {
+        if(_animator.GetCurrentAnimatorStateInfo(0).IsName("Walk") == false)
+            _animator.SetTrigger(TWalk);
+        _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) + 1);
+        DebugManager.Instance.Log($"Walk Index : {_animator.GetInteger(IndexWalk)}");
     }
 }
