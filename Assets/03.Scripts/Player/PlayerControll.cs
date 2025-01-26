@@ -39,6 +39,7 @@ public class PlayerControll : MonoBehaviour
     private float _rotationY = 0.0f;
     
     private bool _isMouseLocked;
+    private bool _isRun;
     #endregion
     
     #region Ray Variables
@@ -65,6 +66,7 @@ public class PlayerControll : MonoBehaviour
         _animator = gameObject.GetComponent<Animator>();
 
         _isMouseLocked = false;
+        _isRun = false;
     }
 
     void Update()
@@ -86,6 +88,10 @@ public class PlayerControll : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             WalkingAnimation();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            _isRun = true;
         }
         
         Vector3 moveDirection = Vector3.zero;
@@ -119,6 +125,11 @@ public class PlayerControll : MonoBehaviour
             moveDirection = moveDirection.normalized;
         }
 
+        if (_isRun)
+        {
+            moveDirection *= 1.5f;
+        }
+
         _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * moveDirection);
         
         if (Input.GetKeyUp(KeyCode.W))
@@ -136,6 +147,10 @@ public class PlayerControll : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.D))
         {
             _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            _isRun = false;
         }
         
 

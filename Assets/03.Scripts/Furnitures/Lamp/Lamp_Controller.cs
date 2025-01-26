@@ -8,7 +8,13 @@ public class Lamp_Controller : MonoBehaviour
 
     private bool ison;
     private float value;
+    
+    
+    public bool now_start_mode;
     public int twinklingMode;
+    public int intensity_Amount = 400000;
+    
+    private Coroutine _lampCoroutine;
     
     void Start()
     {
@@ -18,13 +24,33 @@ public class Lamp_Controller : MonoBehaviour
         ison = true;
         value = 0.0f;
 
-        StartCoroutine(RandomStartCoroutines());
+        if (now_start_mode)
+            StartLampTwinkle();
     }
 
     void Update()
     {
         material.SetFloat("_EmissiveExposureWeight", value);
-        light.intensity = (1 - value) * 40000;
+        light.intensity = (1 - value) * intensity_Amount;
+    }
+
+    public void StartLampTwinkle()
+    {
+        StartCoroutine(RandomStartCoroutines());
+    }
+    
+    public void EndLampTwinkle(bool isOnState)
+    {        
+        StopCoroutine(_lampCoroutine);
+
+        if (isOnState)
+        {
+            value = 0.0f;
+        }
+        else
+        {
+            value = 1.0f;
+        }
     }
 
     IEnumerator RandomStartCoroutines()
@@ -32,9 +58,11 @@ public class Lamp_Controller : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(0.0f, 1.0f));
         
         if (twinklingMode == 0)
-            StartCoroutine(MediumLightCoroutines());
+            _lampCoroutine = StartCoroutine(MediumLightCoroutines());
         else
-            StartCoroutine(FastLightCoroutines());
+            _lampCoroutine = StartCoroutine(FastLightCoroutines());
+        
+        
     }
 
     IEnumerator FastLightCoroutines()
@@ -46,6 +74,7 @@ public class Lamp_Controller : MonoBehaviour
             if (ison)
             {
                 value += 0.1f;
+                // 1.0f으로 수정해야함
                 if (value >= time)
                 {
                     time = Random.Range(0.5f, 1.0f);
@@ -70,7 +99,6 @@ public class Lamp_Controller : MonoBehaviour
         }
     }
     
-    // 따따따따딱닥
     IEnumerator MediumLightCoroutines()
     {
         while (true)

@@ -5,38 +5,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/UnitSpawnEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/UnitSpawnEvent.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scene/InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/InGame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/Lamp_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/Lamp_Controller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Diffuse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Diffuse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Glossiness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Glossiness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1001_Specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Diffuse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Diffuse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Glossiness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Glossiness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_1002_Specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_Body.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_Body.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_Body1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Ch30_Body1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/ZombieAnimator.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/ZombieAnimator.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Zombie_Walk(Slow).fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Zombie_Walk(Slow).fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Zombie_Walk(Sneak).fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Zombie/Zombie_Walk(Sneak).fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Cubemap.cubemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Cubemap.cubemap.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Material #25.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Material #25.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_1_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_1_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_1_2_default_Default_color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_1_2_default_Default_color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_1_2_diff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_1_2_diff.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_1_2_gloss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_1_2_gloss.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_1_2_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_1_2_normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_3_4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_3_4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_3_4_default_Default_color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_3_4_default_Default_color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_3_4_diff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_3_4_diff.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_3_4_gloss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_3_4_gloss.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_3_4_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/Tv_3_4_normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/YourPic.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/YourPic.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/_Tv_newdefault_Default.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/_Tv_newdefault_Default.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/_tv_olddefault_Default.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/_tv_olddefault_Default.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/yourPic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Materials/yourPic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Televisor_00.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Televisor_00.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Televisor_70.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Televisor_70.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Televisor_80.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Televisor_80.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Televisor_90.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Televisor_90.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Tv_1_2.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Tv_1_2.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Tv_3_4.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/Sources/Tv_3_4.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/SpecGrayscaleSF.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/SpecGrayscaleSF.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_00.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_00.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_00_pic.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_00_pic.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_70.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_70.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_70_pic.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_70_pic.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_80.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_80.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_80_pic.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_80_pic.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_90.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_90.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_90_pic.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/_Television_set/TV_90_pic.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxVolume.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SkyBoxVolume.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +103,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ed969b0e627d471da4848289f9c322df46ae00/09/56cf3a99/List`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ed969b0e627d471da4848289f9c322df46ae00/3f/aa9c8bb9/IntPtr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/03.Scripts/Furnitures/EventTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/Lamp_Controller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.high-definition/Runtime/Material/Decal/Decal.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting/Runtime/VisualScripting.Core/Unity/ISingleton.cs" root0="SKIP_HIGHLIGHTING" />
@@ -105,10 +150,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21284">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21964">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="21284" />
+      <option name="pid" value="21964" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
         <list>
@@ -151,6 +196,8 @@
       <workItem from="1737612356511" duration="872000" />
       <workItem from="1737704780006" duration="2190000" />
       <workItem from="1737788720880" duration="10254000" />
+      <workItem from="1737818842873" duration="1759000" />
+      <workItem from="1737873029736" duration="4158000" />
     </task>
     <servers />
   </component>
@@ -180,15 +227,21 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/03.Scripts/Furnitures/FlashLight/FlashLight.cs</url>
           <line>10</line>
-          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Furnitures\FlashLight\FlashLight.cs" containingFunctionPresentation="메서드 'Start'">
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Furnitures\FlashLight\FlashLight.cs" containingFunctionPresentation="메서드 'Start'" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/03.Scripts/UnitSpawnEvent.cs</url>
+          <line>17</line>
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\UnitSpawnEvent.cs" containingFunctionPresentation="메서드 'DestroyUnit'">
             <startOffsets>
-              <option value="169" />
+              <option value="542" />
             </startOffsets>
             <endOffsets>
-              <option value="217" />
+              <option value="605" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
