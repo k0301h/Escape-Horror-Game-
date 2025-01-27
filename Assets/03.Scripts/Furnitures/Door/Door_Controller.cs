@@ -7,8 +7,8 @@ public class Door_Controller : MonoBehaviour
     
     private Animator _animator;
     // private AudioClip _openClip;
-    private AudioSource _closeAudioSource;
     private AudioSource _openAudioSource;
+    private AudioSource _closeAudioSource;
     private bool _isOpen;
     
     void Start()
@@ -28,14 +28,14 @@ public class Door_Controller : MonoBehaviour
     
     public void OpenDoor()
     {
-        _openAudioSource.Play();
+        SoundManager.Instance.AudioPlay(_openAudioSource);
         _isOpen = true;
         _animator.SetTrigger(TOpen);
     }
     
     public void CloseDoor()
     {
-        _closeAudioSource.Play();
+        SoundManager.Instance.AudioPlay(_closeAudioSource);
         _isOpen = false;
         _animator.SetTrigger(TClose);
     }
