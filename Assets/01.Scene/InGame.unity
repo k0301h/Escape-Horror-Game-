@@ -212,7 +212,7 @@ Transform:
   m_GameObject: {fileID: 56011132}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.98, y: 1.2873452, z: -13.071173}
+  m_LocalPosition: {x: 5.87, y: 1.2873452, z: -13.071173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4755,7 +4755,7 @@ Transform:
   m_GameObject: {fileID: 1890477776}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.36, y: 1.2873452, z: -13.071173}
+  m_LocalPosition: {x: -3.63, y: 1.2873452, z: -13.071173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4792,8 +4792,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f9b5b63c39e45194d98bafb3fff0c7bc, type: 3}
-  m_Resource: {fileID: 8300000, guid: f9b5b63c39e45194d98bafb3fff0c7bc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 19984bb83238fa94aa07a318cc149748, type: 3}
+  m_Resource: {fileID: 8300000, guid: 19984bb83238fa94aa07a318cc149748, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4879,11 +4879,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &1895179724 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6860114332956968756, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
-  m_PrefabInstance: {fileID: 8811823384655512776}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1905545410 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6455325840327202098, guid: fb85ae0f00baa25408e67963a6a4b787, type: 3}
@@ -4970,31 +4965,6 @@ Transform:
   - {fileID: 1153650224}
   m_Father: {fileID: 1135684402}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1956161666 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6838523029309058383, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
-  m_PrefabInstance: {fileID: 8811823384655512776}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1956161667 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 237754058914852239, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
-  m_PrefabInstance: {fileID: 8811823384655512776}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1956161671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1956161666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13a802620e124b2196411f12f8f10de2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1956161667}
-  isIKActive: 1
-  rightHandPosition: {fileID: 2019987550}
 --- !u!1001 &1990020604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5186,37 +5156,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &2019987549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2019987550}
-  m_Layer: 0
-  m_Name: RightHandPos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2019987550
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019987549}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.331, y: -0.115, z: 0.287}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1895179724}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2093162475
 GameObject:
   m_ObjectHideFlags: 0
@@ -5688,18 +5627,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 454217343370383847, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
-      propertyPath: allowDynamicResolution
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2554678412423803096, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
-      propertyPath: _moveSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2554678412423803096, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
-      propertyPath: IKController
-      value: 
-      objectReference: {fileID: 1956161671}
     - target: {fileID: 6173450863361341429, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.4
@@ -5744,32 +5671,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6860114332956968756, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6860114332956968756, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 8871339176291865927, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
-      propertyPath: near clip plane
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8871339176291865927, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
-      propertyPath: m_AllowDynamicResolution
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6860114332956968756, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2019987550}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6838523029309058383, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1956161671}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
