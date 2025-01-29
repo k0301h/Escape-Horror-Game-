@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scene/InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/InGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01.Scene/TutScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/TutScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +125,7 @@
       <workItem from="1737873029736" duration="4158000" />
       <workItem from="1737997906476" duration="1909000" />
       <workItem from="1738081588471" duration="2577000" />
+      <workItem from="1738157587396" duration="859000" />
     </task>
     <servers />
   </component>
