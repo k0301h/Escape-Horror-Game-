@@ -393,6 +393,5 @@ public class PlayerControll : MonoBehaviour
         if(_animator.GetCurrentAnimatorStateInfo(0).IsName("Walk") == false)
             _animator.SetTrigger(TWalk);
         _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) + 1);
-        DebugManager.Instance.Log($"Walk Index : {_animator.GetInteger(IndexWalk)}");
     }
 }

@@ -212,7 +212,7 @@ Transform:
   m_GameObject: {fileID: 56011132}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.87, y: 1.2873452, z: -13.071173}
+  m_LocalPosition: {x: 7.08, y: 1.2873452, z: -13.071173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -300,6 +300,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Manequin(Clone)
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 892053141}
+        m_TargetAssemblyTypeName: PlayerSoundPlayer, Assembly-CSharp
+        m_MethodName: StopSound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Breath
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!4 &83379761 stripped
@@ -2353,6 +2365,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8026580354595368593, guid: f69f399c8c9671046961b86276cbc1e2, type: 3}
   m_PrefabInstance: {fileID: 852301204}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &892053141 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4771941468317741433, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
+  m_PrefabInstance: {fileID: 8811823384655512776}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7910674f6f41a6a951b6b4275ecc8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &915500090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2884,7 +2907,7 @@ Transform:
   m_GameObject: {fileID: 1063241813}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 12.58, y: 0, z: -13.206}
+  m_LocalPosition: {x: 13.54, y: 0, z: -13.206}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5516,6 +5539,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 892053141}
+        m_TargetAssemblyTypeName: PlayerSoundPlayer, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Breath
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1890477778
 Transform:
   m_ObjectHideFlags: 0
@@ -5550,8 +5585,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.89477515, y: 2.133348, z: 2.2577896}
-  m_Center: {x: -0.38151443, y: 0.091047525, z: 0}
+  m_Size: {x: 0.18144178, y: 2.133348, z: 2.2577896}
+  m_Center: {x: -0.024847746, y: 0.091047525, z: 0}
 --- !u!82 &1890477780
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5565,7 +5600,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 19984bb83238fa94aa07a318cc149748, type: 3}
   m_Resource: {fileID: 8300000, guid: 19984bb83238fa94aa07a318cc149748, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0

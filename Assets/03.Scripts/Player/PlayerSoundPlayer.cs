@@ -7,13 +7,15 @@ public class PlayerSoundPlayer : MonoBehaviour
     [SerializeField] private AudioSource leftFootSound;
     [SerializeField] private AudioSource inhaleBreathSound;
     [SerializeField] private AudioSource exhaleBreathSound;
+    
+    private Coroutine _breathCoroutine;
 
     void Start()
     {
-        StartCoroutine(BreathCorutine());
+        
     }
-
-    IEnumerator BreathCorutine()
+    
+    IEnumerator BreathCoroutine()
     {
         while (true)
         {
@@ -34,13 +36,17 @@ public class PlayerSoundPlayer : MonoBehaviour
         {
             leftFootSound.Play();
         }
-        else if (soundName == "inhaleBreath")
+        else if (soundName == "Breath")
         {
-            inhaleBreathSound.Play();
+            _breathCoroutine = StartCoroutine(BreathCoroutine());
         }
-        else if (soundName == "exhaleBreath")
+    }
+
+    public void StopSound(string soundName)
+    {
+        if (soundName == "Breath")
         {
-            exhaleBreathSound.Play();
+            StopCoroutine(_breathCoroutine);
         }
     }
 }
