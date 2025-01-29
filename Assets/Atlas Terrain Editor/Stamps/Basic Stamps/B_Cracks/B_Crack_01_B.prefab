@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4421006274801266743}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4421006274801266742
 MonoBehaviour:
@@ -67,6 +67,14 @@ MonoBehaviour:
       contrast: 3
       saturation: 1
       hue: 0
+      enabled: 0
+      edgeMode: 0
+      edgeFade: 0.1
+      edgeSize: 1
+      edgeOpacity: 1
+      maskInvert: 0
+      heightSelectFrom: 0
+      heightSelectTo: 0.1
     inspectorInitialized: 1
     selfIndex: 0
   heightMap:
@@ -90,6 +98,14 @@ MonoBehaviour:
       contrast: 3
       saturation: 1
       hue: 0
+      enabled: 0
+      edgeMode: 0
+      edgeFade: 0.1
+      edgeSize: 1
+      edgeOpacity: 1
+      maskInvert: 0
+      heightSelectFrom: 0
+      heightSelectTo: 0.1
     inspectorInitialized: 1
     selfIndex: 0
   colorMap:
@@ -113,7 +129,46 @@ MonoBehaviour:
       contrast: 1
       saturation: 0.7
       hue: 0
+      enabled: 0
+      edgeMode: 0
+      edgeFade: 0.1
+      edgeSize: 1
+      edgeOpacity: 1
+      maskInvert: 0
+      heightSelectFrom: 0
+      heightSelectTo: 0.1
     inspectorInitialized: 1
+    selfIndex: 0
+  highlightMap:
+    mapType: 5
+    input: 0
+    target: 19
+    modifier:
+      modifierType: 4
+      blendMode: 0
+      blendRatio: 1
+      edgeBlend: 1
+      opacity: 1
+      power: 1
+      edgeErase: 0
+      offset: 0
+      multiplier: 1
+      cutoffMin: 0
+      cutoffMax: 1
+      invert: 0
+      brightness: 1
+      contrast: 1
+      saturation: 1
+      hue: 0
+      enabled: 0
+      edgeMode: 0
+      edgeFade: 0.1
+      edgeSize: 1
+      edgeOpacity: 1
+      maskInvert: 0
+      heightSelectFrom: 0
+      heightSelectTo: 0.1
+    inspectorInitialized: 0
     selfIndex: 0
   roadMaskMap:
     mapType: 4
@@ -136,6 +191,14 @@ MonoBehaviour:
       contrast: 1
       saturation: 1
       hue: 0
+      enabled: 0
+      edgeMode: 0
+      edgeFade: 0.1
+      edgeSize: 1
+      edgeOpacity: 1
+      maskInvert: 0
+      heightSelectFrom: 0
+      heightSelectTo: 0.1
     inspectorInitialized: 0
     selfIndex: 0
   stampMaps:
@@ -159,6 +222,14 @@ MonoBehaviour:
       contrast: 3
       saturation: 1
       hue: 0
+      enabled: 0
+      edgeMode: 0
+      edgeFade: 0.1
+      edgeSize: 1
+      edgeOpacity: 1
+      maskInvert: 0
+      heightSelectFrom: 0
+      heightSelectTo: 0.1
     inspectorInitialized: 1
     selfIndex: 0
   - mapType: 3
@@ -181,6 +252,14 @@ MonoBehaviour:
       contrast: 3
       saturation: 1
       hue: 0
+      enabled: 0
+      edgeMode: 0
+      edgeFade: 0.1
+      edgeSize: 1
+      edgeOpacity: 1
+      maskInvert: 0
+      heightSelectFrom: 0
+      heightSelectTo: 0.1
     inspectorInitialized: 1
     selfIndex: 1
   - mapType: 3
@@ -203,6 +282,14 @@ MonoBehaviour:
       contrast: 3
       saturation: 1
       hue: 0
+      enabled: 0
+      edgeMode: 0
+      edgeFade: 0.1
+      edgeSize: 1
+      edgeOpacity: 1
+      maskInvert: 0
+      heightSelectFrom: 0
+      heightSelectTo: 0.1
     inspectorInitialized: 1
     selfIndex: 2
   - mapType: 3
@@ -225,6 +312,14 @@ MonoBehaviour:
       contrast: 3
       saturation: 1
       hue: 0
+      enabled: 0
+      edgeMode: 0
+      edgeFade: 0.1
+      edgeSize: 1
+      edgeOpacity: 1
+      maskInvert: 0
+      heightSelectFrom: 0
+      heightSelectTo: 0.1
     inspectorInitialized: 1
     selfIndex: 3
   - mapType: 3
@@ -247,6 +342,14 @@ MonoBehaviour:
       contrast: 3
       saturation: 1
       hue: 0
+      enabled: 0
+      edgeMode: 0
+      edgeFade: 0.1
+      edgeSize: 1
+      edgeOpacity: 1
+      maskInvert: 0
+      heightSelectFrom: 0
+      heightSelectTo: 0.1
     inspectorInitialized: 1
     selfIndex: 4
   - mapType: 3
@@ -269,8 +372,49 @@ MonoBehaviour:
       contrast: 3
       saturation: 1
       hue: 0
+      enabled: 0
+      edgeMode: 0
+      edgeFade: 0.1
+      edgeSize: 1
+      edgeOpacity: 1
+      maskInvert: 0
+      heightSelectFrom: 0
+      heightSelectTo: 0.1
     inspectorInitialized: 1
     selfIndex: 5
+  holeMap:
+    mapType: 6
+    input: 0
+    target: 20
+    modifier:
+      modifierType: 5
+      blendMode: 0
+      blendRatio: 1
+      edgeBlend: 1
+      opacity: 1
+      power: 1
+      edgeErase: 0
+      offset: 0
+      multiplier: 1
+      cutoffMin: 0
+      cutoffMax: 1
+      invert: 0
+      brightness: 1
+      contrast: 1
+      saturation: 1
+      hue: 0
+      enabled: 0
+      edgeMode: 0
+      edgeFade: 0.1
+      edgeSize: 1
+      edgeOpacity: 1
+      maskInvert: 0
+      heightSelectFrom: 0
+      heightSelectTo: 0.1
+    inspectorInitialized: 1
+    selfIndex: 0
   center: {x: 0, y: 0, z: 0}
   size: {x: 512, y: 8, z: 512}
   roadBlending: 0
+  tileMask: 0
+  stampTiling: {x: 1, y: 1}
