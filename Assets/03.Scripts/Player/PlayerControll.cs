@@ -7,14 +7,11 @@ public class PlayerControll : MonoBehaviour
 {
     #region Cached references
     
-    // private static readonly int IsFront = Animator.StringToHash("isFront");
-    // private static readonly int IsRight = Animator.StringToHash("isRight");
-    // private static readonly int IsLeft = Animator.StringToHash("isLeft");
-    // private static readonly int IsBack = Animator.StringToHash("isBack");
     private static readonly int IndexWalk = Animator.StringToHash("IndexWalk");
     
     private static readonly int TWalk = Animator.StringToHash("tWalk");
-    
+    private static readonly int WalkSpeed = Animator.StringToHash("WalkSpeed");
+
     #endregion
     
     public Camera _viewCamera;
@@ -60,7 +57,7 @@ public class PlayerControll : MonoBehaviour
         _viewCamera = gameObject.GetComponentInChildren<Camera>();
         _cc = gameObject.GetComponent<CharacterController>();
         _canvas = gameObject.GetComponentInChildren<Canvas>();
-        _cursorImage = _canvas.gameObject.GetComponentInChildren<RawImage>();
+        _cursorImage = _canvas?.gameObject.GetComponentInChildren<RawImage>();
         _inventory = gameObject.GetComponent<PlayerInventory>();
         _IKController = gameObject.GetComponent<PlayerIKController>();
         _animator = gameObject.GetComponent<Animator>();
@@ -92,6 +89,7 @@ public class PlayerControll : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             _isRun = true;
+            _animator.SetFloat(WalkSpeed, 1.5f);
         }
         
         Vector3 moveDirection = Vector3.zero;
@@ -151,6 +149,7 @@ public class PlayerControll : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             _isRun = false;
+            _animator.SetFloat(WalkSpeed, 1.0f);
         }
         
 
@@ -296,13 +295,16 @@ public class PlayerControll : MonoBehaviour
             Layer_Item);
         
         // always
-        if (furnitureRayResult || ItemRayResult)
+        if (_cursorImage)
         {
-            _cursorImage.enabled = true;
-        }
-        else
-        {
-            _cursorImage.enabled = false;
+            if ((furnitureRayResult || ItemRayResult))
+            {
+                _cursorImage.enabled = true;
+            }
+            else
+            {
+                _cursorImage.enabled = false;
+            }
         }
         //
         
