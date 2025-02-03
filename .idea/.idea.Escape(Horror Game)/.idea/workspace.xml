@@ -6,10 +6,509 @@
   <component name="ChangeListManager">
     <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scene/TutScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/TutScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/11.Model/player/PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/11.Model/player/PlayerAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/001initializeatlas.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/001initializeatlas.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/002previewvolume.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/002previewvolume.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/003stampprefab.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/003stampprefab.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/004applyingatlastoterrain.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/004applyingatlastoterrain.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/005createstamp.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/005createstamp.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/006splatmaps.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/006splatmaps.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/007paintmask.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/007paintmask.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/008undomask.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/008undomask.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/009createspline.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/009createspline.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/010detailspline.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/010detailspline.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/011dropspline.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/011dropspline.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/012exportmesh.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/012exportmesh.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/013createscatterrule.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/013createscatterrule.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/014setupscatterrule.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/014setupscatterrule.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/015renderscattering.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/015renderscattering.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/018multipleterrains.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/018multipleterrains.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/019createstamp.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/Images/019createstamp.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/docs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasDocumentation/docs.html.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasProjectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/AtlasProjectSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/AtlasGizmoInstaller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/AtlasGizmoInstaller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/AtlasMenuItems.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/AtlasMenuItems.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/AtlasProjectSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/AtlasProjectSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/AtlasSceneProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/AtlasSceneProcessor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/AtlasUnityPreviewVolumeEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/AtlasUnityPreviewVolumeEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/AtlasUnityTerrainRendererEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/AtlasUnityTerrainRendererEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/DetailPassEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/DetailPassEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/ScatterPassEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/ScatterPassEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/ScatterRuleAssetEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/ScatterRuleAssetEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/SplineStampEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/SplineStampEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/StampAssetEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/StampAssetEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/StampBaseEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/StampBaseEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/StampEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/StampEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/StampMapEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/StampMapEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/UnityToAtlasConverterAssetEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Editor/UnityToAtlasConverterAssetEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Atlas.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Atlas.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/AtlasPaintBrushPreview.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/AtlasPaintBrushPreview.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/AtlasPainter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/AtlasPainter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/AtlasToolbar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/AtlasToolbar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/AtlasUnityPreviewVolume.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/AtlasUnityPreviewVolume.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/AtlasUnityTerrainRenderer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/AtlasUnityTerrainRenderer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Brushes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Brushes/AtlasUnityTerrainDefaultBrush.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Brushes/AtlasUnityTerrainDefaultBrush.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/FlattenStamp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/FlattenStamp.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/AtlasScaleReferencesImage.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/AtlasScaleReferencesImage.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_activationtool_icon.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_activationtool_icon.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_activationtool_icon_off.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_activationtool_icon_off.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_combine_splat_icon.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_combine_splat_icon.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_convert_16_32_bit_icon.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_convert_16_32_bit_icon.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_drop_to_floor_icon.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_drop_to_floor_icon.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_icon.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_icon.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_pack_unpack_icon.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_pack_unpack_icon.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_smooth_height_icon.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_smooth_height_icon.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_smooth_latheral_icon.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_smooth_latheral_icon.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_smooth_scaling_icon.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_smooth_scaling_icon.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_spline_icon.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_spline_icon.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_subdivide_icon.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_subdivide_icon.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_unsubdivide_icon.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Icons/Atlas_unsubdivide_icon.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Materials/AtlasScaleReferenceMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Materials/AtlasScaleReferenceMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Materials/AtlasUnityTerrainMaskPreview.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Materials/AtlasUnityTerrainMaskPreview.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceBush.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceBush.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceBushModel.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceBushModel.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceHouse.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceHouse.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceHouseModel.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceHouseModel.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceMannequin.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceMannequin.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceMannequinModel.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceMannequinModel.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceTree.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceTree.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceTreeModel.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Prefabs/AtlasScaleReferenceTreeModel.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/ScatterRuleAsset.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/ScatterRuleAsset.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasBrush.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasBrush.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasBrushPreview.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasBrushPreview.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasColor.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasColor.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasColorMerge.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasColorMerge.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHeight.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHeight.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHeightBasedAlteration.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHeightBasedAlteration.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHeightMerge.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHeightMerge.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHeightToMask.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHeightToMask.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHeightToUnityTerrainHeight.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHeightToUnityTerrainHeight.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHighlight.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHighlight.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHighlightMerge.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHighlightMerge.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHole.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHole.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHoleMerge.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasHoleMerge.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasMask.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasMask.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasNormal.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasNormal.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasNormalilzeHeight.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasNormalilzeHeight.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasOtherMask.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasOtherMask.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasOtherMaskMerge.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasOtherMaskMerge.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasRoadMask.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasRoadMask.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasRoadMaskMerge.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasRoadMaskMerge.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasRotateTexture.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasRotateTexture.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasScatterChannelMerge.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasScatterChannelMerge.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasSplatNormalize.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasSplatNormalize.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasSplatSum.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasSplatSum.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasThumbnail.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasThumbnail.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasUnityToAtlasConverterAssetPreview.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/AtlasUnityToAtlasConverterAssetPreview.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/ColorChanger.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Shaders/ColorChanger.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/SplineStamp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/SplineStamp.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Stamp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/Stamp.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/StampAsset.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/StampAsset.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/StampBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/StampBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/UnityToAtlasConverterAsset.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Runtime/UnityToAtlasConverterAsset.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Samples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Samples/DemoHDRP.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Samples/DemoHDRP/Atlas Demo HDRP.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Cliffs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Cliffs/b_cliff_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Cliffs/b_cliff_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Cliffs/b_cliff_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Cliffs/b_cliff_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Cliffs/b_cliff_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Cliffs/b_cliff_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Ridges.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Ridges/b_ridge_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Ridges/b_ridge_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Ridges/b_ridge_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Ridges/b_ridge_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Ridges/b_ridge_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Ridges/b_ridge_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Rivers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Rivers/b_river_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Rivers/b_river_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Roads.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Roads/b_road_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Roads/b_road_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Roads/b_road_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/BS_Roads/b_road_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Beach.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Beach/b_Beach.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Beach/b_Beach.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Cracks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Cracks/b_crack_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Cracks/b_crack_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Cracks/b_crack_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Cracks/b_crack_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Cracks/b_crack_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Cracks/b_crack_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Craters.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Craters/b_crater_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Craters/b_crater_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Craters/b_crater_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Craters/b_crater_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Craters/b_crater_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Craters/b_crater_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Details.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Details/b_detail_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Details/b_detail_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Details/b_detail_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Details/b_detail_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Details/b_detail_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Details/b_detail_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Dunes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Dunes/b_dune_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Dunes/b_dune_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Dunes/b_dune_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Dunes/b_dune_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Dunes/b_dune_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Dunes/b_dune_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Hills.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Hills/b_hill_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Hills/b_hill_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Hills/b_hill_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Hills/b_hill_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Hills/b_hill_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Hills/b_hill_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Hills/b_hill_04.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Hills/b_hill_04.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Hills/b_hill_05.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Hills/b_hill_05.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Lakes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Lakes/b_lake_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Lakes/b_lake_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Lakes/b_lake_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Lakes/b_lake_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Lakes/b_lake_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Lakes/b_lake_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Lakes/b_lake_04.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Lakes/b_lake_04.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Mountains.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Mountains/b_mountain_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Mountains/b_mountain_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Mountains/b_mountain_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Mountains/b_mountain_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Mountains/b_mountain_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Mountains/b_mountain_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Mountains/b_mountain_04.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Mountains/b_mountain_04.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Shapes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Shapes/b_flat_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Shapes/b_flat_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Shapes/b_pyramde_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Shapes/b_pyramde_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Shapes/b_sphere_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Shapes/b_sphere_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Volcanos.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Volcanos/b_volcano_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Volcanos/b_volcano_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Volcanos/b_volcano_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Volcanos/b_volcano_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Volcanos/b_volcano_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Volcanos/b_volcano_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Volcanos/b_volcano_04.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/StampAssets/Basic Stamps/B_Volcanos/b_volcano_04.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Cliffs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Cliffs/BS_Cliff_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Cliffs/BS_Cliff_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Cliffs/BS_Cliff_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Cliffs/BS_Cliff_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Cliffs/BS_Cliff_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Cliffs/BS_Cliff_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Ridges.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Ridges/BS_Ridge_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Ridges/BS_Ridge_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Ridges/BS_Ridge_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Ridges/BS_Ridge_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Ridges/BS_Ridge_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Ridges/BS_Ridge_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Rivers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Rivers/BS_River_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Rivers/BS_River_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Rivers/BS_River_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Rivers/BS_River_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Roads.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Roads/B_Road_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Roads/B_Road_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Roads/B_Road_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Roads/B_Road_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Roads/B_Road_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/BS_Roads/B_Road_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Beach.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Beach/B_Beach.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Beach/B_Beach.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks/B_Crack_01_A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks/B_Crack_01_A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks/B_Crack_01_B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks/B_Crack_01_B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks/B_Crack_02_A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks/B_Crack_02_A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks/B_Crack_02_B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks/B_Crack_02_B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks/B_Crack_03_A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks/B_Crack_03_A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks/B_Crack_03_B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Cracks/B_Crack_03_B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Craters.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Craters/B_Crater_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Craters/B_Crater_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Craters/B_Crater_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Craters/B_Crater_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Craters/B_Crater_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Craters/B_Crater_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Details.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Details/B_Detail_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Details/B_Detail_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Details/B_Detail_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Details/B_Detail_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Details/B_Detail_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Details/B_Detail_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Dunes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Dunes/B_Dune_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Dunes/B_Dune_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Dunes/B_Dune_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Dunes/B_Dune_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Dunes/B_Dune_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Dunes/B_Dune_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Hills.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Hills/B_Hill_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Hills/B_Hill_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Hills/B_Hill_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Hills/B_Hill_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Hills/B_Hill_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Hills/B_Hill_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Hills/B_Hill_04.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Hills/B_Hill_04.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Hills/B_Hill_05.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Hills/B_Hill_05.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Lakes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Lakes/B_Lake_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Lakes/B_Lake_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Lakes/B_Lake_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Lakes/B_Lake_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Lakes/B_Lake_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Lakes/B_Lake_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Lakes/B_Lake_04.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Lakes/B_Lake_04.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Mountains.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Mountains/B_Mountain_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Mountains/B_Mountain_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Mountains/B_Mountain_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Mountains/B_Mountain_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Mountains/B_Mountain_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Mountains/B_Mountain_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Mountains/B_Mountain_04.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Mountains/B_Mountain_04.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Shapes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Shapes/B_Shape_Flat_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Shapes/B_Shape_Flat_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Shapes/B_Shape_Pyramide_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Shapes/B_Shape_Pyramide_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Shapes/B_Shape_Sphere_01 .prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Shapes/B_Shape_Sphere_01 .prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Volcanos.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Volcanos/B_Volcano_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Volcanos/B_Volcano_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Volcanos/B_Volcano_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Volcanos/B_Volcano_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Volcanos/B_Volcano_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Volcanos/B_Volcano_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Volcanos/B_Volcano_04.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/Stamps/Basic Stamps/B_Volcanos/B_Volcano_04.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_01.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_01/A_grass_01.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_01/A_grass_01.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_01/A_grass_01_D.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_01/A_grass_01_D.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_01/A_grass_01_M.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_01/A_grass_01_M.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_01/A_grass_01_N.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_01/A_grass_01_N.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_02.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_02/A_grass_02.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_02/A_grass_02.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_02/A_grass_02_D.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_02/A_grass_02_D.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_02/A_grass_02_M.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_02/A_grass_02_M.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_02/A_grass_02_N.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_grass_02/A_grass_02_N.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_01.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_01/A_rock_01.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_01/A_rock_01.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_01/A_rock_01_D.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_01/A_rock_01_D.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_01/A_soil_02_M.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_01/A_soil_02_M.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_01/A_soil_02_N.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_01/A_soil_02_N.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_02.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_02/A_rock_02.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_02/A_rock_02.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_02/A_rock_02_D.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_02/A_rock_02_D.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_02/A_rock_02_M.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_02/A_rock_02_M.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_02/A_rock_02_N.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_rock_02/A_rock_02_N.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_sand_01.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_sand_01/A_sand_01.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_sand_01/A_sand_01.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_sand_01/A_sand_01_D.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_sand_01/A_sand_01_D.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_sand_01/A_sand_01_M.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_sand_01/A_sand_01_M.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_sand_01/A_sand_01_N.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_sand_01/A_sand_01_N.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_snow_01.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_snow_01/A_snow_01.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_snow_01/A_snow_01.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_snow_01/A_snow_01_D.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_snow_01/A_snow_01_D.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_snow_01/A_snow_01_M.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_snow_01/A_snow_01_M.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_snow_01/A_snow_01_N.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_snow_01/A_snow_01_N.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_01.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_01/A_soil_01.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_01/A_soil_01.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_01/A_soil_01_D.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_01/A_soil_01_D.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_01/A_soil_01_M.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_01/A_soil_01_M.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_01/A_soil_01_N.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_01/A_soil_01_N.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_02.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_02/A_soil_02.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_02/A_soil_02.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_02/A_soil_02_D.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_02/A_soil_02_D.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_02/A_soil_02_M.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_02/A_soil_02_M.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_02/A_soil_02_N.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/A_soil_02/A_soil_02_N.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/TerrainLayers_order.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas Terrain Editor/TerrainLayers/TerrainLayers_order.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/AtlasIcon.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/AtlasIcon.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/AtlasSplineIcon.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/AtlasSplineIcon.tif.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +627,7 @@
       <workItem from="1737997906476" duration="1909000" />
       <workItem from="1738081588471" duration="2577000" />
       <workItem from="1738157587396" duration="4224000" />
-      <workItem from="1738205647934" duration="414000" />
+      <workItem from="1738205647934" duration="1475000" />
     </task>
     <servers />
   </component>
