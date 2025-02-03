@@ -20,6 +20,8 @@ public class Lamp_Controller : MonoBehaviour
         light = gameObject.GetComponentInChildren<Light>();
         material = gameObject.GetComponentInChildren<Renderer>().material;
         
+        light.enabled = true;
+        
         ison = true;
         value = 0.0f;
 
