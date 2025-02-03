@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Television.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Television.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Event/LampTwinkleEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Event/LampTwinkleEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Door/Door_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Door/Door_Controller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Mannagers/LineManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Mannagers/LineManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/LeonLamp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/LeonLamp.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/13.Shader/TV_shader.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/13.Shader/TV_shader.shadergraph.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,15 +85,13 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11308">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="11308" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -159,6 +140,7 @@
       <workItem from="1738392053993" duration="9086000" />
       <workItem from="1738423684247" duration="3753000" />
       <workItem from="1738479319166" duration="11500000" />
+      <workItem from="1738567060781" duration="573000" />
     </task>
     <servers />
   </component>
@@ -206,13 +188,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs</url>
-          <line>328</line>
+          <line>378</line>
           <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Player\PlayerControll.cs" containingFunctionPresentation="메서드 'FixedUpdate'">
             <startOffsets>
-              <option value="11889" />
+              <option value="13577" />
             </startOffsets>
             <endOffsets>
-              <option value="11939" />
+              <option value="13578" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="22" />
