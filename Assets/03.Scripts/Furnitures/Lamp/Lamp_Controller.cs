@@ -9,7 +9,6 @@ public class Lamp_Controller : MonoBehaviour
     private bool ison;
     private float value;
     
-    
     public bool now_start_mode;
     public int twinklingMode;
     public int intensity_Amount = 400000;
