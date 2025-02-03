@@ -415,6 +415,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 2086434294129377212, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -284017154869102511, guid: 76d87ab26bd8c5e4ca6573bc4f8df5f9, type: 2}
     - target: {fileID: 2554678412423803096, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
       propertyPath: _flashLight
       value: 
@@ -475,6 +479,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6838831084308862582, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838831084308862582, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -284017154869102511, guid: 76d87ab26bd8c5e4ca6573bc4f8df5f9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -8329,6 +8341,10 @@ PrefabInstance:
       propertyPath: now_start_mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2117716122420869774, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2483971531796024395, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8336,6 +8352,10 @@ PrefabInstance:
     - target: {fileID: 2483971531796024395, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.336
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545085863949853817, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3605060646899178634, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8372,6 +8392,10 @@ PrefabInstance:
     - target: {fileID: 3995961137837734741, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: now_start_mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995961137837734741, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: intensity_Amount
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 4939863414037008685, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8437,12 +8461,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Second_Map
       objectReference: {fileID: 0}
+    - target: {fileID: 7028506343838271072, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7954414562860915490, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8063843593431774697, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: now_start_mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8955975478334508464, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9134901416601081861, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
