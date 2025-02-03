@@ -14,29 +14,34 @@ public class PlayerControll : MonoBehaviour
 
     #endregion
     
-    public Camera _viewCamera;
-    public CharacterController _cc;
-    public PlayerInventory _inventory;
-    public PlayerIKController _IKController;
-    public Animator _animator;
+    [SerializeField] private Camera _viewCamera;
+    [SerializeField] private CharacterController _cc;
+    [SerializeField] private PlayerInventory _inventory;
+    [SerializeField] private PlayerIKController _IKController;
+    [SerializeField] private Animator _animator;
     
-    public Canvas _canvas;
-    public RawImage _cursorImage;
+    [SerializeField] private Canvas _canvas;
+    [SerializeField] private RawImage _cursorImage;
+    [SerializeField] private RawImage _LockImage;
     
-    public FlashLight _flashLight;
+    [SerializeField] private FlashLight _flashLight;
     
     #region controll variables
-    public float _moveSpeed = 1f;
+    [SerializeField] private float _moveSpeed = 3f;
     
-    public float sensitivityX = 15.0f;
-    public float sensitivityY = 15.0f;
-    public float minimumY = -50.0f;
-    public float maximumY = 50.0f;
+    [SerializeField] private float sensitivityX = 3f;
+    [SerializeField] private float sensitivityY = 2f;
+    [SerializeField] private float minimumY = -50.0f;
+    [SerializeField] private float maximumY = 50.0f;
     private float _rotationX = 0.0f;
     private float _rotationY = 0.0f;
     
     private bool _isMouseLocked;
     private bool _isRun;
+    
+    [SerializeField] private float jumpHight = 1.5f;
+    private const float Gravity = -9.8f;
+    private Vector3 _gravityVelocity;
     #endregion
     
     #region Ray Variables
@@ -57,7 +62,11 @@ public class PlayerControll : MonoBehaviour
         _viewCamera = gameObject.GetComponentInChildren<Camera>();
         _cc = gameObject.GetComponent<CharacterController>();
         _canvas = gameObject.GetComponentInChildren<Canvas>();
-        _cursorImage = _canvas?.gameObject.GetComponentInChildren<RawImage>();
+        
+        var image = _canvas.GetComponentsInChildren<RawImage>();
+        _cursorImage = image[0];
+        _LockImage = image[1];
+        
         _inventory = gameObject.GetComponent<PlayerInventory>();
         _IKController = gameObject.GetComponent<PlayerIKController>();
         _animator = gameObject.GetComponent<Animator>();
@@ -122,13 +131,33 @@ public class PlayerControll : MonoBehaviour
         {
             moveDirection = moveDirection.normalized;
         }
-
+        
         if (_isRun)
         {
             moveDirection *= 1.5f;
         }
+        
+        #region Gravity
 
-        _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * moveDirection);
+        if (_cc.isGrounded && _gravityVelocity.y < 0)
+        {
+            _gravityVelocity.y = -2f;
+        }
+
+        #region Jump
+        
+        // TODO : 일단 만들자
+        // if (Input.GetKeyDown(KeyCode.Space) && _cc.isGrounded)
+        // {
+        //     _gravityVelocity.y = Mathf.Sqrt(jumpHight * -2f * Gravity);
+        // }
+        #endregion
+        
+        _gravityVelocity.y += Gravity * (TimeManager.Instance == null ? Time.deltaTime : TimeManager.Instance.DeltaTime());
+        _cc.Move(_gravityVelocity * (TimeManager.Instance == null ? Time.deltaTime : TimeManager.Instance.DeltaTime()));
+        #endregion
+        
+        _cc.Move(_moveSpeed * (TimeManager.Instance == null ? Time.deltaTime : TimeManager.Instance.DeltaTime()) * moveDirection);
         
         if (Input.GetKeyUp(KeyCode.W))
         {
@@ -295,16 +324,30 @@ public class PlayerControll : MonoBehaviour
             Layer_Item);
         
         // always
-        if (_cursorImage)
+        if (furnitureRayResult || ItemRayResult)
         {
-            if ((furnitureRayResult || ItemRayResult))
+            var rayObject = _furnitureHit.collider.gameObject;
+
+            if (rayObject.TryGetComponent<Door_Controller>(out Door_Controller doorController))
             {
-                _cursorImage.enabled = true;
+                if (doorController.IsLock())
+                {
+                    _LockImage.enabled = true;
+                }
+                else
+                {
+                    _cursorImage.enabled = true;
+                }
             }
             else
             {
-                _cursorImage.enabled = false;
+                _cursorImage.enabled = true;
             }
+        }
+        else
+        {
+            _cursorImage.enabled = false;
+            _LockImage.enabled = false;
         }
         //
         
@@ -312,22 +355,29 @@ public class PlayerControll : MonoBehaviour
         {
             if (furnitureRayResult)
             {
-                DebugManager.Instance.LogAndDrawRay(_furnitureHit, _viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
+                DebugManager.Instance?.LogAndDrawRay(_furnitureHit, _viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
                 
                 var rayObject = _furnitureHit.collider.gameObject;
-                Door_Controller doorController;
-
-                if (rayObject.TryGetComponent<Door_Controller>(out doorController))
+                
+                if (rayObject.TryGetComponent<Door_Controller>(out Door_Controller doorController))
                 {
                     if(doorController.IsOpen())
                         doorController.CloseDoor();
                     else
                         doorController.OpenDoor();
                 }
+                else if (rayObject.TryGetComponent<Portal>(out Portal portal))
+                {
+                    portal.LoadScene("1.InGame");
+                }
+                else if (rayObject.TryGetComponent<EventScript>(out EventScript eventScript))
+                {   
+                    eventScript.StartEvent();
+                }
             }
             else
             {
-                DebugManager.Instance.DrawRay(_viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
+                DebugManager.Instance?.DrawRay(_viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
             }
         }
         else if (Input.GetMouseButtonDown(2))
@@ -354,7 +404,7 @@ public class PlayerControll : MonoBehaviour
         {            
             if (ItemRayResult)
             {
-                DebugManager.Instance.LogAndDrawRay(_itemHit, _viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
+                DebugManager.Instance?.LogAndDrawRay(_itemHit, _viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
                 
                 var rayObject = _itemHit.collider.gameObject;
                 
@@ -372,7 +422,7 @@ public class PlayerControll : MonoBehaviour
             }
             else
             {
-                DebugManager.Instance.DrawRay(_viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
+                DebugManager.Instance?.DrawRay(_viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
             }
         }
         else if (Input.GetKeyDown(KeyCode.R))

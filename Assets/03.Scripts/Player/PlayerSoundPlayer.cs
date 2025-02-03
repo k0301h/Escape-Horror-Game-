@@ -9,20 +9,28 @@ public class PlayerSoundPlayer : MonoBehaviour
     [SerializeField] private AudioSource exhaleBreathSound;
     
     private Coroutine _breathCoroutine;
-
-    void Start()
-    {
-        
-    }
     
     IEnumerator BreathCoroutine()
     {
+        yield return new WaitForSeconds(1.5f);
+        float volume = 0.3f;
         while (true)
         {
-            inhaleBreathSound.Play();
             yield return new WaitForSeconds(1.0f);
-            exhaleBreathSound.Play();
+         
+            inhaleBreathSound.volume = volume;
+            exhaleBreathSound.volume = volume;
+            
+            DebugSound(inhaleBreathSound, true);
+            SoundManager.Instance?.AudioPlay(inhaleBreathSound);
+            yield return new WaitForSeconds(1.0f);
+            
+            DebugSound(exhaleBreathSound, true);
+            SoundManager.Instance?.AudioPlay(exhaleBreathSound);
             yield return new WaitForSeconds(1.5f);
+            
+            if(volume < 0.5f)
+                volume += 0.05f;
         }
     }
     
@@ -30,11 +38,13 @@ public class PlayerSoundPlayer : MonoBehaviour
     {
         if (soundName == "rightFoot")
         {
-            rightFootSound.Play();
+            DebugSound(rightFootSound, true);
+            SoundManager.Instance?.AudioPlay(rightFootSound);
         }
         else if (soundName == "leftFoot")
         {
-            leftFootSound.Play();
+            DebugSound(leftFootSound, true);
+            SoundManager.Instance?.AudioPlay(leftFootSound);
         }
         else if (soundName == "Breath")
         {
@@ -44,9 +54,33 @@ public class PlayerSoundPlayer : MonoBehaviour
 
     public void StopSound(string soundName)
     {
-        if (soundName == "Breath")
+        if (soundName == "rightFoot")
+        {
+            DebugSound(rightFootSound, false);
+            SoundManager.Instance?.AudioStop(rightFootSound);
+        }
+        else if (soundName == "leftFoot")
+        {
+            DebugSound(leftFootSound, false);
+            SoundManager.Instance?.AudioStop(leftFootSound);
+        }
+        else if (soundName == "Breath")
         {
             StopCoroutine(_breathCoroutine);
         }
+    }
+    
+    [System.Diagnostics.Conditional("UNITY_EDITOR")]
+    private void DebugSound(AudioSource audioSource, bool isPlay)
+    {
+        #if UNITY_EDITOR
+        if (SoundManager.Instance == null)
+        {
+            if(isPlay)
+                audioSource.Play();
+            else
+                audioSource.Stop();
+        }
+        #endif
     }
 }

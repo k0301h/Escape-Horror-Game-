@@ -87,7 +87,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.8828125
+      - time: 0.822867
         functionName: PlaySound
         data: rightFoot
         objectReferenceParameter: {fileID: 11500000, guid: fe7910674f6f41a6a951b6b4275ecc8d, type: 3}

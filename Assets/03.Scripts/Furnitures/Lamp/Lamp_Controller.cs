@@ -31,6 +31,11 @@ public class Lamp_Controller : MonoBehaviour
     void Update()
     {
         material.SetFloat("_EmissiveExposureWeight", value);
+        
+        Color finalEmissionColor = new Color(1, 1, 1) * (1 - value) * 10.0f;
+        material.SetColor("_EmissiveColor", finalEmissionColor);
+        material.SetFloat("_EmissiveIntensity", value * 10.0f); 
+        
         light.intensity = (1 - value) * intensity_Amount;
     }
 
@@ -58,7 +63,7 @@ public class Lamp_Controller : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(0.0f, 1.0f));
         
         if (twinklingMode == 0)
-            _lampCoroutine = StartCoroutine(MediumLightCoroutines());
+            _lampCoroutine = StartCoroutine(LightCoroutines());
         else
             _lampCoroutine = StartCoroutine(FastLightCoroutines());
         
@@ -73,25 +78,27 @@ public class Lamp_Controller : MonoBehaviour
         {
             if (ison)
             {
-                value += 0.1f;
+                value += Random.Range(0.1f, 0.3f);
                 // 1.0f으로 수정해야함
                 if (value >= time)
                 {
                     time = Random.Range(0.5f, 1.0f);
+                    value = 1.0f;
                     ison = false;            
                     yield return new WaitForSeconds(breakTime);
-                    breakTime = Random.Range(0.0f, 0.5f);
+                    breakTime = Random.Range(0.0f, 1.0f);
                 }
             }
             else
             {
-                value -= 0.1f;
+                value -= Random.Range(0.1f, 0.3f);
                 if (value <= 0.0f)
                 {
                     time = Random.Range(0.5f, 1.0f);
+                    value = 0.0f;
                     ison = true;
                     yield return new WaitForSeconds(breakTime);
-                    breakTime = Random.Range(0.0f, 0.5f);
+                    breakTime = Random.Range(0.0f, 1.0f);
                 }
             }
 
@@ -99,7 +106,7 @@ public class Lamp_Controller : MonoBehaviour
         }
     }
     
-    IEnumerator MediumLightCoroutines()
+    IEnumerator LightCoroutines()
     {
         while (true)
         {

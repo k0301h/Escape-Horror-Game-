@@ -39,12 +39,12 @@ public static class ObjectExtension
 
     public static void Log()
     {
-        DebugManager.Instance.Log("------Start Logging------");
+        DebugManager.Instance?.Log("------Start Logging------");
         foreach (var obj in _savedObjects)
         {
-            DebugManager.Instance.Log($"{obj.name}");
+            DebugManager.Instance?.Log($"{obj.name}");
         }
-        DebugManager.Instance.Log("-------End Logging-------");
+        DebugManager.Instance?.Log("-------End Logging-------");
     }
 
     public static Object FindObjectByID(string objectID)

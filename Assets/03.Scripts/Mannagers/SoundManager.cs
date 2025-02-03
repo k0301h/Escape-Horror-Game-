@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour
@@ -20,6 +21,21 @@ public class SoundManager : MonoBehaviour
                 return null;
 
             return _instance;
+        }
+    }
+
+    IEnumerator SoundAutoPlayCoroutine(AudioSource audioSource, float time)
+    {
+        audioSource.Play();
+        yield return new WaitForSeconds(time);
+        audioSource.Stop();
+    }
+    
+    public void BGMPlay(AudioSource audioSource)
+    {
+        if (isOn)
+        {
+            StartCoroutine(SoundAutoPlayCoroutine(audioSource, 10.0f));
         }
     }
 
