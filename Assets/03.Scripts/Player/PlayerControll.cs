@@ -412,9 +412,10 @@ public class PlayerControll : MonoBehaviour
                 {
                     if (itemCoponent is FlashLight flashLight)
                     {
+                        // TODO : 일반화 필요
                         flashLight.Acquired(_viewCamera.gameObject);
-                        flashLight.SetFlash();
-                        _IKController.changeIK();
+                        // flashLight.SetFlash();
+                        // _IKController.changeIK();
                     }
                 }
                 
@@ -427,6 +428,7 @@ public class PlayerControll : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.R))
         {
+            // TODO : 일반화 필요
             if (_flashLight == null) _flashLight = _inventory._inventory.Find(x => x.name == "Flashlight").GetComponent<FlashLight>();
 
             if(_flashLight.IsOn())

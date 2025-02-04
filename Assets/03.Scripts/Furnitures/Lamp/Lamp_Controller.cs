@@ -7,7 +7,7 @@ public class Lamp_Controller : MonoBehaviour
     public new Light light;
     public Material material;
 
-    [SerializeField] private bool isOnState;
+    [SerializeField] private bool isOnState = false;
     private float value;
     
     public bool now_start_mode;
@@ -20,11 +20,13 @@ public class Lamp_Controller : MonoBehaviour
     {
         light = gameObject.GetComponentInChildren<Light>();
         material = gameObject.GetComponentInChildren<Renderer>().material;
-        
+
         light.enabled = true;
-        
-        isOnState = false;
-        value = 1.0f;
+
+        if (isOnState)
+            value = 0.0f;
+        else
+            value = 1.0f;
 
         if (now_start_mode)
             StartLampTwinkle();

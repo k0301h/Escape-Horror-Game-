@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/FlashLight/FlashLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/FlashLight/FlashLight.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/Lamp_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/Lamp_Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Old_Hospital.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Old_Hospital.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Abandoned_Asylum/Materials/LampWall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Abandoned_Asylum/Materials/LampWall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Abandoned_Asylum/Materials/NeonLift.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Abandoned_Asylum/Materials/NeonLift.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +153,7 @@
       <workItem from="1738479319166" duration="11500000" />
       <workItem from="1738567060781" duration="573000" />
       <workItem from="1738590933084" duration="3918000" />
-      <workItem from="1738681738386" duration="410000" />
+      <workItem from="1738681738386" duration="3338000" />
     </task>
     <servers />
   </component>
