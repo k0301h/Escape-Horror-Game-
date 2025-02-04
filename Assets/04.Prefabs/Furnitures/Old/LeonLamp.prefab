@@ -41,13 +41,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377637644360644594}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b56ccc03c1af8ee40916cc564f709c74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 5545494808244134970}
   material: {fileID: 0}
+  isOnState: 0
   now_start_mode: 0
   twinklingMode: 1
   intensity_Amount: 3000

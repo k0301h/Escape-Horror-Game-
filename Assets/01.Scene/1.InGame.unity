@@ -7662,7 +7662,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 8920952716913681554}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b56ccc03c1af8ee40916cc564f709c74, type: 3}
   m_Name: 
@@ -8007,6 +8007,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1746008519}
     m_Modifications:
     - target: {fileID: 292280594496221933, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 292280594496221933, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: intensity_Amount
       value: 300
       objectReference: {fileID: 0}
@@ -8051,8 +8055,16 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1063166922388980439, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063166922388980439, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: intensity_Amount
       value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369483333528144135, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1369483333528144135, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: intensity_Amount
@@ -8138,6 +8150,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3995961137837734741, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4495033611828270504, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -8199,6 +8215,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5898258152835869470, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5898258152835869470, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: intensity_Amount
       value: 300
       objectReference: {fileID: 0}
@@ -8216,6 +8236,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7550682670291924150, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8063843593431774697, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8063843593431774697, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}

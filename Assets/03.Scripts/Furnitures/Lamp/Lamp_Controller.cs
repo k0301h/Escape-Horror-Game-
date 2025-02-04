@@ -1,12 +1,13 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Lamp_Controller : MonoBehaviour
 {
     public new Light light;
     public Material material;
 
-    private bool ison;
+    [SerializeField] private bool isOnState;
     private float value;
     
     public bool now_start_mode;
@@ -22,8 +23,8 @@ public class Lamp_Controller : MonoBehaviour
         
         light.enabled = true;
         
-        ison = true;
-        value = 0.0f;
+        isOnState = false;
+        value = 1.0f;
 
         if (now_start_mode)
             StartLampTwinkle();
@@ -77,7 +78,7 @@ public class Lamp_Controller : MonoBehaviour
         float breakTime = Random.Range(0.0f, 0.5f);
         while (true)
         {
-            if (ison)
+            if (isOnState)
             {
                 value += Random.Range(0.1f, 0.3f);
                 // 1.0f으로 수정해야함
@@ -85,7 +86,7 @@ public class Lamp_Controller : MonoBehaviour
                 {
                     time = Random.Range(0.5f, 1.0f);
                     value = 1.0f;
-                    ison = false;            
+                    isOnState = false;            
                     yield return new WaitForSeconds(breakTime);
                     breakTime = Random.Range(0.0f, 1.0f);
                 }
@@ -97,7 +98,7 @@ public class Lamp_Controller : MonoBehaviour
                 {
                     time = Random.Range(0.5f, 1.0f);
                     value = 0.0f;
-                    ison = true;
+                    isOnState = true;
                     yield return new WaitForSeconds(breakTime);
                     breakTime = Random.Range(0.0f, 1.0f);
                 }
@@ -111,15 +112,15 @@ public class Lamp_Controller : MonoBehaviour
     {
         while (true)
         {
-            if (ison)
+            if (isOnState)
             {
                 value += 0.1f;
-                if (value >= 1.0f) ison = false;
+                if (value >= 1.0f) isOnState = false;
             }
             else
             {
                 value -= 0.1f;
-                if (value <= 0.0f) ison = true;
+                if (value <= 0.0f) isOnState = true;
             }
 
             yield return new WaitForSeconds(0.03f);
