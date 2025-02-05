@@ -48,7 +48,7 @@ public class PlayerControll : MonoBehaviour
     private RaycastHit _furnitureHit;
     private RaycastHit _itemHit;
 
-    private readonly float Ray_Dist = 3.0f;
+    private readonly float Ray_Dist = 1.0f;
     private readonly int Layer_Furniture = 1 << 10;
     private readonly int Layer_Item = 1 << 11;
     #endregion
@@ -64,8 +64,8 @@ public class PlayerControll : MonoBehaviour
         _canvas = gameObject.GetComponentInChildren<Canvas>();
         
         var image = _canvas.GetComponentsInChildren<RawImage>();
-        _cursorImage = image[0];
-        _LockImage = image[1];
+        _cursorImage = image[1];
+        _LockImage = image[2];
         
         _inventory = gameObject.GetComponent<PlayerInventory>();
         _IKController = gameObject.GetComponent<PlayerIKController>();
