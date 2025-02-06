@@ -454,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6173450863361341429, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.218
+      value: -1.87
       objectReference: {fileID: 0}
     - target: {fileID: 6173450863361341429, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -462,7 +462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6173450863361341429, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 36.097
+      value: 13.13
       objectReference: {fileID: 0}
     - target: {fileID: 6173450863361341429, guid: a1913b5384d804749959e55d29a95c9e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1426,6 +1426,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 169710, guid: dc8f3955c063af240afd23143f496335, type: 3}
   m_PrefabInstance: {fileID: 794967240}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &227974036 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7968581940774656159, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+  m_PrefabInstance: {fileID: 8920952716913681554}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7381207077747b44da51b904e712f53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &233768876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7778,6 +7789,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8125280234572785066, guid: b4c13cd4e5a8c8b4cba12f0bd6b62338, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8115,6 +8130,38 @@ PrefabInstance:
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 3151200805809531030, guid: 8821fed1c4dcd8744a6ea8c052d46632, type: 2}
+    - target: {fileID: 7968581940774656159, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968581940774656159, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968581940774656159, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 227974036}
+    - target: {fileID: 7968581940774656159, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968581940774656159, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ShowLine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968581940774656159, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: EventScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968581940774656159, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: '"There was a sound in the hallway on the right"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968581940774656159, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

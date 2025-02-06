@@ -18,10 +18,18 @@ public class Door_Controller : MonoBehaviour
     {
         _animator = gameObject.GetComponent<Animator>();
         // _openClip = Resources.Load<AudioClip>("10.Sounds/door/door_open");
-        _openAudioSource = gameObject.transform.GetChild(2).GetComponent<AudioSource>();
-        _closeAudioSource = gameObject.transform.GetChild(3).GetComponent<AudioSource>();
-        _LockAudioSource = gameObject.transform.GetChild(4).GetComponent<AudioSource>();
-        _LockOffAudioSource = gameObject.transform.GetChild(5).GetComponent<AudioSource>();
+        
+        var audios = gameObject.GetComponentsInChildren<AudioSource>();
+
+        _openAudioSource = audios[0];
+        _closeAudioSource = audios[1];
+        _LockAudioSource = audios[2];
+        _LockOffAudioSource = audios[3];
+        
+        // _openAudioSource = gameObject.transform.GetChild(2).GetComponent<AudioSource>();
+        // _closeAudioSource = gameObject.transform.GetChild(3).GetComponent<AudioSource>();
+        // _LockAudioSource = gameObject.transform.GetChild(4).GetComponent<AudioSource>();
+        // _LockOffAudioSource = gameObject.transform.GetChild(5).GetComponent<AudioSource>();
         _isOpen = false;
     }
 

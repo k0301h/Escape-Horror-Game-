@@ -40,9 +40,9 @@ public class EventScript : MonoBehaviour
     {
         myEvent.Invoke();
         
-        gameObject.SetActive(false);
-        // var col = GetComponent<Collider>();
-        // col.enabled = false;
+        // gameObject.SetActive(false);
+        var col = GetComponent<Collider>();
+        col.enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)
