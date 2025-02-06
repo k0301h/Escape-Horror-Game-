@@ -6,15 +6,15 @@ public class Lamp_Controller : MonoBehaviour
 {
     public new Light light;
     public Material material;
-
-    [SerializeField] private bool isOnState = false;
-    private float value;
     
-    public bool now_start_mode;
-    public int twinklingMode;
-    public int intensity_Amount = 400000;
+    [SerializeField] private bool isOnState = false;
+    [SerializeField] private bool now_start_mode;
+    [SerializeField] private int twinklingMode;
+    [SerializeField] private int intensity_Amount = 400000;
+    [SerializeField] private float Emission_Intensity = 10.0f;
     
     private Coroutine _lampCoroutine;
+    private float value;
     
     void Start()
     {
@@ -38,7 +38,7 @@ public class Lamp_Controller : MonoBehaviour
         
         Color finalEmissionColor = new Color(1, 1, 1) * (1 - value) * 10.0f;
         material.SetColor("_EmissiveColor", finalEmissionColor);
-        material.SetFloat("_EmissiveIntensity", value * 10.0f); 
+        material.SetFloat("_EmissiveIntensity", value * Emission_Intensity); 
         
         light.intensity = (1 - value) * intensity_Amount;
     }

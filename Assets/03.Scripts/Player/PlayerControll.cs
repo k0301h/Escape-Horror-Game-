@@ -48,7 +48,7 @@ public class PlayerControll : MonoBehaviour
     private RaycastHit _furnitureHit;
     private RaycastHit _itemHit;
 
-    private readonly float Ray_Dist = 1.0f;
+    private readonly float Ray_Dist = 2.0f;
     private readonly int Layer_Furniture = 1 << 10;
     private readonly int Layer_Item = 1 << 11;
     #endregion

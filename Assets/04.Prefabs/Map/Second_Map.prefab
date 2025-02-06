@@ -181,6 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6255652107479572184}
   - component: {fileID: 3311791364430255610}
+  - component: {fileID: 5565507795807764439}
   m_Layer: 0
   m_Name: First_Event
   m_TagString: Untagged
@@ -197,7 +198,7 @@ Transform:
   m_GameObject: {fileID: 2009684748559238434}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 38.32, y: 1.137, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -217,7 +218,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5840613526483801711}
+        m_TargetAssemblyTypeName: Lamp_Controller, Assembly-CSharp
+        m_MethodName: StartLampTwinkle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Lamp_Controller, Assembly-CSharp
+        m_MethodName: StartLampTwinkle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &5565507795807764439
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009684748559238434}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2120275795731747277
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +558,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 482809036903810848}
         m_TargetAssemblyTypeName: EventScript, Assembly-CSharp
@@ -2023,7 +2069,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 286431031779653436, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       propertyPath: isLock
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2116542520330808052, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2032,6 +2078,10 @@ PrefabInstance:
     - target: {fileID: 2631083643604499623, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861229273713157396, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: Emission_Intensity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3730821599292643469, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       propertyPath: m_Name
@@ -2081,13 +2131,17 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: bb166e94b3c2c624899c14b8137e2cf8, type: 2}
+    - target: {fileID: 6142351668430449267, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: m_Name
+      value: LeonLamp
+      objectReference: {fileID: 0}
     - target: {fileID: 7158130887211711337, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8528768480356670845, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       propertyPath: isLock
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9205318101456721873, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2128,6 +2182,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5768624124856435767, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 378989771421413155}
+    - targetCorrespondingSourceObject: {fileID: 5768624124856435767, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6669790820185214270}
     - targetCorrespondingSourceObject: {fileID: 3777920011061168886, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8734611315524316361}
@@ -2698,6 +2755,135 @@ MonoBehaviour:
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
   m_ObsoleteContactShadows: 0
+--- !u!1001 &3502526984443326202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8314211551578445409}
+    m_Modifications:
+    - target: {fileID: 1377637644360644594, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_Name
+      value: LeonLamp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377637644360644594, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594170871056955097, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594170871056955097, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597335408352262157, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217595799811208792, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217595799811208792, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545494808244134970, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_Range
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545494808244134970, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_Intensity
+      value: 318.30984
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545494808244134970, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 8.291548
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031665698453485717, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: isOnState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031665698453485717, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031665698453485717, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: now_start_mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031665698453485717, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: intensity_Amount
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031665698453485717, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: Emission_Intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788028693501961156, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 28.282
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788028693501961156, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.416
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788028693501961156, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.668
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788028693501961156, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7068765
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788028693501961156, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000026683848
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788028693501961156, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707337
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788028693501961156, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000026701231
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788028693501961156, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788028693501961156, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90.037
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788028693501961156, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+--- !u!114 &5840613526483801711 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7031665698453485717, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+  m_PrefabInstance: {fileID: 3502526984443326202}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56ccc03c1af8ee40916cc564f709c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &6669790820185214270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7788028693501961156, guid: 9d14b82f5c33b4146877b980c8e3dbe5, type: 3}
+  m_PrefabInstance: {fileID: 3502526984443326202}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3876217219155619690
 PrefabInstance:
   m_ObjectHideFlags: 0
