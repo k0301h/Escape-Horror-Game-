@@ -13,6 +13,9 @@ public class Lamp_Controller : MonoBehaviour
     [SerializeField] private int intensity_Amount = 400000;
     [SerializeField] private float Emission_Intensity = 10.0f;
     
+    private Color Emission_Color;
+    [SerializeField] private float Emission_Color_Value = 5.0f;
+    
     private Coroutine _lampCoroutine;
     private float value;
     
@@ -28,16 +31,22 @@ public class Lamp_Controller : MonoBehaviour
         else
             value = 1.0f;
 
+        Emission_Color = new Color(1, 1, 1);
+        
         if (now_start_mode)
             StartLampTwinkle();
     }
 
     void Update()
     {
-        material.SetFloat("_EmissiveExposureWeight", value);
+        // 이렇게 하면 Emission Color가 너무 쌔다
+        // Color finalEmissionColor = new Color(1, 1, 1);
+        // finalEmissionColor *= (1 - value) * 10.0f;
+        // material.SetColor("_EmissiveColor", finalEmissionColor);
         
-        Color finalEmissionColor = new Color(1, 1, 1) * (1 - value) * 10.0f;
-        material.SetColor("_EmissiveColor", finalEmissionColor);
+        material.SetColor("_EmissiveColor", Emission_Color * Emission_Color_Value * (1 - value));
+        
+        material.SetFloat("_EmissiveExposureWeight", value);
         material.SetFloat("_EmissiveIntensity", value * Emission_Intensity); 
         
         light.intensity = (1 - value) * intensity_Amount;
@@ -51,6 +60,8 @@ public class Lamp_Controller : MonoBehaviour
     public void EndLampTwinkle(bool isOnState)
     {        
         StopCoroutine(_lampCoroutine);
+        light.color = Color.white;
+        Emission_Color = new Color(1, 1, 1);
 
         if (isOnState)
         {
@@ -68,10 +79,14 @@ public class Lamp_Controller : MonoBehaviour
         
         if (twinklingMode == 0)
             _lampCoroutine = StartCoroutine(LightCoroutines());
-        else
+        else if(twinklingMode == 1)
             _lampCoroutine = StartCoroutine(FastLightCoroutines());
-        
-        
+        else if (twinklingMode == 2)
+        {
+            _lampCoroutine = StartCoroutine(FastLightCoroutines());
+            light.color = Color.red;
+            Emission_Color = new Color(1, 0, 0);
+        }
     }
 
     IEnumerator FastLightCoroutines()
