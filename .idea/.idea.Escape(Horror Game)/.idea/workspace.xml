@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/Paper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/Paper.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/Lamp_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/Lamp_Controller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v1/Door_V1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v1/Door_V1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v2/Door_V2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v2/Door_V2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Old_Hospital.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Old_Hospital.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/FlashLight/FlashLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/FlashLight/FlashLight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,13 +96,15 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19656">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="19656" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -154,7 +157,7 @@
       <workItem from="1738590933084" duration="3918000" />
       <workItem from="1738681738386" duration="3934000" />
       <workItem from="1738734725279" duration="5445000" />
-      <workItem from="1738829008999" duration="1934000" />
+      <workItem from="1738829008999" duration="3906000" />
     </task>
     <servers />
   </component>
@@ -189,16 +192,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs</url>
-          <line>378</line>
+          <line>382</line>
           <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Player\PlayerControll.cs" containingFunctionPresentation="메서드 'FixedUpdate'">
             <startOffsets>
-              <option value="13577" />
+              <option value="13663" />
             </startOffsets>
             <endOffsets>
-              <option value="13578" />
+              <option value="13664" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs</url>
+          <line>425</line>
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Player\PlayerControll.cs" containingFunctionPresentation="메서드 'FixedUpdate'">
+            <startOffsets>
+              <option value="15138" />
+            </startOffsets>
+            <endOffsets>
+              <option value="15183" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs</url>
+          <line>414</line>
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Player\PlayerControll.cs" containingFunctionPresentation="메서드 'FixedUpdate'">
+            <startOffsets>
+              <option value="14669" />
+            </startOffsets>
+            <endOffsets>
+              <option value="14728" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -67,7 +67,7 @@ public class PlayerControll : MonoBehaviour
         _cursorImage = image[1];
         _LockImage = image[2];
         
-        _inventory = gameObject.GetComponent<PlayerInventory>();
+        _inventory = gameObject.GetComponentInChildren<PlayerInventory>();
         _IKController = gameObject.GetComponent<PlayerIKController>();
         _animator = gameObject.GetComponent<Animator>();
 
@@ -324,7 +324,7 @@ public class PlayerControll : MonoBehaviour
             Layer_Item);
         
         // always
-        if (furnitureRayResult || ItemRayResult)
+        if (furnitureRayResult)
         {
             var rayObject = _furnitureHit.collider.gameObject;
 
@@ -343,6 +343,10 @@ public class PlayerControll : MonoBehaviour
             {
                 _cursorImage.enabled = true;
             }
+        }
+        else if (ItemRayResult)
+        {
+            _cursorImage.enabled = true;
         }
         else
         {
@@ -416,6 +420,10 @@ public class PlayerControll : MonoBehaviour
                         flashLight.Acquired(_viewCamera.gameObject);
                         // flashLight.SetFlash();
                         // _IKController.changeIK();
+                    }
+                    else
+                    {
+                        itemCoponent.Acquired(_inventory.gameObject);
                     }
                 }
                 
