@@ -6,6 +6,7 @@ public class Lamp_Controller : MonoBehaviour
 {
     public new Light light;
     public Material material;
+    [SerializeField] private AudioSource source;
     
     [SerializeField] private bool isOnState = false;
     [SerializeField] private bool now_start_mode;
@@ -23,11 +24,15 @@ public class Lamp_Controller : MonoBehaviour
     {
         light = gameObject.GetComponentInChildren<Light>();
         material = gameObject.GetComponentInChildren<Renderer>().material;
+        source = gameObject.GetComponent<AudioSource>();
 
         light.enabled = true;
 
         if (isOnState)
+        {
             value = 0.0f;
+            SoundManager.Instance?.AudioPlay(source);
+        }
         else
             value = 1.0f;
 
@@ -57,19 +62,21 @@ public class Lamp_Controller : MonoBehaviour
         StartCoroutine(RandomStartCoroutines());
     }
     
-    public void EndLampTwinkle(bool isOnState)
+    public void EndLampTwinkle(bool state)
     {        
         StopCoroutine(_lampCoroutine);
         light.color = Color.white;
         Emission_Color = new Color(1, 1, 1);
 
-        if (isOnState)
+        if (state)
         {
             value = 0.0f;
+            SoundManager.Instance?.AudioPlay(source);
         }
         else
         {
             value = 1.0f;
+            SoundManager.Instance?.AudioStop(source);
         }
     }
 
@@ -93,9 +100,11 @@ public class Lamp_Controller : MonoBehaviour
     {
         float time = Random.Range(0.5f, 1.0f);
         float breakTime = Random.Range(0.0f, 0.5f);
+        bool isOn = true;
+        
         while (true)
         {
-            if (isOnState)
+            if (isOn)
             {
                 value += Random.Range(0.1f, 0.3f);
                 // 1.0f으로 수정해야함
@@ -103,7 +112,7 @@ public class Lamp_Controller : MonoBehaviour
                 {
                     time = Random.Range(0.5f, 1.0f);
                     value = 1.0f;
-                    isOnState = false;            
+                    isOn = false;            
                     yield return new WaitForSeconds(breakTime);
                     breakTime = Random.Range(0.0f, 1.0f);
                 }
@@ -115,7 +124,7 @@ public class Lamp_Controller : MonoBehaviour
                 {
                     time = Random.Range(0.5f, 1.0f);
                     value = 0.0f;
-                    isOnState = true;
+                    isOn = true;
                     yield return new WaitForSeconds(breakTime);
                     breakTime = Random.Range(0.0f, 1.0f);
                 }
@@ -127,17 +136,19 @@ public class Lamp_Controller : MonoBehaviour
     
     IEnumerator LightCoroutines()
     {
+        bool isOn = true;
+        
         while (true)
         {
-            if (isOnState)
+            if (isOn)
             {
                 value += 0.1f;
-                if (value >= 1.0f) isOnState = false;
+                if (value >= 1.0f) isOn = false;
             }
             else
             {
                 value -= 0.1f;
-                if (value <= 0.0f) isOnState = true;
+                if (value <= 0.0f) isOn = true;
             }
 
             yield return new WaitForSeconds(0.03f);

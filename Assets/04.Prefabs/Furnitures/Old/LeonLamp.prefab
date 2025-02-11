@@ -49,11 +49,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light: {fileID: 5545494808244134970}
   material: {fileID: 0}
+  source: {fileID: 7368953903085096701}
   isOnState: 0
   now_start_mode: 0
   twinklingMode: 1
   intensity_Amount: 3000
   Emission_Intensity: 10
+  Emission_Color_Value: 5
 --- !u!82 &7368953903085096701
 AudioSource:
   m_ObjectHideFlags: 0
@@ -66,7 +68,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8a40a0ccdd6a60544be04e9549f1c738, type: 3}
   m_Resource: {fileID: 8300000, guid: 8a40a0ccdd6a60544be04e9549f1c738, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
