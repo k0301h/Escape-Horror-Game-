@@ -298,11 +298,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 3381978041502929381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: -200}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 550, y: -210}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0}
 --- !u!222 &7671911657924952962
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1150,11 +1150,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8451924387932823274}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: -200}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 550, y: -160}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0}
 --- !u!222 &4207913820536291748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1704,8 +1704,10 @@ MonoBehaviour:
   _IKController: {fileID: 7445624198286618188}
   _animator: {fileID: 237754058914852239}
   _canvas: {fileID: 5010836306918188343}
-  _cursorImage: {fileID: 0}
+  _FurnitureImage: {fileID: 0}
+  _CursorImage: {fileID: 0}
   _LockImage: {fileID: 0}
+  _ItemImage: {fileID: 0}
   _flashLight: {fileID: 0}
   _moveSpeed: 3
   sensitivityX: 3

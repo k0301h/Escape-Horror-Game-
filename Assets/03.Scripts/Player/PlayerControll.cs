@@ -50,10 +50,11 @@ public class PlayerControll : MonoBehaviour
     #region Ray Variables
     private RaycastHit _furnitureHit;
     private RaycastHit _itemHit;
+    private RaycastHit _targetHit;
 
     private readonly float Ray_Dist = 2.0f;
-    private readonly int Layer_Furniture = 1 << 10;
-    private readonly int Layer_Item = 1 << 11;
+    
+    private readonly int Layer_Target = 1 << 10;
     #endregion
     
     void Start()
@@ -329,20 +330,24 @@ public class PlayerControll : MonoBehaviour
         
         #region Click Function
         
-        bool furnitureRayResult = Physics.Raycast(_viewCamera.transform.position, _viewCamera.transform.forward, out _furnitureHit, Ray_Dist,
-            Layer_Furniture);
-        bool ItemRayResult = Physics.Raycast(_viewCamera.transform.position, _viewCamera.transform.forward, out _itemHit, Ray_Dist,
-            Layer_Item);
+        bool RayResult = Physics.Raycast(_viewCamera.transform.position, _viewCamera.transform.forward, out _targetHit, Ray_Dist,
+            Layer_Target);
         
         // always
-        if (furnitureRayResult)
+        if (RayResult)
         {
-            _FurnitureImage.SetActive(true);
-            
-            var rayObject = _furnitureHit.collider.gameObject;
+            var rayObject = _targetHit.collider.gameObject;
 
-            if (rayObject.TryGetComponent<Door_Controller>(out Door_Controller doorController))
+            if (rayObject.TryGetComponent<Item>(out Item item))
             {
+                _ItemImage.SetActive(true);
+                _FurnitureImage.SetActive(false);
+            }
+            else if (rayObject.TryGetComponent<Door_Controller>(out Door_Controller doorController))
+            {
+                _FurnitureImage.SetActive(true);
+                _ItemImage.SetActive(false);
+                
                 if (doorController.IsLock())
                 {
                     _LockImage.SetActive(true);
@@ -354,12 +359,11 @@ public class PlayerControll : MonoBehaviour
             }
             else
             {
+                _FurnitureImage.SetActive(true);
+                _ItemImage.SetActive(false);
+                
                 _CursorImage.SetActive(true);
             }
-        }
-        else if (ItemRayResult)
-        {
-            _ItemImage.SetActive(true);
         }
         else
         {
@@ -372,13 +376,17 @@ public class PlayerControll : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0))
         {
-            if (furnitureRayResult)
+            if (RayResult)
             {
-                DebugManager.Instance?.LogAndDrawRay(_furnitureHit, _viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
+                DebugManager.Instance?.LogAndDrawRay(_targetHit, _viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
                 
-                var rayObject = _furnitureHit.collider.gameObject;
-                
-                if (rayObject.TryGetComponent<Door_Controller>(out Door_Controller doorController))
+                var rayObject = _targetHit.collider.gameObject;
+
+                if (rayObject.TryGetComponent<Item>(out Item item))
+                {
+                    // pass
+                }
+                else if (rayObject.TryGetComponent<Door_Controller>(out Door_Controller doorController))
                 {
                     if(doorController.IsOpen())
                         doorController.CloseDoor();
@@ -421,11 +429,11 @@ public class PlayerControll : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {            
-            if (ItemRayResult)
+            if (RayResult)
             {
-                DebugManager.Instance?.LogAndDrawRay(_itemHit, _viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
+                DebugManager.Instance?.LogAndDrawRay(_targetHit, _viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
                 
-                var rayObject = _itemHit.collider.gameObject;
+                var rayObject = _targetHit.collider.gameObject;
                 
                 if (rayObject.TryGetComponent<Item>(out Item itemCoponent))
                 {

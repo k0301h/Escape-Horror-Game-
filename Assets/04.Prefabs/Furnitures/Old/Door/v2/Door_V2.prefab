@@ -376,7 +376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2347358042424718365}
   - component: {fileID: 5701467561101986224}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Lock_sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,7 +505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7372963418268215897}
   - component: {fileID: 8205368563148152895}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: LockOff_sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}

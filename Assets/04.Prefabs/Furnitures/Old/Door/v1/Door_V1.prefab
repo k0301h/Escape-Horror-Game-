@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 196463265859990727}
   - component: {fileID: 2390220845349000277}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Lock_sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 621329813852677398}
   - component: {fileID: 8261896041232715405}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: LockOff_sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -816,7 +816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6689311066932039345}
   - component: {fileID: 5100849514807698613}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Door_V1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
