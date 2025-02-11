@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 611070339242345589}
   - component: {fileID: 5067805274116536791}
-  - component: {fileID: -5030210647073677844}
+  - component: {fileID: 4474177463074825156}
   m_Layer: 0
   m_Name: Dry6524
   m_TagString: Untagged
@@ -68,8 +68,8 @@ LODGroup:
     renderers:
     - renderer: {fileID: 7154634618021259387}
   m_Enabled: 1
---- !u!136 &-5030210647073677844
-CapsuleCollider:
+--- !u!65 &4474177463074825156
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -86,11 +86,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.8
-  m_Height: 10
-  m_Direction: 1
-  m_Center: {x: 1.05, y: 5, z: 0.04}
+  serializedVersion: 3
+  m_Size: {x: 0.82960224, y: 1.6472143, z: 0.8707426}
+  m_Center: {x: 1.1051989, y: 0.80610377, z: -0.16462871}
 --- !u!1 &4822492104077466958
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +358,6 @@ GameObject:
   - component: {fileID: 6878175237843549458}
   - component: {fileID: 3329998596488770176}
   - component: {fileID: 2541386472716945988}
-  - component: {fileID: 8148414414305115040}
   m_Layer: 0
   m_Name: Dry6524
   m_TagString: Untagged
@@ -436,25 +433,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8148414414305115040
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7906446345103534504}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7616738987837946967, guid: 5736b0f1a73af4a4581db8226d31045c, type: 3}

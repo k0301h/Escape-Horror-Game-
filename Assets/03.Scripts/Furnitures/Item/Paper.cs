@@ -11,5 +11,6 @@ public class Paper : Item
         eventScript = gameObject.GetComponent<EventScript>();
         
         eventScript.StartEvent();
+        gameObject.SetActive(false);
     }
 }

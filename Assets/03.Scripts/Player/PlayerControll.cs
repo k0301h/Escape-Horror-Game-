@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -21,8 +22,10 @@ public class PlayerControll : MonoBehaviour
     [SerializeField] private Animator _animator;
     
     [SerializeField] private Canvas _canvas;
-    [SerializeField] private RawImage _cursorImage;
-    [SerializeField] private RawImage _LockImage;
+    [SerializeField] private GameObject _FurnitureImage;
+    [SerializeField] private GameObject _CursorImage;
+    [SerializeField] private GameObject _LockImage;
+    [SerializeField] private GameObject _ItemImage;
     
     [SerializeField] private FlashLight _flashLight;
     
@@ -64,8 +67,16 @@ public class PlayerControll : MonoBehaviour
         _canvas = gameObject.GetComponentInChildren<Canvas>();
         
         var image = _canvas.GetComponentsInChildren<RawImage>();
-        _cursorImage = image[1];
-        _LockImage = image[2];
+
+        _FurnitureImage = image[1].transform.parent.gameObject;
+        _CursorImage = image[1].gameObject;
+        _LockImage = image[2].gameObject;
+        _ItemImage = image[4].transform.parent.gameObject;
+        
+        _FurnitureImage.SetActive(false);
+        _CursorImage.SetActive(false);
+        _LockImage.SetActive(false);
+        _ItemImage.SetActive(false);
         
         _inventory = gameObject.GetComponentInChildren<PlayerInventory>();
         _IKController = gameObject.GetComponent<PlayerIKController>();
@@ -326,32 +337,36 @@ public class PlayerControll : MonoBehaviour
         // always
         if (furnitureRayResult)
         {
+            _FurnitureImage.SetActive(true);
+            
             var rayObject = _furnitureHit.collider.gameObject;
 
             if (rayObject.TryGetComponent<Door_Controller>(out Door_Controller doorController))
             {
                 if (doorController.IsLock())
                 {
-                    _LockImage.enabled = true;
+                    _LockImage.SetActive(true);
                 }
                 else
                 {
-                    _cursorImage.enabled = true;
+                    _CursorImage.SetActive(true);
                 }
             }
             else
             {
-                _cursorImage.enabled = true;
+                _CursorImage.SetActive(true);
             }
         }
         else if (ItemRayResult)
         {
-            _cursorImage.enabled = true;
+            _ItemImage.SetActive(true);
         }
         else
         {
-            _cursorImage.enabled = false;
-            _LockImage.enabled = false;
+            _FurnitureImage.SetActive(false);
+            _CursorImage.SetActive(false);
+            _LockImage.SetActive(false);
+            _ItemImage.SetActive(false);
         }
         //
         
@@ -444,7 +459,6 @@ public class PlayerControll : MonoBehaviour
             else 
                 _flashLight.TurnOn();  
         }
-
         #endregion
 
         #endregion

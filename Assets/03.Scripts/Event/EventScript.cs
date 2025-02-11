@@ -35,7 +35,6 @@ public class EventScript : MonoBehaviour
         SoundManager.Instance?.BGMPlay(audioSource);
     }
     
-    // TODO : 추후에 Inventory Array에 못 찾는 경우가 발생할 수 있으니 재확인 필요
     public void StartEvent()
     {
         myEvent.Invoke();
