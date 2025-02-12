@@ -30,8 +30,8 @@ public class FlashLight : Item
     {
         base.Acquired(player);
         
-        transform.localPosition = new Vector3(0.317f, -0.139f, 0.422f);
-        transform.localRotation = Quaternion.Euler(0f, 90f, 90f);
+        transform.localPosition = new Vector3(0.157f, -0.1f, 0.23f);
+        transform.localRotation = Quaternion.Euler(90f, 3f, 0f);
 
         gameObject.AddComponent<FlashLight>();
         
