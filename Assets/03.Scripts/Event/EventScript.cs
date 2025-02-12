@@ -49,7 +49,10 @@ public class EventScript : MonoBehaviour
         myEvent.Invoke();
         
         // gameObject.SetActive(false);
-        var col = GetComponent<Collider>();
-        col.enabled = false;
+        var cols = GetComponents<Collider>();
+        foreach (var col in cols)
+        {
+            col.enabled = false;
+        }
     }
 }

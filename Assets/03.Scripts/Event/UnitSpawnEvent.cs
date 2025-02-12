@@ -15,7 +15,7 @@ public class UnitSpawnEvent : MonoBehaviour
 
     public void DestroyUnitToString(string unitName)
     {
-        Destroy(gameObject.transform.parent.Find(unitName).gameObject);
+        Destroy(gameObject.transform.Find(unitName).gameObject);
     }
     
     public void DestroyUnitToGameObject(GameObject unitGameObject)
