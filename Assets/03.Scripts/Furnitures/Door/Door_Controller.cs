@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Door_Controller : MonoBehaviour
 {
-    private static readonly int TOpen = Animator.StringToHash("tOpen");
-    private static readonly int TClose = Animator.StringToHash("tClose");
+    private static readonly int Open = Animator.StringToHash("tOpen");
+    private static readonly int Close = Animator.StringToHash("tClose");
     
     private Animator _animator;
     private AudioSource _openAudioSource;
@@ -62,6 +62,19 @@ public class Door_Controller : MonoBehaviour
         isLock = false;
     }
     
+    public void LockOnDoor()
+    {
+        // DebugSound(_LockOffAudioSource);
+        //
+        // SoundManager.Instance?.AudioPlay(_LockOffAudioSource);
+        if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Open"))
+        {
+            CloseDoor();
+        }
+        
+        isLock = true;
+    }
+    
     public void OpenDoor()
     {
         if (!isLock)
@@ -70,7 +83,7 @@ public class Door_Controller : MonoBehaviour
 
             SoundManager.Instance?.AudioPlay(_openAudioSource);
             _isOpen = true;
-            _animator.SetTrigger(TOpen);
+            _animator.SetTrigger(Open);
         }
         else
         {
@@ -86,6 +99,6 @@ public class Door_Controller : MonoBehaviour
         
         SoundManager.Instance?.AudioPlay(_closeAudioSource);
         _isOpen = false;
-        _animator.SetTrigger(TClose);
+        _animator.SetTrigger(Close);
     }
 }

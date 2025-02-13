@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/Creature/Creature.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/Creature/Creature.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Event/UnitSpawnEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Event/UnitSpawnEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Cretures/Manequin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Cretures/Manequin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Door/Door_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Door/Door_Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Cretures/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Cretures/Zombie.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/13.Shader/TV/TV_shader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/13.Shader/TV/TV_shader.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/11.Model/Cretures/Zombie/ZombieAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/11.Model/Cretures/Zombie/ZombieAnimator.controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,15 +96,13 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20528">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="20528" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -160,7 +159,8 @@
       <workItem from="1738940857230" duration="261000" />
       <workItem from="1739087903405" duration="4534000" />
       <workItem from="1739287358412" duration="7340000" />
-      <workItem from="1739344128162" duration="5593000" />
+      <workItem from="1739344128162" duration="6193000" />
+      <workItem from="1739426937726" duration="1823000" />
     </task>
     <servers />
   </component>
