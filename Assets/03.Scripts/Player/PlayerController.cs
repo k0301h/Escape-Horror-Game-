@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public class PlayerControll : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     #region Cached references
     
@@ -26,6 +26,8 @@ public class PlayerControll : MonoBehaviour
     [SerializeField] private GameObject _CursorImage;
     [SerializeField] private GameObject _LockImage;
     [SerializeField] private GameObject _ItemImage;
+
+    public GameObject StoryBackGroundImage;
     
     [SerializeField] private FlashLight _flashLight;
     
@@ -73,11 +75,14 @@ public class PlayerControll : MonoBehaviour
         _CursorImage = image[1].gameObject;
         _LockImage = image[2].gameObject;
         _ItemImage = image[4].transform.parent.gameObject;
+
+        StoryBackGroundImage = image[6].gameObject;
         
         _FurnitureImage.SetActive(false);
         _CursorImage.SetActive(false);
         _LockImage.SetActive(false);
         _ItemImage.SetActive(false);
+        StoryBackGroundImage.SetActive(false);
         
         _inventory = gameObject.GetComponentInChildren<PlayerInventory>();
         _IKController = gameObject.GetComponent<PlayerIKController>();
@@ -85,6 +90,8 @@ public class PlayerControll : MonoBehaviour
 
         _isMouseLocked = false;
         _isRun = false;
+        
+        this.gameObject.AddPlayer();
     }
 
     void Update()

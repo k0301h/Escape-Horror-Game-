@@ -11,6 +11,8 @@ namespace Mannagers
             // == gameObject.DontDestroyOnLoad(); // 확장 매서드 사용 예
             
             ObjectExtension.Log();
+            
+            PlayerExtension.Init();
         }
     }
 }

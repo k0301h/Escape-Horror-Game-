@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
 
 public class Paper : Item
 {
@@ -12,5 +13,20 @@ public class Paper : Item
         
         eventScript.StartEvent();
         gameObject.SetActive(false);
+
+        ShowStory();
+    }
+    
+    private void ShowStory()
+    {
+        // PlayerExtension.FindPlayerByID("player");
+
+        GameObject player = PlayerExtension.FindPlayerByID("player1").GameObject();
+        var playerContoroller = player.GetComponentInChildren<PlayerController>();
+        
+        playerContoroller.StoryBackGroundImage.SetActive(true);
+        
+        
+        
     }
 }
