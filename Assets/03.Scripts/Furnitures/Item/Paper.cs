@@ -19,12 +19,11 @@ public class Paper : Item
     
     private void ShowStory()
     {
-        // PlayerExtension.FindPlayerByID("player");
-
-        GameObject player = PlayerExtension.FindPlayerByID("player1").GameObject();
+        GameObject player = PlayerExtension.FindPlayerByID("Old_Player").GameObject();
         var playerContoroller = player.GetComponentInChildren<PlayerController>();
+        var playerUIController = player.GetComponentInChildren<PlayerUIController>();
         
-        playerContoroller.StoryBackGroundImage.SetActive(true);
+        playerUIController.SetUI(UI_Index.StoryBackID, true);
         
         
         

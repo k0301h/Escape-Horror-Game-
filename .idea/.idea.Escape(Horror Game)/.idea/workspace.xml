@@ -5,24 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/Creature/Manequin.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/Creature/Manequin.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/Mannagers/PlayerExtension.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/Mannagers/PlayerExtension.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerUIController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerUIController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/Paper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/Paper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Mannagers/GeneralManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Mannagers/GeneralManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerControll.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Cretures/Ani/Manequin.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Cretures/Ani/Manequin.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Cretures/Manequin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Cretures/Manequin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Mannagers/PlayerExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Mannagers/PlayerExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,10 +98,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19928">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9852">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="19928" />
+      <option name="pid" value="9852" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
         <list>
@@ -175,6 +167,8 @@
       <workItem from="1739426937726" duration="1823000" />
       <workItem from="1739455032509" duration="732000" />
       <workItem from="1739548372853" duration="3396000" />
+      <workItem from="1739596927434" duration="276000" />
+      <workItem from="1739599131906" duration="1972000" />
     </task>
     <servers />
   </component>
@@ -221,43 +215,17 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/Paper.cs</url>
-          <line>24</line>
-          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Furnitures\Item\Paper.cs" containingFunctionPresentation="메서드 'ShowStory'">
+          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Mannagers/PlayerExtension.cs</url>
+          <line>25</line>
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Mannagers\PlayerExtension.cs" containingFunctionPresentation="메서드 'FindPlayerByID'">
             <startOffsets>
-              <option value="583" />
+              <option value="603" />
             </startOffsets>
             <endOffsets>
-              <option value="657" />
+              <option value="675" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/Paper.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Furnitures\Item\Paper.cs" containingFunctionPresentation="메서드 'ShowStory'">
-            <startOffsets>
-              <option value="499" />
-            </startOffsets>
-            <endOffsets>
-              <option value="574" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs</url>
-          <line>93</line>
-          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Player\PlayerController.cs" containingFunctionPresentation="메서드 'Start'">
-            <startOffsets>
-              <option value="3195" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3223" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

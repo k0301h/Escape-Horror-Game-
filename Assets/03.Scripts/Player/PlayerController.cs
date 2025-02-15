@@ -21,13 +21,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private PlayerIKController _IKController;
     [SerializeField] private Animator _animator;
     
-    [SerializeField] private Canvas _canvas;
-    [SerializeField] private GameObject _FurnitureImage;
-    [SerializeField] private GameObject _CursorImage;
-    [SerializeField] private GameObject _LockImage;
-    [SerializeField] private GameObject _ItemImage;
-
-    public GameObject StoryBackGroundImage;
+    public PlayerUIController _uiController;
     
     [SerializeField] private FlashLight _flashLight;
     
@@ -67,22 +61,8 @@ public class PlayerController : MonoBehaviour
         
         _viewCamera = gameObject.GetComponentInChildren<Camera>();
         _cc = gameObject.GetComponent<CharacterController>();
-        _canvas = gameObject.GetComponentInChildren<Canvas>();
         
-        var image = _canvas.GetComponentsInChildren<RawImage>();
-
-        _FurnitureImage = image[1].transform.parent.gameObject;
-        _CursorImage = image[1].gameObject;
-        _LockImage = image[2].gameObject;
-        _ItemImage = image[4].transform.parent.gameObject;
-
-        StoryBackGroundImage = image[6].gameObject;
-        
-        _FurnitureImage.SetActive(false);
-        _CursorImage.SetActive(false);
-        _LockImage.SetActive(false);
-        _ItemImage.SetActive(false);
-        StoryBackGroundImage.SetActive(false);
+        _uiController = gameObject.GetComponentInChildren<PlayerUIController>();
         
         _inventory = gameObject.GetComponentInChildren<PlayerInventory>();
         _IKController = gameObject.GetComponent<PlayerIKController>();
@@ -347,37 +327,37 @@ public class PlayerController : MonoBehaviour
 
             if (rayObject.TryGetComponent<Item>(out Item item))
             {
-                _ItemImage.SetActive(true);
-                _FurnitureImage.SetActive(false);
+                _uiController.SetUI(UI_Index.ItemID, true);
+                _uiController.SetUI(UI_Index.FurnitureID, false);
             }
             else if (rayObject.TryGetComponent<Door_Controller>(out Door_Controller doorController))
             {
-                _FurnitureImage.SetActive(true);
-                _ItemImage.SetActive(false);
+                _uiController.SetUI(UI_Index.FurnitureID, true);
+                _uiController.SetUI(UI_Index.ItemID, false);
                 
                 if (doorController.IsLock())
                 {
-                    _LockImage.SetActive(true);
+                    _uiController.SetUI(UI_Index.LockID, true);
                 }
                 else
                 {
-                    _CursorImage.SetActive(true);
+                    _uiController.SetUI(UI_Index.CursorID, true);
                 }
             }
             else
             {
-                _FurnitureImage.SetActive(true);
-                _ItemImage.SetActive(false);
+                _uiController.SetUI(UI_Index.FurnitureID, true);
+                _uiController.SetUI(UI_Index.ItemID, false);
                 
-                _CursorImage.SetActive(true);
+                _uiController.SetUI(UI_Index.CursorID, true);
             }
         }
         else
         {
-            _FurnitureImage.SetActive(false);
-            _CursorImage.SetActive(false);
-            _LockImage.SetActive(false);
-            _ItemImage.SetActive(false);
+            _uiController.SetUI(UI_Index.FurnitureID, false);
+            _uiController.SetUI(UI_Index.CursorID, false);
+            _uiController.SetUI(UI_Index.LockID, false);
+            _uiController.SetUI(UI_Index.ItemID, false);
         }
         //
         
