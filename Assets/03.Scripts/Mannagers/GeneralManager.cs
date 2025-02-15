@@ -4,7 +4,7 @@ namespace Mannagers
 {
     public class GeneralManager : MonoBehaviour
     {
-        void Start()
+        void Awake()
         {
             ObjectExtension.Init();
             ObjectExtension.DontDestroyOnLoad(this.gameObject);
