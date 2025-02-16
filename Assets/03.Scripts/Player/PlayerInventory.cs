@@ -32,8 +32,8 @@ public class PlayerInventory : MonoBehaviour
 
     public void PlayStoryEvent()
     {
-        var paper = _inventory[^1].GetComponent<Paper>();
+        var paper = _inventory[^1].GetComponent<EventScript>();
 
-        paper.StartEvent();
+        paper.StartPaperEvent();
     }
 }

@@ -35,6 +35,12 @@ public class EventScript : MonoBehaviour
         SoundManager.Instance?.BGMPlay(audioSource);
     }
     
+    public void StartPaperEvent()
+    {
+        myEvent.Invoke();
+        gameObject.SetActive(false);
+    }
+    
     public void StartEvent()
     {
         myEvent.Invoke();

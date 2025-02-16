@@ -36,6 +36,14 @@ public class PlayerController : MonoBehaviour
     private float _rotationY = 0.0f;
     
     private bool _isMouseLocked;
+    private bool _isStoryMode;
+
+    public bool IsStoryMode
+    {
+        get => _isStoryMode;
+        set => _isStoryMode = value;
+    }
+    
     private bool _isRun;
     
     [SerializeField] private float jumpHight = 1.5f;
@@ -64,7 +72,11 @@ public class PlayerController : MonoBehaviour
         _IKController = gameObject.GetComponent<PlayerIKController>();
         _animator = gameObject.GetComponent<Animator>();
 
-        _isMouseLocked = false;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        _isMouseLocked = true;
+        
+        _isStoryMode = false;
         _isRun = false;
         
         this.gameObject.AddPlayer();
@@ -201,7 +213,6 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         #region Mouse Function
-
         if (_isMouseLocked)
         {
             #region Direction
@@ -350,9 +361,22 @@ public class PlayerController : MonoBehaviour
             #endregion
         }
 
-        if (Input.GetMouseButtonDown(2))
+        if (!_isStoryMode)
         {
-            SetMouseHide();
+            if(Input.GetMouseButtonDown(2))
+                SetMouseHide();
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                var button = _uiController.GetUIGameObject(UI_Index.StoryExitButtonID).GetComponent<Button>();
+                
+                button.onClick.Invoke();
+
+                SetMouseHide();
+                _isStoryMode = false;
+            }
         }
         #endregion
     }

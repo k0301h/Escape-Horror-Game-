@@ -52,6 +52,11 @@ public class PlayerUIController : MonoBehaviour
         _storyLineCoroutine = null;
     }
 
+    public GameObject GetUIGameObject(int id)
+    {
+        return UIElements[id];
+    }
+
     public void SetUI(int id, bool isActive)
     {
         UIElements[id].SetActive(isActive);
@@ -63,4 +68,6 @@ public class PlayerUIController : MonoBehaviour
 
         text.text = line;
     }
+    
+    // TODO : story 진행 중에는 마우스 고정모드 못하도록 변경해야한다.
 }

@@ -20,19 +20,12 @@ public class Paper : Item
         var playerUIController = player.GetComponentInChildren<PlayerUIController>();
         
         playerContoroller.SetMouseHide();
+        playerContoroller.IsStoryMode = true;
         
         playerUIController.SetUI(UI_Index.StoryBackID, true);
         playerUIController.SetUI(UI_Index.StoryLineID, true);
         playerUIController.SetUI(UI_Index.StoryExitButtonID, true);
         
         playerUIController.SetStoryLine(StoryLine);
-    }
-
-    public void StartEvent()
-    {
-        eventScript = gameObject.GetComponent<EventScript>();
-        
-        eventScript.StartEvent();
-        gameObject.SetActive(false);
     }
 }
