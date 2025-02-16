@@ -303,159 +303,158 @@ public class PlayerController : MonoBehaviour
     {
         #region Mouse Function
 
-        #region Direction
-        
-        _rotationX += Input.GetAxis("Mouse X") * sensitivityX;
-        
-        _rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
-        _rotationY = Mathf.Clamp(_rotationY, minimumY, maximumY);
-        
-        transform.localEulerAngles = new Vector3(0.0f, _rotationX, 0.0f);
-        _viewCamera.transform.localEulerAngles = new Vector3(-_rotationY, 0.0f, 0.0f);
-
-        #endregion
-        
-        #region Click Function
-        
-        bool RayResult = Physics.Raycast(_viewCamera.transform.position, _viewCamera.transform.forward, out _targetHit, Ray_Dist,
-            Layer_Target);
-        
-        // always
-        if (RayResult)
+        if (_isMouseLocked)
         {
-            var rayObject = _targetHit.collider.gameObject;
+            #region Direction
 
-            if (rayObject.TryGetComponent<Item>(out Item item))
+            _rotationX += Input.GetAxis("Mouse X") * sensitivityX;
+
+            _rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
+            _rotationY = Mathf.Clamp(_rotationY, minimumY, maximumY);
+
+            transform.localEulerAngles = new Vector3(0.0f, _rotationX, 0.0f);
+            _viewCamera.transform.localEulerAngles = new Vector3(-_rotationY, 0.0f, 0.0f);
+
+            #endregion
+
+            #region Click Function
+
+            bool RayResult = Physics.Raycast(_viewCamera.transform.position, _viewCamera.transform.forward,
+                out _targetHit, Ray_Dist,
+                Layer_Target);
+
+            // always
+            if (RayResult)
             {
-                _uiController.SetUI(UI_Index.ItemID, true);
-                _uiController.SetUI(UI_Index.FurnitureID, false);
-            }
-            else if (rayObject.TryGetComponent<Door_Controller>(out Door_Controller doorController))
-            {
-                _uiController.SetUI(UI_Index.FurnitureID, true);
-                _uiController.SetUI(UI_Index.ItemID, false);
-                
-                if (doorController.IsLock())
+                var rayObject = _targetHit.collider.gameObject;
+
+                if (rayObject.TryGetComponent<Item>(out Item item))
                 {
-                    _uiController.SetUI(UI_Index.LockID, true);
+                    _uiController.SetUI(UI_Index.ItemID, true);
+                    _uiController.SetUI(UI_Index.FurnitureID, false);
+                }
+                else if (rayObject.TryGetComponent<Door_Controller>(out Door_Controller doorController))
+                {
+                    _uiController.SetUI(UI_Index.FurnitureID, true);
+                    _uiController.SetUI(UI_Index.ItemID, false);
+
+                    if (doorController.IsLock())
+                    {
+                        _uiController.SetUI(UI_Index.LockID, true);
+                    }
+                    else
+                    {
+                        _uiController.SetUI(UI_Index.CursorID, true);
+                    }
                 }
                 else
                 {
+                    _uiController.SetUI(UI_Index.FurnitureID, true);
+                    _uiController.SetUI(UI_Index.ItemID, false);
+
                     _uiController.SetUI(UI_Index.CursorID, true);
                 }
             }
             else
             {
-                _uiController.SetUI(UI_Index.FurnitureID, true);
+                _uiController.SetUI(UI_Index.FurnitureID, false);
+                _uiController.SetUI(UI_Index.CursorID, false);
+                _uiController.SetUI(UI_Index.LockID, false);
                 _uiController.SetUI(UI_Index.ItemID, false);
-                
-                _uiController.SetUI(UI_Index.CursorID, true);
             }
-        }
-        else
-        {
-            _uiController.SetUI(UI_Index.FurnitureID, false);
-            _uiController.SetUI(UI_Index.CursorID, false);
-            _uiController.SetUI(UI_Index.LockID, false);
-            _uiController.SetUI(UI_Index.ItemID, false);
-        }
-        //
-        
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (RayResult)
-            {
-                DebugManager.Instance?.LogAndDrawRay(_targetHit, _viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
-                
-                var rayObject = _targetHit.collider.gameObject;
+            //
 
-                if (rayObject.TryGetComponent<Item>(out Item item))
-                {
-                    // pass
-                }
-                else if (rayObject.TryGetComponent<Door_Controller>(out Door_Controller doorController))
-                {
-                    if(doorController.IsOpen())
-                        doorController.CloseDoor();
-                    else
-                        doorController.OpenDoor();
-                }
-                else if (rayObject.TryGetComponent<Portal>(out Portal portal))
-                {
-                    portal.LoadScene("1.InGame");
-                }
-                else if (rayObject.TryGetComponent<EventScript>(out EventScript eventScript))
-                {   
-                    eventScript.StartEvent();
-                }
-            }
-            else
+            if (Input.GetMouseButtonDown(0))
             {
-                DebugManager.Instance?.DrawRay(_viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
-            }
-        }
-        else if (Input.GetMouseButtonDown(2))
-        {
-            if (_isMouseLocked)
-            {
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
-                _isMouseLocked = false;
-            }
-            else
-            {
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
-                _isMouseLocked = true;
-            }
-        }
-        
-        #endregion
-        
-        #region Item
+                if (RayResult)
+                {
+                    DebugManager.Instance?.LogAndDrawRay(_targetHit, _viewCamera.transform.position,
+                        _viewCamera.transform.forward, Ray_Dist);
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {            
-            if (RayResult)
-            {
-                DebugManager.Instance?.LogAndDrawRay(_targetHit, _viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
-                
-                var rayObject = _targetHit.collider.gameObject;
-                
-                if (rayObject.TryGetComponent<Item>(out Item itemCoponent))
-                {
-                    if (itemCoponent is FlashLight flashLight)
+                    var rayObject = _targetHit.collider.gameObject;
+
+                    if (rayObject.TryGetComponent<Item>(out Item item))
                     {
-                        // TODO : 일반화 필요
-                        flashLight.Acquired(_viewCamera.gameObject);
-                        // flashLight.SetFlash();
-                        // _IKController.changeIK();
+                        // pass
                     }
-                    else
+                    else if (rayObject.TryGetComponent<Door_Controller>(out Door_Controller doorController))
                     {
-                        itemCoponent.Acquired(_inventory.gameObject);
+                        if (doorController.IsOpen())
+                            doorController.CloseDoor();
+                        else
+                            doorController.OpenDoor();
+                    }
+                    else if (rayObject.TryGetComponent<Portal>(out Portal portal))
+                    {
+                        portal.LoadScene("1.InGame");
+                    }
+                    else if (rayObject.TryGetComponent<EventScript>(out EventScript eventScript))
+                    {
+                        eventScript.StartEvent();
                     }
                 }
-                
-                _inventory.AddItem(rayObject);
+                else
+                {
+                    DebugManager.Instance?.DrawRay(_viewCamera.transform.position, _viewCamera.transform.forward,
+                        Ray_Dist);
+                }
             }
-            else
+
+            #endregion
+
+            #region Item
+
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                DebugManager.Instance?.DrawRay(_viewCamera.transform.position, _viewCamera.transform.forward, Ray_Dist);
+                if (RayResult)
+                {
+                    DebugManager.Instance?.LogAndDrawRay(_targetHit, _viewCamera.transform.position,
+                        _viewCamera.transform.forward, Ray_Dist);
+
+                    var rayObject = _targetHit.collider.gameObject;
+
+                    if (rayObject.TryGetComponent<Item>(out Item itemCoponent))
+                    {
+                        if (itemCoponent is FlashLight flashLight)
+                        {
+                            // TODO : 일반화 필요
+                            flashLight.Acquired(_viewCamera.gameObject);
+                            // flashLight.SetFlash();
+                            // _IKController.changeIK();
+                        }
+                        else
+                        {
+                            itemCoponent.Acquired(_inventory.gameObject);
+                        }
+                    }
+
+                    _inventory.AddItem(rayObject);
+                }
+                else
+                {
+                    DebugManager.Instance?.DrawRay(_viewCamera.transform.position, _viewCamera.transform.forward,
+                        Ray_Dist);
+                }
             }
+            else if (Input.GetKeyDown(KeyCode.R))
+            {
+                // TODO : 일반화 필요
+                if (_flashLight == null)
+                    _flashLight = _inventory._inventory.Find(x => x.name == "Flashlight").GetComponent<FlashLight>();
+
+                if (_flashLight.IsOn())
+                    _flashLight.TurnOff();
+                else
+                    _flashLight.TurnOn();
+            }
+
+            #endregion
         }
-        else if (Input.GetKeyDown(KeyCode.R))
+
+        if (Input.GetMouseButtonDown(2))
         {
-            // TODO : 일반화 필요
-            if (_flashLight == null) _flashLight = _inventory._inventory.Find(x => x.name == "Flashlight").GetComponent<FlashLight>();
-
-            if(_flashLight.IsOn())
-                _flashLight.TurnOff();
-            else 
-                _flashLight.TurnOn();  
+            SetMouseHide();
         }
-        #endregion
-
         #endregion
     }
     
@@ -464,5 +463,21 @@ public class PlayerController : MonoBehaviour
         if(_animator.GetCurrentAnimatorStateInfo(0).IsName("Walk") == false)
             _animator.SetTrigger(TWalk);
         _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) + 1);
+    }
+
+    public void SetMouseHide()
+    {
+        if (_isMouseLocked)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            _isMouseLocked = false;
+        }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            _isMouseLocked = true;
+        }
     }
 }

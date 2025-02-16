@@ -24,6 +24,8 @@ public class Paper : Item
         var playerContoroller = player.GetComponentInChildren<PlayerController>();
         var playerUIController = player.GetComponentInChildren<PlayerUIController>();
         
+        playerContoroller.SetMouseHide();
+        
         playerUIController.SetUI(UI_Index.StoryBackID, true);
         playerUIController.SetUI(UI_Index.StoryLineID, true);
         playerUIController.SetUI(UI_Index.StoryExitButtonID, true);
