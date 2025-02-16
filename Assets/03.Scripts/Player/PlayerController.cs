@@ -339,7 +339,7 @@ public class PlayerController : MonoBehaviour
             {
                 // TODO : 일반화 필요
                 if (_flashLight == null)
-                    _flashLight = _inventory._inventory.Find(x => x.name == "Flashlight").GetComponent<FlashLight>();
+                    _flashLight = _inventory.GetItem("Flashlight").GetComponent<FlashLight>();
 
                 if (_flashLight.IsOn())
                     _flashLight.TurnOff();

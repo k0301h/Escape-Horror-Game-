@@ -10,11 +10,6 @@ public class Paper : Item
     {
         base.Acquired(player);
 
-        eventScript = gameObject.GetComponent<EventScript>();
-        
-        eventScript.StartEvent();
-        gameObject.SetActive(false);
-
         ShowStory();
     }
     
@@ -31,6 +26,13 @@ public class Paper : Item
         playerUIController.SetUI(UI_Index.StoryExitButtonID, true);
         
         playerUIController.SetStoryLine(StoryLine);
+    }
+
+    public void StartEvent()
+    {
+        eventScript = gameObject.GetComponent<EventScript>();
         
+        eventScript.StartEvent();
+        gameObject.SetActive(false);
     }
 }
