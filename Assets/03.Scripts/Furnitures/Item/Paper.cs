@@ -4,6 +4,7 @@ using UnityEngine;
 public class Paper : Item
 {
     [SerializeField] private EventScript eventScript;
+    [SerializeField] private string StoryLine;
     
     public override void Acquired(GameObject player)
     {
@@ -24,8 +25,10 @@ public class Paper : Item
         var playerUIController = player.GetComponentInChildren<PlayerUIController>();
         
         playerUIController.SetUI(UI_Index.StoryBackID, true);
+        playerUIController.SetUI(UI_Index.StoryLineID, true);
+        playerUIController.SetUI(UI_Index.StoryExitButtonID, true);
         
-        
+        playerUIController.SetStoryLine(StoryLine);
         
     }
 }

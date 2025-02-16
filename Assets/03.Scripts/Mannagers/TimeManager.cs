@@ -6,9 +6,11 @@ public class TimeManager : MonoBehaviour
     private static TimeManager _instance;
     
     private float _time, _prev;
+    private bool _isRunning;
 
     void Awake()
     {
+        _isRunning = true;
         if(_instance == null)
             _instance = this;
         else
@@ -24,10 +26,13 @@ public class TimeManager : MonoBehaviour
 
     void Update()
     {
-        _prev = _time;
-        _time += Time.deltaTime;
+        if (_isRunning)
+        {
+            _prev = _time;
+            _time += Time.deltaTime;
+        }
     }
-    
+
     public static TimeManager Instance
     {
         get 
@@ -41,11 +46,20 @@ public class TimeManager : MonoBehaviour
 
     public float DeltaTime()
     {
-        return _time - _prev;
+        if(_isRunning)
+            return _time - _prev;
+        
+        return 0f;
     }
     
-    public float GetTime()
+    public float GetTotalTime()
     {
         return _time;
+    }
+
+    public bool Running
+    {
+        get => _isRunning;
+        set => _isRunning = value;
     }
 }
