@@ -55,10 +55,6 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
-        // extension class 사용법
-        // Object timer = ObjectExtension.FindObjectByID("TimeManager");
-        // _timer = timer?.GetComponent<TimeManager>();
-        
         _viewCamera = gameObject.GetComponentInChildren<Camera>();
         _cc = gameObject.GetComponent<CharacterController>();
         
@@ -77,225 +73,128 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         #region Move Function
-        
-        if (Input.GetKeyDown(KeyCode.W))
+        if (_isMouseLocked)
         {
-            WalkingAnimation();
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            WalkingAnimation();
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            WalkingAnimation();
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            WalkingAnimation();
-        }
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            _isRun = true;
-            _animator.SetFloat(WalkSpeed, 1.5f);
-        }
-        
-        Vector3 moveDirection = Vector3.zero;
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                WalkingAnimation();
+            }
 
-        if (Input.GetKey(KeyCode.W))
-        {
-            moveDirection += new Vector3(Mathf.Sin(transform.localEulerAngles.y * Mathf.Deg2Rad), 0,
-                Mathf.Cos(transform.localEulerAngles.y * Mathf.Deg2Rad));
-        }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                WalkingAnimation();
+            }
 
-        if (Input.GetKey(KeyCode.S))
-        {
-            moveDirection += new Vector3(Mathf.Sin((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad), 0,
-                Mathf.Cos((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad));
-        }
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                WalkingAnimation();
+            }
 
-        if (Input.GetKey(KeyCode.A))
-        {
-            moveDirection += new Vector3(Mathf.Sin((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad), 0,
-                Mathf.Cos((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad));
-        }
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                WalkingAnimation();
+            }
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            moveDirection += new Vector3(Mathf.Sin((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad), 0,
-                Mathf.Cos((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad));
-        }
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                _isRun = true;
+                _animator.SetFloat(WalkSpeed, 1.5f);
+            }
 
-        if (moveDirection != Vector3.zero)
-        {
-            moveDirection = moveDirection.normalized;
-        }
-        
-        if (_isRun)
-        {
-            moveDirection *= 1.5f;
-        }
-        
-        #region Gravity
+            Vector3 moveDirection = Vector3.zero;
 
-        if (_cc.isGrounded && _gravityVelocity.y < 0)
-        {
-            _gravityVelocity.y = -2f;
-        }
+            if (Input.GetKey(KeyCode.W))
+            {
+                moveDirection += new Vector3(Mathf.Sin(transform.localEulerAngles.y * Mathf.Deg2Rad), 0,
+                    Mathf.Cos(transform.localEulerAngles.y * Mathf.Deg2Rad));
+            }
 
-        #region Jump
-        
-        // TODO : 일단 만들자
-        // if (Input.GetKeyDown(KeyCode.Space) && _cc.isGrounded)
-        // {
-        //     _gravityVelocity.y = Mathf.Sqrt(jumpHight * -2f * Gravity);
-        // }
-        #endregion
-        
-        _gravityVelocity.y += Gravity * (TimeManager.Instance == null ? Time.deltaTime : TimeManager.Instance.DeltaTime());
-        _cc.Move(_gravityVelocity * (TimeManager.Instance == null ? Time.deltaTime : TimeManager.Instance.DeltaTime()));
-        #endregion
-        
-        _cc.Move(_moveSpeed * (TimeManager.Instance == null ? Time.deltaTime : TimeManager.Instance.DeltaTime()) * moveDirection);
-        
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-            _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
-        }
-        if (Input.GetKeyUp(KeyCode.S))
-        {
-            _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
-        }
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
-        }
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
-        }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            _isRun = false;
-            _animator.SetFloat(WalkSpeed, 1.0f);
-        }
-        
+            if (Input.GetKey(KeyCode.S))
+            {
+                moveDirection += new Vector3(Mathf.Sin((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad), 0,
+                    Mathf.Cos((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad));
+            }
 
-        #region Demo Moving1
+            if (Input.GetKey(KeyCode.A))
+            {
+                moveDirection += new Vector3(Mathf.Sin((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad), 0,
+                    Mathf.Cos((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad));
+            }
 
-        // if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) ||
-        //     Input.GetKeyDown(KeyCode.D))
-        // {
-        //     WalkingAnimation();
-        // }
-        //
-        // //
-        // if (Input.GetKey(KeyCode.A))
-        // {
-        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad), 0,
-        //         Mathf.Cos((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad)));
-        // }
-        // if (Input.GetKey(KeyCode.D))
-        // {
-        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad), 0,
-        //         Mathf.Cos((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad)));
-        // }
-        // if (Input.GetKey(KeyCode.W))
-        // {
-        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin(transform.localEulerAngles.y * Mathf.Deg2Rad), 0,
-        //         Mathf.Cos(transform.localEulerAngles.y * Mathf.Deg2Rad)));
-        // }
-        // if (Input.GetKey(KeyCode.S))
-        // {            
-        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad), 0,
-        //         Mathf.Cos((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad)));
-        // }
-        // //
-        //
-        // if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) ||
-        //     Input.GetKeyUp(KeyCode.D))
-        // {
-        //     _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
-        // }
-        //
+            if (Input.GetKey(KeyCode.D))
+            {
+                moveDirection += new Vector3(Mathf.Sin((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad), 0,
+                    Mathf.Cos((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad));
+            }
 
-        #endregion
-        #region Demo Moving2
-        
-        // if (Input.GetKeyDown(KeyCode.W))
-        // {
-        //     WalkingAnimation();
-        //     isFornt = !isFornt;
-        //     DebugManager.Instance.Log($"isFornt : {isFornt}");
-        // }
-        // if (Input.GetKeyDown(KeyCode.S))
-        // {
-        //     WalkingAnimation();
-        //     isBack = !isBack;
-        //     DebugManager.Instance.Log($"isBack : {isBack}");
-        // }
-        // if (Input.GetKeyDown(KeyCode.A))
-        // {
-        //     WalkingAnimation();
-        //     isLeft = !isLeft;
-        //     DebugManager.Instance.Log($"isLeft : {isLeft}");
-        // }
-        // if (Input.GetKeyDown(KeyCode.D))
-        // {
-        //     WalkingAnimation();
-        //     isRight = !isRight;
-        //     DebugManager.Instance.Log($"isRight : {isRight}");
-        // }
-        //
-        // // 여기서 boolean값 이용해서 구현하려 했으나 더 효율적인 방안 구안
-        // if (isFornt)
-        // {
-        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin(transform.localEulerAngles.y * Mathf.Deg2Rad), 0,
-        //         Mathf.Cos(transform.localEulerAngles.y * Mathf.Deg2Rad)));
-        // }
-        // if (isBack)
-        // {            
-        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad), 0,
-        //         Mathf.Cos((transform.localEulerAngles.y + 180.0f) * Mathf.Deg2Rad)));
-        // }
-        // if (isLeft)
-        // {
-        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad), 0,
-        //         Mathf.Cos((transform.localEulerAngles.y + 270.0f) * Mathf.Deg2Rad)));
-        // }
-        // if (isRight)
-        // {
-        //     _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() * new Vector3(Mathf.Sin((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad), 0,
-        //         Mathf.Cos((transform.localEulerAngles.y + 90.0f) * Mathf.Deg2Rad)));
-        // }
-        // //
-        //
-        // if (Input.GetKeyUp(KeyCode.W))
-        // {
-        //     _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
-        //     isFornt = !isFornt;
-        //     DebugManager.Instance.Log($"isFornt : {isFornt}");
-        // }
-        // if (Input.GetKeyUp(KeyCode.S))
-        // {
-        //     _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
-        //     isBack = !isBack;
-        //     DebugManager.Instance.Log($"isBack : {isBack}");
-        // }
-        // if (Input.GetKeyUp(KeyCode.A))
-        // {
-        //     _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
-        //     isLeft = !isLeft;
-        //     DebugManager.Instance.Log($"isLeft : {isLeft}");
-        // }
-        // if (Input.GetKeyUp(KeyCode.D))
-        // {
-        //     _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
-        //     isRight = !isRight;
-        //     DebugManager.Instance.Log($"isRight : {isRight}");
-        // }
-        
-        #endregion
+            if (moveDirection != Vector3.zero)
+            {
+                moveDirection = moveDirection.normalized;
+            }
+
+            if (_isRun)
+            {
+                moveDirection *= 1.5f;
+            }
+
+            #region Gravity
+
+            if (_cc.isGrounded && _gravityVelocity.y < 0)
+            {
+                _gravityVelocity.y = -2f;
+            }
+
+            #region Jump
+
+            // TODO : 일단 만들자
+            // if (Input.GetKeyDown(KeyCode.Space) && _cc.isGrounded)
+            // {
+            //     _gravityVelocity.y = Mathf.Sqrt(jumpHight * -2f * Gravity);
+            // }
+
+            #endregion
+
+            _gravityVelocity.y +=
+                Gravity * (TimeManager.Instance == null ? Time.deltaTime : TimeManager.Instance.DeltaTime());
+            _cc.Move(_gravityVelocity *
+                     (TimeManager.Instance == null ? Time.deltaTime : TimeManager.Instance.DeltaTime()));
+
+            #endregion
+
+            _cc.Move(_moveSpeed * (TimeManager.Instance == null ? Time.deltaTime : TimeManager.Instance.DeltaTime()) *
+                     moveDirection);
+
+            if (Input.GetKeyUp(KeyCode.W))
+            {
+                _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+            }
+
+            if (Input.GetKeyUp(KeyCode.S))
+            {
+                _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+            }
+
+            if (Input.GetKeyUp(KeyCode.A))
+            {
+                _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+            }
+
+            if (Input.GetKeyUp(KeyCode.D))
+            {
+                _animator.SetInteger(IndexWalk, _animator.GetInteger(IndexWalk) - 1);
+            }
+
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                _isRun = false;
+                _animator.SetFloat(WalkSpeed, 1.0f);
+            }
+
+            if (_animator.GetInteger(IndexWalk) < 0)
+            {
+                _animator.SetInteger(IndexWalk, 0);
+            }
+        }
         #endregion
     }
     
@@ -472,6 +371,7 @@ public class PlayerController : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             _isMouseLocked = false;
+            _animator.SetInteger(IndexWalk, 0);
         }
         else
         {
