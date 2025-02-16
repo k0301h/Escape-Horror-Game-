@@ -380,6 +380,11 @@ public class PlayerController : MonoBehaviour
         }
         #endregion
     }
+
+    public void SetStoryMode(bool isStoryMode)
+    {
+        _isStoryMode = isStoryMode;
+    }
     
     void WalkingAnimation()
     {

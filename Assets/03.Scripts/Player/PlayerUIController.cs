@@ -68,6 +68,4 @@ public class PlayerUIController : MonoBehaviour
 
         text.text = line;
     }
-    
-    // TODO : story 진행 중에는 마우스 고정모드 못하도록 변경해야한다.
 }

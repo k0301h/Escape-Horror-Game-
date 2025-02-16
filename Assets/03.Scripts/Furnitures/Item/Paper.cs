@@ -15,7 +15,7 @@ public class Paper : Item
     
     private void ShowStory()
     {
-        GameObject player = PlayerExtension.FindPlayerByID("Old_Player").GameObject();
+        GameObject player = PlayerExtension.FindPlayerByID("Player").GameObject();
         var playerContoroller = player.GetComponentInChildren<PlayerController>();
         var playerUIController = player.GetComponentInChildren<PlayerUIController>();
         
