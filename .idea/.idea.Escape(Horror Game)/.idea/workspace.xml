@@ -6,15 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scene/0.TutScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/0.TutScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Creature/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Creature/Zombie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Cretures/Manequin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Cretures/Manequin.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Cretures/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Cretures/Zombie.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/11.Model/Cretures/Zombie/ZombieAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/11.Model/Cretures/Zombie/ZombieAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +33,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/84f0d810adef4e6c8deab33e4ae93f7c1dec00/97/e10cee4e/Debug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/84f0d810adef4e6c8deab33e4ae93f7c1dec00/ab/dcaaaa5d/Mathf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/84f0d810adef4e6c8deab33e4ae93f7c1dec00/ca/e490eaf0/Component.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/91aa50f2e703411fbb05bdf5832f909e2ac00/55/7b1aa395/Physics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/be22215073e941cca3d3beabd871e2b68c00/ac/bffcac7c/Input.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ed969b0e627d471da4848289f9c322df46ae00/09/56cf3a99/List`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ed969b0e627d471da4848289f9c322df46ae00/3f/aa9c8bb9/IntPtr.cs" root0="FORCE_HIGHLIGHTING" />
@@ -100,13 +99,15 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11016">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="11016" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -173,7 +174,7 @@
       <workItem from="1739685555466" duration="843000" />
       <workItem from="1739698695670" duration="1308000" />
       <workItem from="1739707203052" duration="10003000" />
-      <workItem from="1739869606074" duration="7375000" />
+      <workItem from="1739869606074" duration="8370000" />
     </task>
     <servers />
   </component>
@@ -205,19 +206,6 @@
           <line>10</line>
           <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Furnitures\FlashLight\FlashLight.cs" containingFunctionPresentation="메서드 'Start'" />
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs</url>
-          <line>54</line>
-          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Event\EventScript.cs" containingFunctionPresentation="메서드 'OnTriggerEnter'">
-            <startOffsets>
-              <option value="1171" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1188" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

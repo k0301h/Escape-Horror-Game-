@@ -7,6 +7,9 @@ public class Zombie : Creature
     [SerializeField] private CharacterController cc;
     [SerializeField] private float moveSpeed = 3f;
     
+    [SerializeField] private AudioSource rightFootSound;
+    [SerializeField] private AudioSource leftFootSound;
+    
     private bool _isRunning;
     
     private static readonly int SeatIdle = Animator.StringToHash("tSeatIdle");
@@ -55,6 +58,18 @@ public class Zombie : Creature
         animator.SetTrigger(Run);
     }
 
+    public void PlaySound(string soundName)
+    {
+        if (soundName == "rightFoot")
+        {
+            SoundManager.Instance?.AudioPlay(rightFootSound);
+        }
+        else if (soundName == "leftFoot")
+        {
+            SoundManager.Instance?.AudioPlay(leftFootSound);
+        }
+    }
+    
     #endregion
 
 }
