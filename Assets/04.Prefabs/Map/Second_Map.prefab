@@ -214,6 +214,102 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1053159778827200339}
+        m_TargetAssemblyTypeName: Zombie, Assembly-CSharp
+        m_MethodName: Play_SeatClapping
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 724230449421921299}
+        m_TargetAssemblyTypeName: Zombie, Assembly-CSharp
+        m_MethodName: Play_SeatClapping
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8271982008401206724}
+        m_TargetAssemblyTypeName: Zombie, Assembly-CSharp
+        m_MethodName: Play_SeatClapping
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 338123192534492029}
+        m_TargetAssemblyTypeName: Zombie, Assembly-CSharp
+        m_MethodName: Play_SeatClapping
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2697151902581895298}
+        m_TargetAssemblyTypeName: Zombie, Assembly-CSharp
+        m_MethodName: Play_SeatClapping
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4462089131586437282}
+        m_TargetAssemblyTypeName: Zombie, Assembly-CSharp
+        m_MethodName: Play_SeatClapping
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2530906003254952818}
+        m_TargetAssemblyTypeName: Zombie, Assembly-CSharp
+        m_MethodName: Play_SeatClapping
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 449954326489864529}
+        m_TargetAssemblyTypeName: Zombie, Assembly-CSharp
+        m_MethodName: Play_SeatClapping
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!82 &7681052746233775512
 AudioSource:
   m_ObjectHideFlags: 0
@@ -435,6 +531,53 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 20, y: 5, z: 14}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1170390393762532436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8978425579252800640}
+  - component: {fileID: 9008430738895986591}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8978425579252800640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170390393762532436}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.01, y: 0.049, z: -34.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4643496877559773492}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9008430738895986591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170390393762532436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4338a51c8d7a458e804b30cf8b4e36c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitGameObject: {fileID: 4888624299503218489, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
+  unitParentTransform: {fileID: 8978425579252800640}
+  unitPosition: {fileID: 8978425579252800640}
 --- !u!1 &1277005618124499764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,7 +1990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4338a51c8d7a458e804b30cf8b4e36c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitGameObject: {fileID: 4430552915070734030, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
+  unitGameObject: {fileID: 4888624299503218489, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
   unitParentTransform: {fileID: 7596381787454032500}
   unitPosition: {fileID: 7596381787454032500}
 --- !u!1 &4996896091808018412
@@ -2356,6 +2499,38 @@ Transform:
   m_Children:
   - {fileID: 6388541563253563323}
   m_Father: {fileID: 4939863414037008685}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6530389475322738026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4643496877559773492}
+  m_Layer: 0
+  m_Name: Third Event
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4643496877559773492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6530389475322738026}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8978425579252800640}
+  m_Father: {fileID: 2799880892906405850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6537604492891870072
 GameObject:
@@ -2917,6 +3092,7 @@ Transform:
   - {fileID: 3575786445533537736}
   - {fileID: 6255652107479572184}
   - {fileID: 7629236009114152679}
+  - {fileID: 4643496877559773492}
   m_Father: {fileID: 4939863414037008685}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8820515759413765517
@@ -3401,7 +3577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -26.1
+      value: -26.390001
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3626,7 +3802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.6
+      value: -24.890001
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4383,7 +4559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.6
+      value: -24.890001
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4633,7 +4809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -26.1
+      value: -26.390001
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4811,7 +4987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.65
+      value: -24.94
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5549,11 +5725,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 785968625289423853, guid: 93feaeedd122f944cab6a7eafef81118, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 785968625289423853, guid: 93feaeedd122f944cab6a7eafef81118, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 785968625289423853, guid: 93feaeedd122f944cab6a7eafef81118, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
@@ -5566,7 +5742,7 @@ PrefabInstance:
     - target: {fileID: 785968625289423853, guid: 93feaeedd122f944cab6a7eafef81118, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 3201968745018797161}
+      objectReference: {fileID: 9008430738895986591}
     - target: {fileID: 785968625289423853, guid: 93feaeedd122f944cab6a7eafef81118, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
@@ -5581,7 +5757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 785968625289423853, guid: 93feaeedd122f944cab6a7eafef81118, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: ShowLine
+      value: SpawnUnit
       objectReference: {fileID: 0}
     - target: {fileID: 785968625289423853, guid: 93feaeedd122f944cab6a7eafef81118, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
@@ -5589,7 +5765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 785968625289423853, guid: 93feaeedd122f944cab6a7eafef81118, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: EventScript, Assembly-CSharp
+      value: UnitSpawnEvent, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 785968625289423853, guid: 93feaeedd122f944cab6a7eafef81118, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
@@ -5601,7 +5777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 785968625289423853, guid: 93feaeedd122f944cab6a7eafef81118, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
-      value: '"There was a sound in the hallway on the right"'
+      value: '"Run Away"'
       objectReference: {fileID: 0}
     - target: {fileID: 785968625289423853, guid: 93feaeedd122f944cab6a7eafef81118, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
@@ -5714,7 +5890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -26.1
+      value: -26.39
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5924,7 +6100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -26.1
+      value: -26.390001
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7531,7 +7707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -26.1
+      value: -26.390001
       objectReference: {fileID: 0}
     - target: {fileID: 5232111063789155715, guid: a1741e0d0301aa149bf5d846416a2fb8, type: 3}
       propertyPath: m_LocalRotation.w

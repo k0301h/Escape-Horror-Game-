@@ -173,7 +173,7 @@ public class PlayerController : MonoBehaviour
 
             #endregion
 
-            _cc.Move(_moveSpeed * (TimeManager.Instance == null ? Time.deltaTime : TimeManager.Instance.DeltaTime()) *
+            _cc.Move(_moveSpeed * TimeManager.Instance.DeltaTime() *
                      moveDirection);
 
             if (Input.GetKeyUp(KeyCode.W))
