@@ -3,13 +3,19 @@ using UnityEngine;
 
 public class Paper : Item
 {
+    private MeshRenderer meshRenderer;
+    
     [SerializeField] private EventScript eventScript;
     [SerializeField] private string StoryLine;
+    [SerializeField] private AudioSource paperSound;
     
     public override void Acquired(GameObject player)
     {
         base.Acquired(player);
 
+        GetComponent<MeshRenderer>().enabled = false;
+        
+        SoundManager.Instance.AudioPlay(paperSound);
         ShowStory();
     }
     
