@@ -6,13 +6,14 @@ namespace Mannagers
     {
         void Awake()
         {
-            ObjectExtension.Init();
-            ObjectExtension.DontDestroyOnLoad(this.gameObject);
-            // == gameObject.DontDestroyOnLoad(); // 확장 매서드 사용 예
-            
-            ObjectExtension.Log();
+            // ObjectExtension.Init();
+            // ObjectExtension.DontDestroyOnLoad(this.gameObject);
+            // // == gameObject.DontDestroyOnLoad(); // 확장 매서드 사용 예
+            //
+            // ObjectExtension.Log();
             
             PlayerExtension.Init();
+            RegionExtension.Init();
         }
     }
 }

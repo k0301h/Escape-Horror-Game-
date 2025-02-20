@@ -9,6 +9,7 @@ public class Zombie : Creature
     
     [SerializeField] private AudioSource rightFootSound;
     [SerializeField] private AudioSource leftFootSound;
+    [SerializeField] private AudioSource roarSound;
     
     private bool _isRunning;
     
@@ -35,8 +36,9 @@ public class Zombie : Creature
     }
 
     public void StartChase()
-    {
+    {       
         _isRunning = true;
+        SoundManager.Instance.AudioPlay(roarSound);
     }
 
     #endregion

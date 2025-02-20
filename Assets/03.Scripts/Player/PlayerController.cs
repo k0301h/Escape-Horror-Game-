@@ -4,6 +4,23 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
+public struct Region
+{
+    public static readonly int HALL = 1;
+    public static readonly int RESTROOM = 2;
+    public static readonly int DAYROOM = 3;
+    
+    public static bool operator==(Region r1, Region r2)
+    {
+        return r1 == r2;
+    }
+    
+    public static bool operator!=(Region r1, Region r2)
+    {
+        return r1 != r2;
+    }
+}
+
 public class PlayerController : MonoBehaviour
 {
     #region Cached references
@@ -20,14 +37,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private PlayerInventory _inventory;
     [SerializeField] private PlayerIKController _IKController;
     [SerializeField] private Animator _animator;
-    
     public PlayerUIController _uiController;
-    
     [SerializeField] private FlashLight _flashLight;
     
     #region controll variables
     [SerializeField] private float _moveSpeed = 3f;
-    
     [SerializeField] private float sensitivityX = 3f;
     [SerializeField] private float sensitivityY = 2f;
     [SerializeField] private float minimumY = -50.0f;
@@ -59,6 +73,24 @@ public class PlayerController : MonoBehaviour
     private readonly float Ray_Dist = 2.0f;
     
     private readonly int Layer_Target = 1 << 10;
+    #endregion
+    
+    #region Statement Variables
+    
+    private Region _currentRegion;
+
+    public Region CurrentRegion
+    {
+        get => _currentRegion;
+        set
+        {
+            if (_currentRegion != value)
+            {
+                _currentRegion = value;
+            }
+        }
+    }
+    
     #endregion
     
     void Start()
