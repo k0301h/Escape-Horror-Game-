@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Door_Controller : MonoBehaviour
@@ -10,6 +11,7 @@ public class Door_Controller : MonoBehaviour
     private AudioSource _closeAudioSource;
     private AudioSource _LockAudioSource;
     private AudioSource _LockOffAudioSource;
+    private AudioSource _LockOnAudioSource;
     private bool _isOpen;
 
     [SerializeField] private bool isLock = true;
@@ -17,7 +19,6 @@ public class Door_Controller : MonoBehaviour
     void Start()
     {
         _animator = gameObject.GetComponent<Animator>();
-        // _openClip = Resources.Load<AudioClip>("10.Sounds/door/door_open");
         
         var audios = gameObject.GetComponentsInChildren<AudioSource>();
 
@@ -25,6 +26,7 @@ public class Door_Controller : MonoBehaviour
         _closeAudioSource = audios[1];
         _LockAudioSource = audios[2];
         _LockOffAudioSource = audios[3];
+        _LockOnAudioSource = audios[4];
         
         // _openAudioSource = gameObject.transform.GetChild(2).GetComponent<AudioSource>();
         // _closeAudioSource = gameObject.transform.GetChild(3).GetComponent<AudioSource>();
@@ -64,9 +66,9 @@ public class Door_Controller : MonoBehaviour
     
     public void LockOnDoor()
     {
-        // DebugSound(_LockOffAudioSource);
-        //
-        // SoundManager.Instance?.AudioPlay(_LockOffAudioSource);
+        DebugSound(_LockOffAudioSource);
+        
+        SoundManager.Instance?.AudioPlay(_LockOffAudioSource);
         if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Open"))
         {
             CloseDoor();
@@ -100,5 +102,22 @@ public class Door_Controller : MonoBehaviour
         SoundManager.Instance?.AudioPlay(_closeAudioSource);
         _isOpen = false;
         _animator.SetTrigger(Close);
+    }
+
+    IEnumerator AutoDoorCoroutine(float time)
+    {
+        LockOnDoor();
+        
+        yield return new WaitForSeconds(1.0f);
+        
+        DebugSound(_LockOnAudioSource);
+        SoundManager.Instance?.AudioPlay(_LockOnAudioSource);
+        yield return new WaitForSeconds(time);
+        LockOffDoor();
+    }
+    
+    public void LockAutoDoor(float time)
+    {
+        StartCoroutine(AutoDoorCoroutine(time));
     }
 }
