@@ -5,7 +5,6 @@ public class Region_Collider : MonoBehaviour
 {
     [SerializeField] private int _regionType;
     [SerializeField] private PlayerInfo _player;
-    public BoxCollider boxCollider; 
 
     private void Start()
     {

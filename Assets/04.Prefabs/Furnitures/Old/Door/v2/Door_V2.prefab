@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4089105340870079324}
   - component: {fileID: 3329021410756603648}
   - component: {fileID: 4489323641665655555}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Door_Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4298357119792534987}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Door_V2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

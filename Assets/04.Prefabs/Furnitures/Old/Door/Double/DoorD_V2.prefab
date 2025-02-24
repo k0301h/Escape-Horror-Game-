@@ -1778,7 +1778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5609780875003516379}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: DoorD_V2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,10 +1,13 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Zombie : Creature
 {
     [SerializeField] private GameObject player;
     [SerializeField] private CharacterController cc;
+    [SerializeField] private NavMeshAgent navMeshAgent;
     [SerializeField] private float moveSpeed = 3f;
     
     [SerializeField] private AudioSource rightFootSound;
@@ -22,6 +25,13 @@ public class Zombie : Creature
     void Start()
     {
         _isRunning = false;
+        navMeshAgent = GetComponent<NavMeshAgent>();
+
+        if (navMeshAgent != null)
+        {
+            navMeshAgent.speed = moveSpeed;
+            player = PlayerExtension.FindPlayerByID("Player").GameObject();
+        }
     }
 
     void FixedUpdate()
@@ -29,9 +39,11 @@ public class Zombie : Creature
         if (_isRunning)
         {
             transform.LookAt(player.transform);
-
-            var direction = (player.transform.position - transform.position).normalized;
-            cc.Move(moveSpeed * TimeManager.Instance.DeltaTime() * direction);
+            
+            navMeshAgent.SetDestination(player.transform.position);
+            
+            // var direction = (player.transform.position - transform.position).normalized;
+            // cc.Move(moveSpeed * TimeManager.Instance.DeltaTime() * direction);
         }
     }
 

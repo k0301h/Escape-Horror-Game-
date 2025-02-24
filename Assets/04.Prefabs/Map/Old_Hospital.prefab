@@ -30250,7 +30250,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 0d2af790d2a3c244ba25944d1d5b70b6, type: 3}
       propertyPath: m_Name
-      value: Televisor_90
+      value: Televisor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0d2af790d2a3c244ba25944d1d5b70b6, type: 3}
       propertyPath: m_Layer

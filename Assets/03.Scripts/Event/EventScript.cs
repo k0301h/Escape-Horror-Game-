@@ -3,6 +3,7 @@ using UnityEngine.Events;
 
 public class EventScript : MonoBehaviour
 {
+    // 10초 뒤에 문이 열리도록 다시 구현하자
     [SerializeField] private UnityEvent myEvent;
     
     void Awake() {
