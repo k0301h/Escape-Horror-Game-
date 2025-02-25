@@ -244,7 +244,7 @@ public class PlayerController : MonoBehaviour
     
     void FixedUpdate()
     {
-        #region Mouse Function
+        #region Mouse Function & ray
         if (_isMouseLocked)
         {
             #region Direction

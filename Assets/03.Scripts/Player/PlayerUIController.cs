@@ -18,21 +18,24 @@ public struct UI_Index
 public class PlayerUIController : MonoBehaviour
 {
     [SerializeField] private List<GameObject> UIElements = new List<GameObject>();
+    [SerializeField] private MosaicScript _mosaicScript;
     
     private Coroutine _storyLineCoroutine;
 
     void Start()
     {
+        _mosaicScript = GetComponentInChildren<MosaicScript>();
+        
         UIElements.Clear();
         
         var image = GetComponentsInChildren<RawImage>();
         
-        UIElements.Add(image[0].gameObject);
-        UIElements.Add(image[1].transform.parent.gameObject);
         UIElements.Add(image[1].gameObject);
+        UIElements.Add(image[2].transform.parent.gameObject);
         UIElements.Add(image[2].gameObject);
-        UIElements.Add(image[4].transform.parent.gameObject);
-        UIElements.Add(image[6].gameObject);
+        UIElements.Add(image[3].gameObject);
+        UIElements.Add(image[5].transform.parent.gameObject);
+        UIElements.Add(image[7].gameObject);
         
         var text = GetComponentsInChildren<TextMeshProUGUI>();
 
@@ -67,5 +70,22 @@ public class PlayerUIController : MonoBehaviour
         var text = UIElements[UI_Index.StoryLineID].GetComponent<TextMeshProUGUI>();
 
         text.text = line;
+    }
+
+    public void MosaicPlayer(bool isOn)
+    {
+        if (isOn)
+        {
+            _mosaicScript.StartMosaic();
+        }
+        else
+        {
+            _mosaicScript.StopMosaic();
+        }
+    }
+
+    public void UpdateMosaic()
+    {
+        _mosaicScript.UpdateMosaic();
     }
 }

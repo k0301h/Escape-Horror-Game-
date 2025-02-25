@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    private List<GameObject> _inventory = new List<GameObject>();
+    [SerializeField] private List<GameObject> _inventory = new List<GameObject>();
 
     void Awake()
     {
