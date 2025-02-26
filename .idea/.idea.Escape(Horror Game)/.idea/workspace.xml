@@ -9,15 +9,8 @@
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/CustomPass.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/CustomPass/BlitToRTCustomPass.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/CustomPass/BlitToRTCustomPass.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerInventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Old_Hospital.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Old_Hospital.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/EffectOrShader/MosaicScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/EffectOrShader/MosaicScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/12.Texture/Mosaic_RenderTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/12.Texture/Mosaic_RenderTexture.renderTexture" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +183,8 @@
       <workItem from="1740369096249" duration="3697000" />
       <workItem from="1740402949048" duration="2069000" />
       <workItem from="1740466686440" duration="2742000" />
-      <workItem from="1740495477310" duration="2885000" />
+      <workItem from="1740495477310" duration="3296000" />
+      <workItem from="1740540849483" duration="155000" />
     </task>
     <servers />
   </component>
@@ -226,14 +220,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/03.Scripts/CustomPass/BlitToRTCustomPass.cs</url>
           <line>21</line>
-          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\CustomPass\BlitToRTCustomPass.cs" containingFunctionPresentation="메서드 'Execute'">
-            <startOffsets>
-              <option value="592" />
-            </startOffsets>
-            <endOffsets>
-              <option value="658" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\CustomPass\BlitToRTCustomPass.cs" containingFunctionPresentation="메서드 'Execute'" />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>

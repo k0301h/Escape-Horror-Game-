@@ -14,15 +14,9 @@ public class MosaicScript : MonoBehaviour
     [SerializeField] private RawImage _mosaicUI;
     [SerializeField] private RectTransform _mosaicTransform;
 
-    // Render Texture 종횡비를 바탕으로 UI의 종횡비도 설정해야한다.
-    
-    void Start()
-    {
-        UpdateMosaic();
-    }
-
     public void StartMosaic()
     {
+        UpdateMosaic();
         _playerCamera.targetTexture = _mosaicTexture;
         _mosaicUI.enabled = true;
     }
