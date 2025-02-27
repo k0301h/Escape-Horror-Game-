@@ -537,6 +537,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 6138410647750987563}
+        m_TargetAssemblyTypeName: Door_Controller, Assembly-CSharp
+        m_MethodName: LockAutoDoor
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 10
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2348026638354523498}
+        m_TargetAssemblyTypeName: Door_Controller, Assembly-CSharp
+        m_MethodName: LockAutoDoor
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 10
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!82 &2186764835590927289
 AudioSource:
   m_ObjectHideFlags: 0
@@ -881,7 +905,7 @@ Transform:
   m_GameObject: {fileID: 2009684748559238434}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.32, y: 1.137, z: -10}
+  m_LocalPosition: {x: 40.397, y: 1.137, z: -9.759}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -926,6 +950,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3311791364430255610}
+        m_TargetAssemblyTypeName: EventScript, Assembly-CSharp
+        m_MethodName: FlashLightBreak
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8100120796379141167}
+        m_TargetAssemblyTypeName: Door_Controller, Assembly-CSharp
+        m_MethodName: LockOnDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &5565507795807764439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -945,7 +993,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.1, y: 2, z: 2}
+  m_Size: {x: 0.1, y: 2, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2209474706939307558
 GameObject:
@@ -958,6 +1006,7 @@ GameObject:
   - component: {fileID: 987084734657939705}
   - component: {fileID: 5695117346492101148}
   - component: {fileID: 7807210767081958694}
+  - component: {fileID: 5886219258276387882}
   m_Layer: 0
   m_Name: End_Event
   m_TagString: Untagged
@@ -974,7 +1023,7 @@ Transform:
   m_GameObject: {fileID: 2209474706939307558}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.28, y: -0.73, z: -1.34}
+  m_LocalPosition: {x: 2.353, y: -0.73, z: -1.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1040,6 +1089,139 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7807210767081958694}
+        m_TargetAssemblyTypeName: EventScript, Assembly-CSharp
+        m_MethodName: StopBreath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5875253031324161280}
+        m_TargetAssemblyTypeName: Door_Controller, Assembly-CSharp
+        m_MethodName: LockOffDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7807210767081958694}
+        m_TargetAssemblyTypeName: EventScript, Assembly-CSharp
+        m_MethodName: AudioPlay
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5886219258276387882}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!82 &5886219258276387882
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2209474706939307558}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: fc1adf631b69a2443bf1c5dd25d3adca, type: 3}
+  m_Resource: {fileID: 8300000, guid: fc1adf631b69a2443bf1c5dd25d3adca, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2453987527432680526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,6 +1285,66 @@ MonoBehaviour:
           m_StringArgument: Manequin(Clone)
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 349423238566541122}
+        m_TargetAssemblyTypeName: Lamp_Controller, Assembly-CSharp
+        m_MethodName: EndLampTwinkle
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Manequin(Clone)
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3885759158981955598}
+        m_TargetAssemblyTypeName: Lamp_Controller, Assembly-CSharp
+        m_MethodName: EndLampTwinkle
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Manequin(Clone)
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 247419062273736521}
+        m_TargetAssemblyTypeName: Lamp_Controller, Assembly-CSharp
+        m_MethodName: EndLampTwinkle
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Manequin(Clone)
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6845470505731823993}
+        m_TargetAssemblyTypeName: Lamp_Controller, Assembly-CSharp
+        m_MethodName: EndLampTwinkle
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Manequin(Clone)
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3796799029462031621}
+        m_TargetAssemblyTypeName: EventScript, Assembly-CSharp
+        m_MethodName: AudioPlay
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 9024919633774717244}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Manequin(Clone)
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!82 &9024919633774717244
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1113,8 +1355,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 55fe79710eb9b6f43b67da94e976c36b, type: 3}
-  m_Resource: {fileID: 8300000, guid: 55fe79710eb9b6f43b67da94e976c36b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 46e0caefc9dff984182f0968ad237b92, type: 3}
+  m_Resource: {fileID: 8300000, guid: 46e0caefc9dff984182f0968ad237b92, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1358,7 +1600,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 482809036903810848}
         m_TargetAssemblyTypeName: EventScript, Assembly-CSharp
-        m_MethodName: BGMPlay
+        m_MethodName: AudioPlay
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 7653456747470939833}
@@ -1727,8 +1969,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 187b8f5ef5aca2a419e3aab4ccbc369b, type: 3}
-  m_Resource: {fileID: 8300000, guid: 187b8f5ef5aca2a419e3aab4ccbc369b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c0f1a28a9bc0e734997224c47ff6669f, type: 3}
+  m_Resource: {fileID: 8300000, guid: c0f1a28a9bc0e734997224c47ff6669f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
@@ -1936,6 +2178,54 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 349423238566541122}
+        m_TargetAssemblyTypeName: Lamp_Controller, Assembly-CSharp
+        m_MethodName: StartLampTwinkle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3885759158981955598}
+        m_TargetAssemblyTypeName: Lamp_Controller, Assembly-CSharp
+        m_MethodName: StartLampTwinkle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 247419062273736521}
+        m_TargetAssemblyTypeName: Lamp_Controller, Assembly-CSharp
+        m_MethodName: StartLampTwinkle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6845470505731823993}
+        m_TargetAssemblyTypeName: Lamp_Controller, Assembly-CSharp
+        m_MethodName: StartLampTwinkle
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2644,7 +2934,7 @@ Transform:
   m_GameObject: {fileID: 8165532898556714146}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -2.652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2722,9 +3012,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 6389397841334707801}
-        m_TargetAssemblyTypeName: Creature, Assembly-CSharp
-        m_MethodName: LookAtPlayer
+      - m_Target: {fileID: 3233801581406617944}
+        m_TargetAssemblyTypeName: EventScript, Assembly-CSharp
+        m_MethodName: PlayBreath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5875253031324161280}
+        m_TargetAssemblyTypeName: Door_Controller, Assembly-CSharp
+        m_MethodName: LockOnDoor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3292,6 +3594,18 @@ PrefabInstance:
       propertyPath: m_BoundingSphereOverride.w
       value: 5.291548
       objectReference: {fileID: 0}
+    - target: {fileID: 2861229273713157396, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: isOnState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861229273713157396, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861229273713157396, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: twinklingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3318535577967012953, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       propertyPath: m_Range
       value: 5
@@ -3303,6 +3617,74 @@ PrefabInstance:
     - target: {fileID: 3730821599292643469, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       propertyPath: m_Name
       value: Old_Hospital
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1637045789004850071}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 8100120796379141167}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: FlashLightFixed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: LockOffDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: EventScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_TargetAssemblyTypeName
+      value: Door_Controller, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_StringArgument
+      value: '"Day Room is Opend"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_StringArgument
+      value: '"Day Room is Opend"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4314531464620941047, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       propertyPath: m_Range
@@ -3384,9 +3766,13 @@ PrefabInstance:
       propertyPath: m_BoundingSphereOverride.w
       value: 5.291548
       objectReference: {fileID: 0}
+    - target: {fileID: 8059128096580733849, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+      propertyPath: m_Name
+      value: Door_par
+      objectReference: {fileID: 0}
     - target: {fileID: 8279113409728104278, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       propertyPath: isLock
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9192045809576056759, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
       propertyPath: m_Range
@@ -3404,7 +3790,8 @@ PrefabInstance:
       propertyPath: m_BoundingSphereOverride.w
       value: 5.291548
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5555487135045530063, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2621533190867281705, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
@@ -3417,9 +3804,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2436292790984399253, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
   m_PrefabInstance: {fileID: 2552492368084947542}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &247419062273736521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2306762319027580191, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+  m_PrefabInstance: {fileID: 2552492368084947542}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56ccc03c1af8ee40916cc564f709c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &292280594496221933 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2837872419500630203, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+  m_PrefabInstance: {fileID: 2552492368084947542}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56ccc03c1af8ee40916cc564f709c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &349423238566541122 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2861229273713157396, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
   m_PrefabInstance: {fileID: 2552492368084947542}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -3449,6 +3858,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3185838215798728733, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
   m_PrefabInstance: {fileID: 2552492368084947542}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1637045789004850071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3880891424299266497, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+  m_PrefabInstance: {fileID: 2552492368084947542}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7381207077747b44da51b904e712f53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1672628638157685946 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3772354758733567724, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
@@ -3502,6 +3922,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1209262061219991713, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
   m_PrefabInstance: {fileID: 2552492368084947542}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3885759158981955598 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1621501572948050520, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+  m_PrefabInstance: {fileID: 2552492368084947542}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56ccc03c1af8ee40916cc564f709c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3995961137837734741 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1448126303240464643, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
@@ -3534,6 +3965,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7117677326091556060, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
   m_PrefabInstance: {fileID: 2552492368084947542}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5875253031324161280 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8279113409728104278, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+  m_PrefabInstance: {fileID: 2552492368084947542}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e4252b888fb634cb0fd7c7fd1f1089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6054872598616775911 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8605108696882990769, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
@@ -3582,6 +4024,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9086710876777802198, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
   m_PrefabInstance: {fileID: 2552492368084947542}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6845470505731823993 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9048779962929531695, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+  m_PrefabInstance: {fileID: 2552492368084947542}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56ccc03c1af8ee40916cc564f709c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7422230758870606948 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4930678273554036274, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
@@ -3591,6 +4044,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f695f4858a2fb5d4aa57df1eccefdff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8100120796379141167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5982239057679713913, guid: 9b990d15d9a1945498733b552d2321b3, type: 3}
+  m_PrefabInstance: {fileID: 2552492368084947542}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e4252b888fb634cb0fd7c7fd1f1089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &8256334263740017437 stripped
@@ -3623,9 +4087,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8185212690476025490}
     m_Modifications:
+    - target: {fileID: -1068651549548827322, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
+      propertyPath: lookPlayerState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3255811449454204133, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3906781187228341364, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.643
+      value: 2.405
       objectReference: {fileID: 0}
     - target: {fileID: 3906781187228341364, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3633,23 +4105,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3906781187228341364, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.477
+      value: -4.029
       objectReference: {fileID: 0}
     - target: {fileID: 3906781187228341364, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.92054415
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3906781187228341364, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3906781187228341364, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.39063874
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3906781187228341364, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3906781187228341364, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3657,7 +4129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3906781187228341364, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 224.011
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3906781187228341364, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3666,6 +4138,10 @@ PrefabInstance:
     - target: {fileID: 4430552915070734030, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
       propertyPath: m_Name
       value: Manequin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4430552915070734030, guid: 92f7d053df954a04e9fad217aa126179, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

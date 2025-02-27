@@ -357,19 +357,17 @@ public class PlayerController : MonoBehaviour
 
                     if (rayObject.TryGetComponent<Item>(out Item itemCoponent))
                     {
-                        itemCoponent.Acquired(_inventory.gameObject);
+                        // itemCoponent.Acquired(_inventory.gameObject);
                         
-                        // if (itemCoponent is FlashLight flashLight)
-                        // {
-                        //     // TODO : 일반화 필요
-                        //     flashLight.Acquired(_viewCamera.gameObject);
-                        //     // flashLight.SetFlash();
-                        //     // _IKController.changeIK();
-                        // }
-                        // else
-                        // {
-                        //     itemCoponent.Acquired(_inventory.gameObject);
-                        // }
+                        if (itemCoponent is FlashLight flashLight)
+                        {
+                            // TODO : 일반화 필요
+                            flashLight.Acquired(_viewCamera.gameObject);
+                        }
+                        else
+                        {
+                            itemCoponent.Acquired(_inventory.gameObject);
+                        }
                     }
 
                     _inventory.AddItem(rayObject);

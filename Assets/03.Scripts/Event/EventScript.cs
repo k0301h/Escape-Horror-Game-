@@ -57,6 +57,11 @@ public class EventScript : MonoBehaviour
     {
         PlayerExtension.FindPlayerByID("Player")?.GameObject().GetComponentInChildren<PlayerController>()?.FlashFixed();
     }
+
+    public void PlayeMosaic(bool isOn)
+    {
+        PlayerExtension.FindPlayerByID("Player")?.GameObject().GetComponentInChildren<PlayerUIController>()?.MosaicPlayer(isOn);
+    }
     
     public void StartEvent()
     {
