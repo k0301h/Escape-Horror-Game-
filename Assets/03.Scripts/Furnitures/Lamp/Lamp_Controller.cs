@@ -82,8 +82,6 @@ public class Lamp_Controller : MonoBehaviour
 
     IEnumerator RandomStartCoroutines()
     {
-        yield return new WaitForSeconds(Random.Range(0.0f, 1.0f));
-        
         if (twinklingMode == 0)
             _lampCoroutine = StartCoroutine(LightCoroutines());
         else if(twinklingMode == 1)
@@ -94,10 +92,13 @@ public class Lamp_Controller : MonoBehaviour
             light.color = Color.red;
             Emission_Color = new Color(1, 0, 0);
         }
+        yield return null;
     }
 
     IEnumerator FastLightCoroutines()
     {
+        yield return new WaitForSeconds(Random.Range(0.0f, 1.0f));
+        
         float time = Random.Range(0.5f, 1.0f);
         float breakTime = Random.Range(0.0f, 0.5f);
         bool isOn = true;
@@ -136,6 +137,8 @@ public class Lamp_Controller : MonoBehaviour
     
     IEnumerator LightCoroutines()
     {
+        yield return new WaitForSeconds(Random.Range(0.0f, 1.0f));
+        
         bool isOn = true;
         
         while (true)

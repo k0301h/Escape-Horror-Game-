@@ -448,11 +448,17 @@ public class PlayerController : MonoBehaviour
 
     public void FlashBreak()
     {
+        if (_flashLight == null)
+            _flashLight = _inventory.GetItem("Flashlight").GetComponent<FlashLight>();
+        
         _flashLight?.BreakFlash();
     }
     
     public void FlashFixed()
     {
+        if (_flashLight == null)
+            _flashLight = _inventory.GetItem("Flashlight").GetComponent<FlashLight>();
+        
         _flashLight?.FixedFlash();
     }
 }

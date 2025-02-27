@@ -4058,6 +4058,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 220440116ec5d2f4fa6d4c4b8a9e095b, type: 3}
+--- !u!114 &1014805938 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8100120796379141167, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+  m_PrefabInstance: {fileID: 8920952716913681554}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e4252b888fb634cb0fd7c7fd1f1089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1063241813
 GameObject:
   m_ObjectHideFlags: 0
@@ -7826,10 +7837,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
@@ -7837,7 +7852,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1521023499}
     - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 1014805938}
+    - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
@@ -7845,11 +7868,23 @@ PrefabInstance:
       value: FlashLightFixed
       objectReference: {fileID: 0}
     - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: LockOffDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
       value: EventScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_TargetAssemblyTypeName
+      value: Door_Controller, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
@@ -7857,7 +7892,15 @@ PrefabInstance:
       value: '"Day Room is Opend"'
       objectReference: {fileID: 0}
     - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_StringArgument
+      value: '"Day Room is Opend"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637045789004850071, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2285432373203115883, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
@@ -7966,10 +8009,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
@@ -7977,7 +8024,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1613577336}
     - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1014805938}
+    - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
@@ -7985,8 +8040,16 @@ PrefabInstance:
       value: FlashLightBreak
       objectReference: {fileID: 0}
     - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: LockOnDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: EventScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: Door_Controller, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
@@ -7994,6 +8057,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311791364430255610, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3796799029462031621, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
@@ -8207,6 +8274,26 @@ PrefabInstance:
     - target: {fileID: 4939863414037008685, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5529153735072799183, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_Name
+      value: Door_par
+      objectReference: {fileID: 0}
+    - target: {fileID: 5565507795807764439, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_Size.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5875253031324161280, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: isLock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6255652107479572184, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 40.397
+      objectReference: {fileID: 0}
+    - target: {fileID: 6255652107479572184, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.759
       objectReference: {fileID: 0}
     - target: {fileID: 6389397841334707801, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: lookPlayerState
