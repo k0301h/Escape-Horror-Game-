@@ -1,10 +1,13 @@
 using UnityEngine;
 
+public struct ITEM_ID
+{
+    public static readonly int Flash = 1;
+}
+
 public class Item : MonoBehaviour
 {
     [SerializeField] protected int id;
-
-    private static readonly int ID_FLASH = 1;
     
     public virtual void Acquired(GameObject player)
     {

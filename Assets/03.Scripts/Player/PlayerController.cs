@@ -357,17 +357,19 @@ public class PlayerController : MonoBehaviour
 
                     if (rayObject.TryGetComponent<Item>(out Item itemCoponent))
                     {
-                        if (itemCoponent is FlashLight flashLight)
-                        {
-                            // TODO : 일반화 필요
-                            flashLight.Acquired(_viewCamera.gameObject);
-                            // flashLight.SetFlash();
-                            // _IKController.changeIK();
-                        }
-                        else
-                        {
-                            itemCoponent.Acquired(_inventory.gameObject);
-                        }
+                        itemCoponent.Acquired(_inventory.gameObject);
+                        
+                        // if (itemCoponent is FlashLight flashLight)
+                        // {
+                        //     // TODO : 일반화 필요
+                        //     flashLight.Acquired(_viewCamera.gameObject);
+                        //     // flashLight.SetFlash();
+                        //     // _IKController.changeIK();
+                        // }
+                        // else
+                        // {
+                        //     itemCoponent.Acquired(_inventory.gameObject);
+                        // }
                     }
 
                     _inventory.AddItem(rayObject);
@@ -388,6 +390,8 @@ public class PlayerController : MonoBehaviour
                     _flashLight.TurnOff();
                 else
                     _flashLight.TurnOn();
+                
+                //TODO : 버튼 누르는 소리 추가 필요
             }
 
             #endregion
@@ -440,5 +444,15 @@ public class PlayerController : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             _isMouseLocked = true;
         }
+    }
+
+    public void FlashBreak()
+    {
+        _flashLight?.BreakFlash();
+    }
+    
+    public void FlashFixed()
+    {
+        _flashLight?.FixedFlash();
     }
 }

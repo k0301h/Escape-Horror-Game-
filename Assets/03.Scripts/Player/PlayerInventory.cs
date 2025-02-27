@@ -7,7 +7,8 @@ public class PlayerInventory : MonoBehaviour
 
     void Awake()
     {
-        _inventory.Clear();
+        // TODO : 테스트용 주석처리
+        // _inventory.Clear();
     }
 
     public void AddItem(GameObject item)
@@ -20,9 +21,9 @@ public class PlayerInventory : MonoBehaviour
         _inventory.Remove(item);
     }
 
-    public GameObject GetItem(string ItemName)
+    public GameObject GetItem(string itemName)
     {
-        return _inventory.Find(x => x.name == ItemName);
+        return _inventory.Find(x => x.name == itemName);
     }
 
     public GameObject GetLastItem()

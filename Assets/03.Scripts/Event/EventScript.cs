@@ -47,6 +47,16 @@ public class EventScript : MonoBehaviour
         myEvent.Invoke();
         gameObject.SetActive(false);
     }
+
+    public void FlashLightBreak()
+    {
+        PlayerExtension.FindPlayerByID("Player")?.GameObject().GetComponentInChildren<PlayerController>()?.FlashBreak();
+    }
+    
+    public void FlashLightFixed()
+    {
+        PlayerExtension.FindPlayerByID("Player")?.GameObject().GetComponentInChildren<PlayerController>()?.FlashFixed();
+    }
     
     public void StartEvent()
     {

@@ -3,12 +3,15 @@
 public class FlashLight : Item
 {
     private GameObject _light;
-    private bool ison;
+    
+    private bool _isOn;
+    public bool isBreak;
 
     void Start()
     {
-        id = 1;
-        ison = true;
+        id = ITEM_ID.Flash;
+        _isOn = true;
+        isBreak = false;
         _light = transform.Find("Spotlight").gameObject;
     }
     
@@ -42,20 +45,35 @@ public class FlashLight : Item
         Destroy(thisCoponent);
     }
 
-    public bool IsOn()
+    public void BreakFlash()
     {
-        return ison;
+        isBreak = true;
+        TurnOff();
+    }
+
+    public void FixedFlash()
+    {
+        isBreak = false;
+        TurnOn();
     }
     
+    public bool IsOn()
+    {
+        return _isOn;
+    }
+
     public void TurnOn()
     {
-        ison = true;
-        _light.SetActive(true);
+        if (!isBreak)
+        {
+            _isOn = true;
+            _light.SetActive(true);
+        }
     }
 
     public void TurnOff()
     {
-        ison = false;
+        _isOn = false;
         _light.SetActive(false);
     }
 }
