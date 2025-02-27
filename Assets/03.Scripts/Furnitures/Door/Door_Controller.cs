@@ -66,17 +66,24 @@ public class Door_Controller : MonoBehaviour
     
     public void LockOnDoor()
     {
-        DebugSound(_LockOffAudioSource);
-        
-        SoundManager.Instance?.AudioPlay(_LockOffAudioSource);
         if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Open"))
         {
             CloseDoor();
         }
         
         isLock = true;
+
+        StartCoroutine(CloseAndLockDoorCoroutine());
     }
-    
+
+    IEnumerator CloseAndLockDoorCoroutine()
+    {
+        yield return new WaitForSeconds(0.8f);
+        
+        DebugSound(_LockOnAudioSource);
+        SoundManager.Instance?.AudioPlay(_LockOnAudioSource);
+    }
+
     public void OpenDoor()
     {
         if (!isLock)
@@ -108,7 +115,7 @@ public class Door_Controller : MonoBehaviour
     {
         LockOnDoor();
         
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.8f);
         
         DebugSound(_LockOnAudioSource);
         SoundManager.Instance?.AudioPlay(_LockOnAudioSource);

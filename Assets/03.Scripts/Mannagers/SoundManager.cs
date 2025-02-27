@@ -24,21 +24,6 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    IEnumerator SoundAutoPlayCoroutine(AudioSource audioSource, float time)
-    {
-        audioSource.Play();
-        yield return new WaitForSeconds(time);
-        audioSource.Stop();
-    }
-    
-    public void BGMPlay(AudioSource audioSource)
-    {
-        if (isOn)
-        {
-            StartCoroutine(SoundAutoPlayCoroutine(audioSource, 10.0f));
-        }
-    }
-
     public void AudioPlay(AudioSource audioSource)
     {
         if(isOn)

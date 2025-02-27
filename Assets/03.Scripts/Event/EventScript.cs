@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -30,10 +31,15 @@ public class EventScript : MonoBehaviour
     {
         SoundManager.Instance?.AudioStop(audioSource);
     }
-    
-    public void BGMPlay(AudioSource audioSource)
+
+    public void PlayBreath()
     {
-        SoundManager.Instance?.BGMPlay(audioSource);
+        PlayerExtension.FindPlayerByID("Player")?.GameObject().GetComponentInChildren<PlayerSoundPlayer>()?.PlaySound("Breath");
+    }
+    
+    public void StopBreath()
+    {
+        PlayerExtension.FindPlayerByID("Player")?.GameObject().GetComponentInChildren<PlayerSoundPlayer>()?.StopSound("Breath");
     }
     
     public void StartPaperEvent()

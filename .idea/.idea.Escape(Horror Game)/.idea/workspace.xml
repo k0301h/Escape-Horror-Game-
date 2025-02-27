@@ -9,8 +9,17 @@
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/EffectOrShader/MosaicScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/EffectOrShader/MosaicScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Creature/Creature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Creature/Creature.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Door/Door_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Door/Door_Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Mannagers/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Mannagers/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/10.Sounds/BGM/Old_Hospital.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/10.Sounds/BGM/Old_Hospital.wav.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/12.Texture/Mosaic_RenderTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/12.Texture/Mosaic_RenderTexture.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/13.Shader/Noise FullScreen/Mosaic FullScreen Shader.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/13.Shader/Noise FullScreen/Mosaic FullScreen Shader.shadergraph.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,6 +194,8 @@
       <workItem from="1740466686440" duration="2742000" />
       <workItem from="1740495477310" duration="3296000" />
       <workItem from="1740540849483" duration="155000" />
+      <workItem from="1740579842835" duration="3829000" />
+      <workItem from="1740624967646" duration="2559000" />
     </task>
     <servers />
   </component>
