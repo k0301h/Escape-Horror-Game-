@@ -7,9 +7,10 @@
     <list default="true" id="6554947d-69ac-420e-a44a-1b6db53de4c0" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape(Horror Game)/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerInventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerUIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/12.Texture/Mosaic_RenderTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/12.Texture/Mosaic_RenderTexture.renderTexture" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,10 +102,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19520">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19324">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="19520" />
+      <option name="pid" value="19324" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
         <list>
@@ -188,6 +189,7 @@
       <workItem from="1740540849483" duration="155000" />
       <workItem from="1740579842835" duration="3829000" />
       <workItem from="1740624967646" duration="6836000" />
+      <workItem from="1740667152789" duration="2268000" />
     </task>
     <servers />
   </component>
@@ -225,6 +227,32 @@
           <line>21</line>
           <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\CustomPass\BlitToRTCustomPass.cs" containingFunctionPresentation="메서드 'Execute'" />
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerUIController.cs</url>
+          <line>79</line>
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Player\PlayerUIController.cs" containingFunctionPresentation="메서드 'MosaicPlayer'">
+            <startOffsets>
+              <option value="2359" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2387" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs</url>
+          <line>63</line>
+          <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Event\EventScript.cs" containingFunctionPresentation="메서드 'PlayMosaic'">
+            <startOffsets>
+              <option value="1713" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1752" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -7661,16 +7661,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 91427766}
     m_Modifications:
     - target: {fileID: 3233801581406617944, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233801581406617944, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2147004499}
     - target: {fileID: 3233801581406617944, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayeMosaic
+      value: PlayMosaic
       objectReference: {fileID: 0}
     - target: {fileID: 3233801581406617944, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: EventScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233801581406617944, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Red
       objectReference: {fileID: 0}
     - target: {fileID: 4292313306178768203, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: player
@@ -7716,6 +7724,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5875253031324161280, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: isLock
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7017738359882570371, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: m_Name
       value: Second_Map
@@ -7725,12 +7737,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7807210767081958694, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7807210767081958694, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 668767215}
     - target: {fileID: 7807210767081958694, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayeMosaic
+      value: EndMosaic
       objectReference: {fileID: 0}
     - target: {fileID: 7807210767081958694, guid: 2a1e5b7ab301df646957193c1289b69f, type: 3}
       propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

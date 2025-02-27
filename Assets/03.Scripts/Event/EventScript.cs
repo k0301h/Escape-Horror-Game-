@@ -4,7 +4,6 @@ using UnityEngine.Events;
 
 public class EventScript : MonoBehaviour
 {
-    // 10초 뒤에 문이 열리도록 다시 구현하자
     [SerializeField] private UnityEvent myEvent;
     
     void Awake() {
@@ -58,9 +57,25 @@ public class EventScript : MonoBehaviour
         PlayerExtension.FindPlayerByID("Player")?.GameObject().GetComponentInChildren<PlayerController>()?.FlashFixed();
     }
 
-    public void PlayeMosaic(bool isOn)
+    public void PlayMosaic(string colorName)
     {
-        PlayerExtension.FindPlayerByID("Player")?.GameObject().GetComponentInChildren<PlayerUIController>()?.MosaicPlayer(isOn);
+        var playerUIController = PlayerExtension.FindPlayerByID("Player")?.GameObject().GetComponentInChildren<PlayerUIController>();
+        
+        playerUIController?.MosaicPlayer(true);
+        
+        if(colorName == "Red")
+            playerUIController?.MosaicColorSet(new Color(1, 0, 0));
+        else if(colorName == "Green")
+            playerUIController?.MosaicColorSet(new Color(0, 1, 0));
+        else if(colorName == "Blue")
+            playerUIController?.MosaicColorSet(new Color(0, 0, 1));
+    }
+    
+    public void EndMosaic()
+    {
+        var playerUIController = PlayerExtension.FindPlayerByID("Player")?.GameObject().GetComponentInChildren<PlayerUIController>();
+        
+        playerUIController?.MosaicPlayer(false);
     }
     
     public void StartEvent()
