@@ -86,4 +86,16 @@ public class Zombie : Creature
     
     #endregion
 
+    #region Collision
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // TODO : 부딪혔을때 다시 할지 아니면 깜놀 사진 띄울지 고민
+        }
+    }
+    
+    #endregion
+    
 }

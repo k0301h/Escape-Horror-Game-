@@ -8,8 +8,8 @@ public class PlayerInventory : MonoBehaviour
     void Awake()
     {
         // TODO : 테스트용 주석처리
-        DebugManager.Instance.Log("Player Inventory 테스트용 주석처리");
-        // _inventory.Clear();
+        // DebugManager.Instance.Log("Player Inventory 테스트용 주석처리");
+        _inventory.Clear();
     }
 
     public void AddItem(GameObject item)

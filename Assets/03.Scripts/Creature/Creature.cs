@@ -8,11 +8,14 @@ public class Creature : MonoBehaviour
     [SerializeField] protected Animator animator;
     
     [SerializeField] private bool lookPlayerState = false;
-    [SerializeField] private GameObject _player;
+    private GameObject _player;
     
     void Start()
     {
         animator = GetComponent<Animator>();
+        
+        // TODO : Test
+        LookAtPlayer();
     }
 
     void Update()
