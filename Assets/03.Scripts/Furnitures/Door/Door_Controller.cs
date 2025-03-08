@@ -9,14 +9,14 @@ public class Door_Controller : MonoBehaviour
     private Animator _animator;
     private AudioSource _openAudioSource;
     private AudioSource _closeAudioSource;
-    private AudioSource _LockAudioSource;
-    private AudioSource _LockOffAudioSource;
-    private AudioSource _LockOnAudioSource;
+    private AudioSource _lockAudioSource;
+    private AudioSource _lockOffAudioSource;
+    private AudioSource _lockOnAudioSource;
     private bool _isOpen;
 
     [SerializeField] private bool isLock = true;
     
-    void Start()
+    private void Start()
     {
         _animator = gameObject.GetComponent<Animator>();
         
@@ -24,14 +24,9 @@ public class Door_Controller : MonoBehaviour
 
         _openAudioSource = audios[0];
         _closeAudioSource = audios[1];
-        _LockAudioSource = audios[2];
-        _LockOffAudioSource = audios[3];
-        _LockOnAudioSource = audios[4];
-        
-        // _openAudioSource = gameObject.transform.GetChild(2).GetComponent<AudioSource>();
-        // _closeAudioSource = gameObject.transform.GetChild(3).GetComponent<AudioSource>();
-        // _LockAudioSource = gameObject.transform.GetChild(4).GetComponent<AudioSource>();
-        // _LockOffAudioSource = gameObject.transform.GetChild(5).GetComponent<AudioSource>();
+        _lockAudioSource = audios[2];
+        _lockOffAudioSource = audios[3];
+        _lockOnAudioSource = audios[4];
         _isOpen = false;
     }
 
@@ -58,9 +53,9 @@ public class Door_Controller : MonoBehaviour
 
     public void LockOffDoor()
     {
-        DebugSound(_LockOffAudioSource);
+        DebugSound(_lockOffAudioSource);
 
-        SoundManager.Instance?.AudioPlay(_LockOffAudioSource);
+        SoundManager.Instance?.AudioPlay(_lockOffAudioSource);
         isLock = false;
     }
     
@@ -80,8 +75,8 @@ public class Door_Controller : MonoBehaviour
     {
         yield return new WaitForSeconds(0.8f);
         
-        DebugSound(_LockOnAudioSource);
-        SoundManager.Instance?.AudioPlay(_LockOnAudioSource);
+        DebugSound(_lockOnAudioSource);
+        SoundManager.Instance?.AudioPlay(_lockOnAudioSource);
     }
 
     public void OpenDoor()
@@ -96,9 +91,9 @@ public class Door_Controller : MonoBehaviour
         }
         else
         {
-            DebugSound(_LockAudioSource);
+            DebugSound(_lockAudioSource);
 
-            SoundManager.Instance?.AudioPlay(_LockAudioSource);
+            SoundManager.Instance?.AudioPlay(_lockAudioSource);
         }
     }
 
@@ -111,20 +106,32 @@ public class Door_Controller : MonoBehaviour
         _animator.SetTrigger(Close);
     }
 
-    IEnumerator AutoDoorCoroutine(float time)
+    IEnumerator AutoLockOffDoorCoroutine(float time)
     {
         LockOnDoor();
         
         yield return new WaitForSeconds(0.8f);
         
-        DebugSound(_LockOnAudioSource);
-        SoundManager.Instance?.AudioPlay(_LockOnAudioSource);
+        DebugSound(_lockOnAudioSource);
+        SoundManager.Instance?.AudioPlay(_lockOnAudioSource);
         yield return new WaitForSeconds(time);
         LockOffDoor();
     }
     
-    public void LockAutoDoor(float time)
+    public void AutoLockOffDoor(float time)
     {
-        StartCoroutine(AutoDoorCoroutine(time));
+        StartCoroutine(AutoLockOffDoorCoroutine(time));
+    }
+    
+    IEnumerator AutoOpenDoorCoroutine(float time)
+    {
+        LockOffDoor();
+        yield return new WaitForSeconds(time);
+        OpenDoor();
+    }
+    
+    public void AutoOpenDoor(float time)
+    {
+        StartCoroutine(AutoOpenDoorCoroutine(time));
     }
 }
