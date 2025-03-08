@@ -4,7 +4,7 @@ using UnityEngine.Serialization;
 
 public class Lamp_Controller : MonoBehaviour
 {
-    public new Light light;
+    public Light lightComponent;
     public Material material;
     [SerializeField] private AudioSource source;
     
@@ -22,11 +22,11 @@ public class Lamp_Controller : MonoBehaviour
     
     void Start()
     {
-        light = gameObject.GetComponentInChildren<Light>();
+        lightComponent = gameObject.GetComponentInChildren<Light>();
         material = gameObject.GetComponentInChildren<Renderer>().material;
         source = gameObject.GetComponent<AudioSource>();
 
-        light.enabled = true;
+        lightComponent.enabled = true;
 
         if (isOnState)
         {
@@ -54,7 +54,7 @@ public class Lamp_Controller : MonoBehaviour
         material.SetFloat("_EmissiveExposureWeight", value);
         material.SetFloat("_EmissiveIntensity", value * Emission_Intensity); 
         
-        light.intensity = (1 - value) * intensity_Amount;
+        lightComponent.intensity = (1 - value) * intensity_Amount;
     }
 
     public void StartLampTwinkle()
@@ -65,7 +65,7 @@ public class Lamp_Controller : MonoBehaviour
     public void EndLampTwinkle(bool state)
     {        
         StopCoroutine(_lampCoroutine);
-        light.color = Color.white;
+        lightComponent.color = Color.white;
         Emission_Color = new Color(1, 1, 1);
 
         if (state)
@@ -89,7 +89,7 @@ public class Lamp_Controller : MonoBehaviour
         else if (twinklingMode == 2)
         {
             _lampCoroutine = StartCoroutine(FastLightCoroutines());
-            light.color = Color.red;
+            lightComponent.color = Color.red;
             Emission_Color = new Color(1, 0, 0);
         }
         yield return null;

@@ -9,37 +9,9 @@
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/FlashLight/FlashLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/FlashLight/FlashLight.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerInventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Close.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Close.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Door_V1.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Door_V1.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Door_par_Right.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Door_par_Right.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Open.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Open.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/RightDoorClose.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/RightDoorClose.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/RightDoorOpen.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/RightDoorOpen.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Double.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Double/DoorD_V2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Double/DoorD_V2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v1/Door_V1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v1/Door_V1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v2/Door_V2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v2/Door_V2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/Lamp_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/Lamp_Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/LampWall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/LampWall.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Old_Hospital.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Old_Hospital.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +40,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/03.Scripts/Event/TimeSlipEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/Lamp_Controller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Lamp/LightController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core/Runtime/Lighting/ProbeVolume/ProbeReferenceVolume.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.high-definition/Runtime/Lighting/Light/HDAdditionalLightData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.high-definition/Runtime/Material/Decal/Decal.shader" root0="SKIP_HIGHLIGHTING" />
@@ -222,6 +195,7 @@
       <workItem from="1740829239750" duration="605000" />
       <workItem from="1741234573393" duration="1794000" />
       <workItem from="1741326550152" duration="64000" />
+      <workItem from="1741428105828" duration="805000" />
     </task>
     <servers />
   </component>
