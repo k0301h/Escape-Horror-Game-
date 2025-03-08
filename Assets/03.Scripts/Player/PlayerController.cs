@@ -459,4 +459,12 @@ public class PlayerController : MonoBehaviour
         
         _flashLight?.FixedFlash();
     }
+    
+    public void FlashColor(int colorType)
+    {
+        if (_flashLight == null)
+            _flashLight = _inventory.GetItem("Flashlight").GetComponent<FlashLight>();
+        
+        _flashLight?.SetColor(colorType);
+    }
 }

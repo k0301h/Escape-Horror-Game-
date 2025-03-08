@@ -9,7 +9,7 @@ public class PlayerInventory : MonoBehaviour
     {
         // TODO : 테스트용 주석처리
         // DebugManager.Instance.Log("Player Inventory 테스트용 주석처리");
-        _inventory.Clear();
+        // _inventory.Clear();
     }
 
     public void AddItem(GameObject item)

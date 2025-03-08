@@ -56,6 +56,11 @@ public class EventScript : MonoBehaviour
     {
         PlayerExtension.FindPlayerByID("Player")?.GameObject().GetComponentInChildren<PlayerController>()?.FlashFixed();
     }
+    
+    public void SetFlashLightColor(int colorType)
+    {
+        PlayerExtension.FindPlayerByID("Player")?.GameObject().GetComponentInChildren<PlayerController>()?.FlashColor(colorType);
+    }
 
     public void PlayMosaic(string colorName)
     {

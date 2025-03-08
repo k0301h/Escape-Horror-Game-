@@ -1477,9 +1477,9 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2447.6191
+  m_Intensity: 1241.67
   m_Range: 10
-  m_SpotAngle: 51.032425
+  m_SpotAngle: 72.24998
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -1550,7 +1550,7 @@ MonoBehaviour:
   m_LightUnit: 0
   m_LuxAtDistance: 1
   m_Intensity: 0
-  m_InnerSpotPercent: 19.595385
+  m_InnerSpotPercent: 45.38025
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
   m_VolumetricDimmer: 1
@@ -2392,6 +2392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
+  isBreak: 0
 --- !u!1 &9104818551007235111
 GameObject:
   m_ObjectHideFlags: 0
@@ -2474,15 +2475,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 20a91139dd5482249ab80196e71c7bdd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.698
+      value: 16.68
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20a91139dd5482249ab80196e71c7bdd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.77
+      value: 1.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20a91139dd5482249ab80196e71c7bdd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.305
+      value: 13.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20a91139dd5482249ab80196e71c7bdd, type: 3}
       propertyPath: m_LocalRotation.w

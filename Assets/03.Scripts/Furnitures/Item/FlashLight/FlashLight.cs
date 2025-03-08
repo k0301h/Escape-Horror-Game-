@@ -2,7 +2,8 @@
 
 public class FlashLight : Item
 {
-    private GameObject _light;
+    private GameObject _lightGameObject;
+    private Light _light;
     
     private bool _isOn;
     public bool isBreak;
@@ -12,7 +13,8 @@ public class FlashLight : Item
         id = ITEM_ID.Flash;
         _isOn = true;
         isBreak = false;
-        _light = transform.Find("Spotlight").gameObject;
+        _lightGameObject = transform.Find("Spotlight").gameObject;
+        _light = _lightGameObject.GetComponent<Light>();
     }
     
     // public void SetFlash()
@@ -56,6 +58,14 @@ public class FlashLight : Item
         isBreak = false;
         TurnOn();
     }
+
+    public void SetColor(int colorType)
+    {
+        if (colorType == 0)
+            _light.color = Color.white;
+        else if(colorType == 1)
+            _light.color = Color.red;
+    }
     
     public bool IsOn()
     {
@@ -67,13 +77,13 @@ public class FlashLight : Item
         if (!isBreak)
         {
             _isOn = true;
-            _light.SetActive(true);
+            _lightGameObject.SetActive(true);
         }
     }
 
     public void TurnOff()
     {
         _isOn = false;
-        _light.SetActive(false);
+        _lightGameObject.SetActive(false);
     }
 }

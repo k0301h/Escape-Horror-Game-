@@ -9,12 +9,37 @@
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scene/1.InGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Creature/Creature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Creature/Creature.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Creature/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Creature/Zombie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/FlashLight/FlashLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Furnitures/Item/FlashLight/FlashLight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Scripts/Player/PlayerInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Close.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Close.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Door_V1.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Door_V1.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Door_par_Right.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Door_par_Right.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Open.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/Open.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/RightDoorClose.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/RightDoorClose.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/RightDoorOpen.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Ani/RightDoorOpen.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Double.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Double/DoorD_V2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/Double/DoorD_V2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v1/Door_V1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v1/Door_V1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v2/Door_V2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Furnitures/Old/Door/v2/Door_V2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Old_Hospital.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Old_Hospital.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Map/Second_Map.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/12.Texture/CustomPass_RenderTexture.renderTexture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/12.Texture/CustomPass_RenderTexture.renderTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04.Prefabs/Units/Player.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +218,10 @@
       <workItem from="1740624967646" duration="6836000" />
       <workItem from="1740667152789" duration="3283000" />
       <workItem from="1740722932531" duration="801000" />
-      <workItem from="1740804370722" duration="2088000" />
+      <workItem from="1740804370722" duration="2702000" />
+      <workItem from="1740829239750" duration="605000" />
+      <workItem from="1741234573393" duration="1794000" />
+      <workItem from="1741326550152" duration="64000" />
     </task>
     <servers />
   </component>
@@ -234,13 +262,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/03.Scripts/Event/EventScript.cs</url>
-          <line>63</line>
+          <line>68</line>
           <properties documentPath="C:\Users\K\OneDrive\Documents\GitHub\Escape(Horror Game)\Assets\03.Scripts\Event\EventScript.cs" containingFunctionPresentation="메서드 'PlayMosaic'">
             <startOffsets>
-              <option value="1713" />
+              <option value="1910" />
             </startOffsets>
             <endOffsets>
-              <option value="1752" />
+              <option value="1949" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="20" />
